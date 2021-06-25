@@ -1,0 +1,15 @@
+﻿  Chapter4.cpp
+d:\github\windows_api\chapter4\chapter4\object.h(40): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\chapter4\chapter4\object.h(47): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\chapter4\chapter4\object.h(71): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\chapter4\chapter4\chapter4.cpp(204): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\chapter4\chapter4\chapter4.cpp(209): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\chapter4\chapter4\chapter4.cpp(214): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\chapter4\chapter4\chapter4.cpp(224): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\chapter4\chapter4\chapter4.cpp(229): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\chapter4\chapter4\chapter4.cpp(234): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\chapter4\chapter4\chapter4.cpp(145): warning C4101: 'hBrush' :참조되지 않은 지역 변수입니다.
+d:\github\windows_api\chapter4\chapter4\chapter4.cpp(145): warning C4101: 'OldBrush' :참조되지 않은 지역 변수입니다.
+d:\github\windows_api\chapter4\chapter4\chapter4.cpp(139): warning C4101: 'str' :참조되지 않은 지역 변수입니다.
+d:\github\windows_api\chapter4\chapter4\chapter4.cpp(387): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Chapter4.vcxproj -> D:\GitHub\Windows_API\Chapter4\x64\Debug\Chapter4.exe
