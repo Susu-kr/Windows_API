@@ -1,19 +1,18 @@
-﻿  Object.cpp
+﻿  Defense_Game.cpp
 d:\github\windows_api\defense_game\defense_game\object.h(28): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 d:\github\windows_api\defense_game\defense_game\object.h(38): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\windows_api\defense_game\defense_game\object.h(71): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\windows_api\defense_game\defense_game\object.h(85): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\windows_api\defense_game\defense_game\object.h(84): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\windows_api\defense_game\defense_game\object.cpp(5): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\windows_api\defense_game\defense_game\object.cpp(7): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
-d:\github\windows_api\defense_game\defense_game\object.cpp(29): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\windows_api\defense_game\defense_game\object.cpp(30): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\windows_api\defense_game\defense_game\object.cpp(31): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\windows_api\defense_game\defense_game\object.cpp(101): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\windows_api\defense_game\defense_game\object.cpp(103): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
-d:\github\windows_api\defense_game\defense_game\object.cpp(107): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\windows_api\defense_game\defense_game\object.cpp(145): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\windows_api\defense_game\defense_game\object.cpp(146): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\windows_api\defense_game\defense_game\object.cpp(147): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\windows_api\defense_game\defense_game\object.cpp(148): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\defense_game\defense_game\object.h(70): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\defense_game\defense_game\object.h(82): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\defense_game\defense_game\object.h(81): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\defense_game\defense_game\defense_game.cpp(194): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\defense_game\defense_game\defense_game.cpp(196): warning C4244: '+=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\defense_game\defense_game\defense_game.cpp(197): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\defense_game\defense_game\defense_game.cpp(215): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\github\windows_api\defense_game\defense_game\defense_game.cpp(218): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\github\windows_api\defense_game\defense_game\defense_game.cpp(221): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\github\windows_api\defense_game\defense_game\defense_game.cpp(236): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\defense_game\defense_game\defense_game.cpp(239): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\defense_game\defense_game\defense_game.cpp(258): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\github\windows_api\defense_game\defense_game\defense_game.cpp(260): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\github\windows_api\defense_game\defense_game\defense_game.cpp(143): warning C4101: 'size' :참조되지 않은 지역 변수입니다.
   Defense_Game.vcxproj -> D:\GitHub\Windows_API\Defense_Game\Debug\Defense_Game.exe

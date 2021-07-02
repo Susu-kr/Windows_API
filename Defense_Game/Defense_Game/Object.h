@@ -6,107 +6,86 @@
 #include "Defense_Game.h"
 #include <cmath>
 
-enum TYPE { CIRCLE, STAR, RECTANGLE, PLAYER };
-
 struct Pos {
-	float x;
-	float y;
+	FLOAT x;
+	FLOAT y;
 };
 
-class CObject {
+class STRUCT {
 protected:
-	Pos center;
-	Pos direction;
-	float distance;
-	Pos		ShotPos;
-	float degree;
-	float size;
-	bool Active;
-	TYPE type;
+	Pos		center;
+	bool	Active;
 public:
-	CObject(float x, float y) : center({ x, y }), direction({ 0, 0 }) {}
-	CObject(float x, float y, float d_x, float d_y, int s) : center({ x,y }), direction({ d_x,d_y }), size(s) {}
+	STRUCT(FLOAT x, FLOAT y) : center({ x, y }) {}
+
 	Pos		GetCenter() { return center; }
-	Pos		GetDirection() { return direction; }
-	TYPE	GetType() { return type; }
-	float	GetSize() { return size; }
 	bool	GetActive() { return Active; }
-	float	GetDegree() { return degree; }
-	Pos		GetShotPos() { return ShotPos; }
 
-	void	SetDegree(float d) { degree = d; }
-	void	SetSize(int s) { size = s; }
-	void	SetActive(bool a) { Active = a; }
-	void	SetCenter(float x, float y) { center = { x, y }; }
-	void	SetDirection(float x, float y) { direction = { x, y }; }
-	void	SetShotPos(float x, float y) { ShotPos.x = x; ShotPos.y = y; }
+	void	SetCenter(FLOAT x, FLOAT y) { center = { x, y }; }
+	void	SetActive(bool a)			{ Active = a; }
 
-	virtual void Update() = 0;					// 좌표를 업데이트
-	virtual void Collision(RECT & r) = 0;		// 충돌 여부 확인
-	virtual void Collision(CObject * a) = 0;	// 충돌 여부 확인
-	virtual void Draw(HDC hdc) = 0;				// 그려주기
+	virtual bool Collision(STRUCT * a) { return false; }	// 충돌 여부 확인
 };
 
-class PLAY : public CObject 
+class PLAY : public STRUCT 
 {
 private:
-
+	FLOAT radian = M_PI * 0.5;
+	FLOAT scale;
 public:
-	PLAY(RECT & R);
+	PLAY(FLOAT x, FLOAT y, FLOAT r) : STRUCT(x, y), scale(r) {}
+	
+	FLOAT GetScale()	{ return scale; }
+	FLOAT GetRadian()	{ return radian; }
 
-	virtual void Update(); // 그려주기
-	virtual void Collision(RECT & r); // 충돌 여부 확인
-	virtual void Collision(CObject * a);
-	virtual void Draw(HDC hdc);
+	void SetScale(FLOAT s) { scale = s; }
 };
 
-class CCircle : public CObject
+class Bullet : public STRUCT
 {
+private:
+	Pos		POS;
+	FLOAT	scale;
 public:
-	CCircle(float x, float y, float d);
-	CCircle(float x, float y, float d_x, float d_y, int size) : CObject(x, y, d_x, d_y, size) {}
-	virtual void Update(); // 그려주기
-	virtual void Collision(RECT & r); // 충돌 여부 확인
-	virtual void Collision(CObject * a);
-	virtual void Draw(HDC hdc) { Ellipse(hdc, center.x - size, center.y - size, center.x + size, center.y + size); }
-
-};
-
-class CRect : public CObject
-{
-
-public:
-	CRect(float x, float y);
-	virtual void Update(); // 그려주기
-	virtual void Collision(RECT & r); // 충돌 여부 확인
-	virtual void Collision(CObject * a);
-	virtual void Draw(HDC hdc) {
-		Rectangle(hdc, center.x - size/2, center.y - size/4,
-			center.x + size/2, center.y + size/4);
+	Bullet(float x, float y, FLOAT r, FLOAT radian) : STRUCT(x, y), scale(r) {
+		POS.x = 5 * cos(radian);
+		POS.y = 5 * sin(radian);
 	}
+	Pos		GetPOS()	{ return POS; }
+	FLOAT	GetScale()	{ return scale; }
+	bool Collision(STRUCT * a);
 };
 
-class CStar : public CObject
+class Wall : public STRUCT
 {
 private:
-	float spin;
-	float rotate;
-	float degree;
+	FLOAT width;
+	FLOAT height;
+public:
+	Wall(FLOAT x, FLOAT y, FLOAT w, FLOAT h) : STRUCT(x, y), width(w), height(h) {}
+	FLOAT	GetWidth()	{ return width; }
+	FLOAT	GetHeight() { return height; }
+};
+
+class Enemy : public STRUCT
+{
+private:
+	FLOAT spin;
+	FLOAT rotate;
+	FLOAT degree;
+	FLOAT scale;
 	POINT star[10];
 	Pos point[5];
 	Pos dup_p[5];
+
 public:
-	CStar(float x, float y);
-	CStar(float x, float y, float d_x, float d_y, int size) : CObject(x, y, d_x, d_y, size) {}
+	Enemy(FLOAT x, FLOAT y);
 
 	Pos intersection(const Pos* p1, const Pos* p2, const Pos* p3, const Pos* p4);
 	void SetStar(float spin);
 
-	virtual void Update(); // 그려주기
-	virtual void Collision(RECT & r); // 충돌 여부 확인
-	virtual void Collision(CObject * a);
+	bool Collision(STRUCT * a);
 	virtual void Draw(HDC hdc) { Polygon(hdc, star, 10); }
-
 };
 
 #endif // !OBJECT_H_

@@ -2,27 +2,6 @@
 #include <time.h>
 
 
-PLAY::PLAY(RECT & R) : CObject(R.right / 2, R.bottom - 50)
-{
-	degree = 90 * M_PI / 180;
-	size = 50;
-	ShotPos.x = center.x + (cos(degree) * (size + 50));
-	ShotPos.y = center.y - (sin(degree) * (size + 50));
-}
-
-void PLAY::Update()
-{
-	ShotPos.x = center.x + (cos(degree) * (size + 50));
-	ShotPos.y = center.y - (sin(degree) * (size + 50));
-}
-
-void PLAY::Collision(RECT & r)
-{
-}
-
-void PLAY::Collision(CObject * a)
-{
-}
 
 void PLAY::Draw(HDC hdc)
 {
@@ -31,7 +10,7 @@ void PLAY::Draw(HDC hdc)
 	Ellipse(hdc, center.x - size, center.y - size, center.x + size, center.y + size);
 }
 
-CCircle::CCircle(float x, float y, float d) : CObject(x, y)
+Bullet::Bullet(float x, float y, float d) : STRUCT(x, y)
 {
 	size = 10;
 	direction.x = (cos(d) * size / 2);
@@ -39,16 +18,16 @@ CCircle::CCircle(float x, float y, float d) : CObject(x, y)
 	type = CIRCLE;
 	Active = true;
 }
-void CCircle::Update() {
+void Bullet::Update() {
 	center.x += direction.x;
 	center.y += direction.y;
 }
-void CCircle::Collision(RECT & r) {
+void Bullet::Collision(RECT & r) {
 	if (size > center.x || r.right - size < center.x || size > center.y)
 		SetActive(false);
 }
 
-void CCircle::Collision(CObject* a)
+void Bullet::Collision(STRUCT* a)
 {
 	distance = (float)sqrt(pow(a->GetCenter().x - center.x, 2) + pow(a->GetCenter().y - center.y, 2));
 	if (distance <= a->GetSize() + size) {
@@ -66,22 +45,22 @@ void CCircle::Collision(CObject* a)
 }
 
 
-CRect::CRect(float x, float y) : CObject(x, y)
+Wall::Wall(float x, float y) : STRUCT(x, y)
 {
 	size = 100;
 	type = RECTANGLE;
 }
 
-void CRect::Update()
+void Wall::Update()
 {
-
+	
 }
 
-void CRect::Collision(RECT & r)
+void Wall::Collision(RECT & r)
 {
 }
 
-void CRect::Collision(CObject * a)
+void Wall::Collision(STRUCT * a)
 {
 	distance = (float)sqrt(pow(a->GetCenter().x - center.x, 2) + pow(a->GetCenter().y - center.y, 2));
 	if (distance <= a->GetSize() + size) {
@@ -96,11 +75,9 @@ void CRect::Collision(CObject * a)
 }
 
 
-CStar::CStar(float x, float y) : CObject(x, y)
+Enemy::Enemy(float x, float y) : STRUCT(x, y)
 {
 	srand((unsigned int)time(NULL));
-	direction.y = rand() % 11;
-	size = 50;
 	degree = 2 * M_PI / 5;
 	while (1) {
 		int num = rand() % 20 + 1;
@@ -110,13 +87,12 @@ CStar::CStar(float x, float y) : CObject(x, y)
 		}
 	}
 	rotate = spin;
-	type = STAR;
 	Active = true;
 	SetStar(rotate);
 
 }
 
-Pos CStar::intersection(const Pos * p1, const Pos * p2, const Pos * p3, const Pos * p4)
+Pos Enemy::intersection(const Pos * p1, const Pos * p2, const Pos * p3, const Pos * p4)
 {
 	Pos ret;
 	ret.x = ((p1->x*p2->y - p1->y*p2->x)*(p3->x - p4->x) - (p1->x - p2->x)*(p3->x*p4->y - p3->y*p4->x))
@@ -128,11 +104,11 @@ Pos CStar::intersection(const Pos * p1, const Pos * p2, const Pos * p3, const Po
 	return ret;
 }
 
-void CStar::SetStar(float rotate)
+void Enemy::SetStar(float rotate)
 {
 	for (int i = 0; i < 5; i++) {
-		point[i].x = center.x + (cos(rotate) * (size));
-		point[i].y = center.y + (sin(rotate) * (size));
+		point[i].x = center.x + (cos(rotate) * (scale));
+		point[i].y = center.y + (sin(rotate) * (scale));
 		rotate += degree;
 	}
 
@@ -150,14 +126,14 @@ void CStar::SetStar(float rotate)
 	}
 }
 
-void CStar::Update()
+void Enemy::Update()
 {
 	center.y += direction.y;
 	rotate += spin;
 	SetStar(rotate);
 }
 
-void CStar::Collision(RECT & r)
+void Enemy::Collision(RECT & r)
 {
 	if (size > center.y) {
 		center.y = size;
@@ -169,7 +145,7 @@ void CStar::Collision(RECT & r)
 	}
 }
 
-void CStar::Collision(CObject * a)
+void Enemy::Collision(STRUCT * a)
 {
 	distance = (float)sqrt(pow(a->GetCenter().x - center.x, 2) + pow(a->GetCenter().y - center.y, 2));
 	if (distance <= a->GetSize() + size) {

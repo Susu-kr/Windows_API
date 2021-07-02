@@ -1,15 +1,14 @@
 ﻿// Defense_Game.cpp : 애플리케이션에 대한 진입점을 정의합니다.
 //
-#define _CRT_SECURE_NO_WARNINGS
 #include "framework.h"
 #include "Defense_Game.h"
 #include "Game.h"
 #include "Object.h"
 #include <iostream>
-#include <fstream>
 #include <string>
 #include <stdlib.h>
 #include <vector>
+#include <time.h>
 
 #define MAX_LOADSTRING 100
 
@@ -132,7 +131,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 //
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
-
+	srand(unsigned(time(NULL)));
 
 	static GAME		G;
 	static RECT		R;
@@ -143,9 +142,10 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	static float	scale;
 	DWORD	size;
 
-	static vector <CObject*> object;
-	static vector <CObject*> bullet;
-	static vector <CObject*> Enemy;
+	static PLAY *Cannon;
+	static vector <Bullet*> bullet;
+	static vector <Wall*> wall;
+	static vector <Enemy*> enemy;
 
     switch (message)
     {
@@ -190,12 +190,11 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 					HideCaret(hWnd);
 					DestroyCaret();
 					G.SetMode(INGAME);
-					object.push_back(new PLAY(R));
 					scale = 100;
 					int x = R.left - (scale / 2), y = R.bottom - (scale / 4);
 					while (x < R.right) {
 						x += scale;
-						object.push_back(new CRect(x, y));
+						wall.push_back(new Wall(x, y));
 						x += 1;
 					}
 				}
@@ -212,8 +211,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			switch (wParam)
 			{
 			case 1:
-				for (int i = 0; i < object.size(); i++) {
-					object[i]->Update();
+				Cannon->Update();
+				for (int i = 0; i < wall.size(); i++) {
+					wall[i]->Update();
 				}
 				for (int i = 0; i < bullet.size(); i++) {
 					bullet[i]->Update();
@@ -222,9 +222,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 					bullet[i]->Collision(R);
 					if (bullet[i]->GetActive() == false) bullet.erase(bullet.begin() + i);
 				}
-				break;
-			case 2:
-				Enemy.push_back()
 				break;
 			}
 			InvalidateRect(hWnd, NULL, true);
@@ -236,17 +233,13 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 				switch (wParam)
 				{
 				case VK_LEFT:
-				{
-					if (object[0]->GetDegree() < 170 * M_PI / 180)object[0]->SetDegree(object[0]->GetDegree() + M_PI / 90);
-				}
+					if (Cannon->GetDegree() < 170 * M_PI / 180)Cannon->SetDegree(Cannon->GetDegree() + M_PI / 90);
 					break;
 				case VK_RIGHT:
-				{
-					if (object[0]->GetDegree() > M_PI / 18)object[0]->SetDegree(object[0]->GetDegree() - M_PI / 90);
-				}
+					if (Cannon->GetDegree() > M_PI / 18)Cannon->SetDegree(Cannon->GetDegree() - M_PI / 90);
 					break;
 				case VK_SPACE:
-					bullet.push_back(new CCircle(object[0]->GetShotPos().x, object[0]->GetShotPos().y, object[0]->GetDegree()));
+					bullet.push_back(new Bullet(Cannon->GetShotPos().x, Cannon->GetShotPos().y, Cannon->GetDegree()));
 					break;
 				}
 			}
@@ -262,28 +255,15 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 				G.Lobby(hdc, R, Player, temp);
 				break;
 			case INGAME:
-				for (int i = 0; i < object.size(); i++)
-					object[i]->Draw(hdc);
-				for (int i = 0; i < bullet.size(); i++) {
+				for (int i = 0; i < wall.size(); i++)
+					wall[i]->Draw(hdc);
+				for (int i = 0; i < bullet.size(); i++)
 					bullet[i]->Draw(hdc);
-				}
+				//for (int i = 0; i < enemy.size(); i++)
+				//	enemy[i]->Draw(hdc);
 				break;
 			case ENDGAME:
-				ofstream output("score.txt", ios::app);
-				if (output.fail()) {
-					cout << "파일을 여는 데 실패했습니다." << endl;
-					return 1;
-				}
-				TCHAR buffer[25];
-				_tcscpy(buffer, Player);
-				TCHAR temp[5];
-				wsprintf(temp, _T(" %d"), G.GetScore());
-				_tcscat(buffer, temp);
-				char res[25];
-				WideCharToMultiByte(CP_ACP, 0, buffer, 25, res, 25, NULL, NULL);
-				output << res << endl;
-				output.close();
-				G.EndGame(hdc, R, buffer);
+				G.EndGame(hdc, R, Player);
 				return 0;
 			}
             EndPaint(hWnd, &ps);
@@ -291,9 +271,15 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         break;
     case WM_DESTROY:
         PostQuitMessage(0);
-		for (CObject * temp : object)
-		delete temp;
+		delete Cannon;
+		for (STRUCT * temp : wall)
+			delete temp;
+		for (STRUCT * temp : bullet)
+			delete temp;
+		for (STRUCT * temp : enemy)
+			delete temp;
 		KillTimer(hWnd, 1);
+		//KillTimer(hWnd, 2);
         break;
     default:
         return DefWindowProc(hWnd, message, wParam, lParam);

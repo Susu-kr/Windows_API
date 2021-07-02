@@ -1,0 +1,3 @@
+﻿  movingPoint.cpp
+d:\github\windows_api\windowsproject1\windowsproject1\movingpoint.cpp(307): warning C4101: 'backup' :참조되지 않은 지역 변수입니다.
+  WindowsProject1.vcxproj -> D:\GitHub\Windows_API\WindowsProject1\Debug\WindowsProject1.exe

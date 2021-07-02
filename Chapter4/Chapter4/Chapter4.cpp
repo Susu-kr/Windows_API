@@ -3,11 +3,17 @@
 
 #include "framework.h"
 #include "Chapter4.h"
-#include "Object.h"
-#include "DLL.h"
+#include <fstream>
 #include <cmath>
 #include <time.h>
 #include <commdlg.h>
+// >> : GDI+
+#include <ObjIdl.h>
+#include <gdiplus.h>
+#pragma comment(lib, "Gdiplus.lib")
+using namespace Gdiplus;
+// << 
+#pragma comment(lib, "msimg32.lib")
 
 #define MAX_LOADSTRING 100
 
@@ -24,6 +30,57 @@ ATOM                MyRegisterClass(HINSTANCE hInstance);
 BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
+
+// image
+HBITMAP				hBackImage;
+BITMAP				bitBack;
+// transparent image
+HBITMAP				hTransparentImage;
+BITMAP				bitTransparent;
+// Animation
+HBITMAP				hAniImage;
+BITMAP				bitAni;
+const int			SPRITE_SIZE_X = 57;
+const int			SPRITE_SIZE_Y = 52;
+//const int			SPRITE_SIZE_X = 32;
+//const int			SPRITE_SIZE_Y = 32;
+POINT				AniPos;
+int					flag;
+int					Start_Pos_X = 0;
+int					Start_Pos_Y = 0;
+// run
+int					RUN_FRAME_MAX = 0;
+int					RUN_FRAME_MIN = 0;
+int					curframe = RUN_FRAME_MIN;
+// Text
+RECT				rectView;
+void				DrawRectText(HDC hdc);
+void				Update();
+void				UpdateFrame();
+// double buffering
+HBITMAP				hDoubleBufferImage;
+HBITMAP				hReverseImage;
+void				DrawBitmapDoubleBuffering(HWND hWnd, HDC hdc);
+// 
+
+// >> : GDI+
+ULONG_PTR			g_GdiToken;
+
+void				Gdi_Init();
+void				Gdi_Draw(HDC hdc);
+void				Gdi_End();
+void				OnGdi_Paint(HDC hdc);
+
+// <<
+
+
+
+void				CreateBitmap();
+void				DrawBitmap(HWND hWnd, HDC hdc);
+void				DeleteBitmap();
+void				UpdateFrame(HWND hWnd);
+VOID CALLBACK		AniProc(HWND hWnd, UINT uMsg, UINT idEvent, DWORD dwTime);
+// <<
 
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,
@@ -50,17 +107,81 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
     MSG msg;
 
+	Gdi_Init();
+
     // 기본 메시지 루프입니다:
-    while (GetMessage(&msg, nullptr, 0, 0))
-    {
-        if (!TranslateAccelerator(msg.hwnd, hAccelTable, &msg))
-        {
-            TranslateMessage(&msg);
-            DispatchMessage(&msg);
-        }
-    }
+    //while (GetMessage(&msg, nullptr, 0, 0))
+    //{
+    //    if (!TranslateAccelerator(msg.hwnd, hAccelTable, &msg))
+    //    {
+    //        TranslateMessage(&msg);
+    //        DispatchMessage(&msg);
+    //    }
+    //}
+
+	while (true) {
+		if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE)) {
+			if (msg.message == WM_QUIT) {
+				break;
+			}
+			else {
+				TranslateMessage(&msg);
+				DispatchMessage(&msg);
+			}
+		}
+		else {
+			Update();
+		}
+	}
+
+	Gdi_End();
 
     return (int) msg.wParam;
+}
+
+void Update() {
+	DWORD newTime = GetTickCount();
+	static DWORD oldTime = newTime;
+	if (newTime - oldTime < 50) return;
+	oldTime = newTime;
+
+	// : to do something
+	UpdateFrame();
+}
+
+void UpdateFrame() {
+	if (GetAsyncKeyState(VK_RIGHT) & 0x8000) {
+		AniPos.x += 10;
+		flag = 6;
+	}
+	if (GetAsyncKeyState(VK_LEFT) & 0x8000) {
+		AniPos.x -= 10;
+		flag = 4;
+	}
+	if (GetAsyncKeyState(VK_UP) & 0x8000) {
+		AniPos.y -= 10;
+		flag = 8;
+	}
+	if (GetAsyncKeyState(VK_DOWN) & 0x8000) {
+		AniPos.y += 10;
+		flag = 2;
+	}
+	if (GetAsyncKeyState(VK_RIGHT) & 0x8000 && GetAsyncKeyState(VK_UP) & 0x8000) {
+		flag = 9;
+		return;
+	}
+	if (GetAsyncKeyState(VK_RIGHT) & 0x8000 && GetAsyncKeyState(VK_DOWN) & 0x8000) {
+		flag = 3;
+		return;
+	}
+	if (GetAsyncKeyState(VK_LEFT) & 0x8000 && GetAsyncKeyState(VK_UP) & 0x8000) {
+		flag = 7;
+		return;
+	}
+	if (GetAsyncKeyState(VK_LEFT) & 0x8000 && GetAsyncKeyState(VK_DOWN) & 0x8000) {
+		flag = 1;
+		return;
+	}
 }
 
 
@@ -132,8 +253,6 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
 	static RECT			rcRect;
-	static List			object;
-	static int			flag;
 
 	OPENFILENAME		OFN;
 	TCHAR				str[100], lpstrFile[100] = _T("");
@@ -150,101 +269,20 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	case WM_CREATE:
 		{
 			flag = 0;
-			GetClientRect(hWnd, &rcRect);
-			SetTimer(hWnd, 1, 10, NULL);
+			GetClientRect(hWnd, &rectView);
+			CreateBitmap();
+			SetTimer(hWnd, 123, 50, AniProc);
 		}
 		break;
 	case WM_SIZE:
 		{
 			GetClientRect(hWnd, &rcRect);
-			InvalidateRect(hWnd, NULL, true);
+			InvalidateRect(hWnd, NULL, false);
 		}
 		break;
 	case WM_LBUTTONDOWN:
-		{
-			int num = rand() % 10;
-			switch (num % 3)
-			{
-			case 0:
-				object.insertBack(new CCircle(LOWORD(lParam), HIWORD(lParam)));
-				break;
-			case 1:
-				object.insertBack(new CRect(LOWORD(lParam), HIWORD(lParam)));
-				break;
-			case 2:
-				object.insertBack(new CStar(LOWORD(lParam), HIWORD(lParam)));
-				break;
-			}
-		}
 		break;
 	case WM_TIMER:
-	{
-		switch (wParam) {
-		case 1: {
-			for (int i = 0; i < object.ListSize(); i++) {
-				object.OBINDEX(i)->Update();
-			}
-			for (int i = 0; i < object.ListSize(); i++) {
-				object.OBINDEX(i)->Collision(rcRect);
-			}
-			for (int i = 0; i < object.ListSize(); i++) {
-				for (int j = i + 1; j < object.ListSize(); j++) {
-					if (flag == 0) object.OBINDEX(i)->Collision(object.OBINDEX(j), NORMAL);
-					else if (flag == 1) {
-						object.OBINDEX(i)->Collision(object.OBINDEX(j), BIGGER);
-						if (!object.OBINDEX(i)->GetActive()) object.removeIndex(i);
-						else if (!object.OBINDEX(j)->GetActive()) object.removeIndex(j);
-					}
-					else if (flag == 2) {
-						object.OBINDEX(i)->Collision(object.OBINDEX(j), SMALLER);
-						if (!object.OBINDEX(i)->GetActive()) {
-							switch (object.OBINDEX(j)->GetType()) {
-							case CIRCLE: {
-								object.insertBack(new CCircle(object.OBINDEX(i)->GetCenter().x, object.OBINDEX(i)->GetCenter().y
-									, object.OBINDEX(i)->GetDirection().x, object.OBINDEX(i)->GetDirection().y, object.OBINDEX(j)->GetSize()));
-							}
-								break;
-							case RECTANGLE: {
-								object.insertBack(new CRect(object.OBINDEX(i)->GetCenter().x, object.OBINDEX(i)->GetCenter().y
-									, object.OBINDEX(i)->GetDirection().x, object.OBINDEX(i)->GetDirection().y, object.OBINDEX(j)->GetSize()));
-							}
-								break;
-							case STAR: {
-								object.insertBack(new CStar(object.OBINDEX(i)->GetCenter().x, object.OBINDEX(i)->GetCenter().y
-									, object.OBINDEX(i)->GetDirection().x, object.OBINDEX(i)->GetDirection().y, object.OBINDEX(j)->GetSize()));
-							}
-								break;
-							}
-							object.removeIndex(i);
-						}
-						else if (!object.OBINDEX(j)->GetActive()) {
-							switch (object.OBINDEX(i)->GetType()) {
-							case CIRCLE: {
-								object.insertBack(new CCircle(object.OBINDEX(j)->GetCenter().x, object.OBINDEX(j)->GetCenter().y
-									, object.OBINDEX(j)->GetDirection().x, object.OBINDEX(j)->GetDirection().y, object.OBINDEX(i)->GetSize()));
-							}
-								break;
-							case RECTANGLE: {
-								object.insertBack(new CRect(object.OBINDEX(j)->GetCenter().x, object.OBINDEX(j)->GetCenter().y
-									, object.OBINDEX(j)->GetDirection().x, object.OBINDEX(j)->GetDirection().y, object.OBINDEX(i)->GetSize()));
-							}
-								break;
-							case STAR: {
-								object.insertBack(new CStar(object.OBINDEX(j)->GetCenter().x, object.OBINDEX(j)->GetCenter().y
-									, object.OBINDEX(j)->GetDirection().x, object.OBINDEX(j)->GetDirection().y, object.OBINDEX(i)->GetSize()));
-							}
-								break;
-							}
-							object.removeIndex(j);
-						}
-					}
-				}
-			}
-			InvalidateRect(hWnd, NULL, true);
-		}
-				break;
-		}
-	}
 		break;
     case WM_COMMAND:
         {
@@ -260,7 +298,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
                 break;
 			case ID_FUNC1:
 				MessageBox(hWnd, _T("기본설정으로 작동합니다."), _T("기능 선택"), MB_OK);
-				flag = 0;
 				break;
 			case ID_FUNC2:
 			{
@@ -276,14 +313,14 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 					MessageBox(hWnd, _T("CANCLE 버튼 선택"), _T("버튼 확인"), MB_OK);
 					break;
 				}
-				flag = 1;
 			}
 				break;
 			case ID_FUNC3:
-				flag = 2;
+				MessageBox(hWnd, _T("분열설정으로 작동합니다."), _T("기능 선택"), MB_OK);
 				break;
 			
 			case ID_FUNC4:
+				MessageBox(hWnd, _T("기능4설정으로 작동합니다."), _T("기능 선택"), MB_OK);
 				break;
 
 			case ID_FILEOPEN:
@@ -319,6 +356,14 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             }
         }
         break;
+	case WM_KEYDOWN:
+	{
+		switch (wParam) {
+			DialogBox(hInst, MAKEINTRESOURCE(IDD_ABOUTBOX), hWnd, About);
+
+		}
+	}
+		break;
     case WM_PAINT:
         {
             PAINTSTRUCT ps;
@@ -329,18 +374,17 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			//SelectObject(hdc, OldBrush);
 			//DeleteObject(hBrush);
             // TODO: 여기에 hdc를 사용하는 그리기 코드를 추가합니다...
-			for (int i = 0; i < object.ListSize(); i++) {
-				object.OBINDEX(i)->Draw(hdc);
-			}
-            EndPaint(hWnd, &ps);
+
+			//DrawBitmap(hWnd, hdc);
+			//DrawRectText(hdc);
+			DrawBitmapDoubleBuffering(hWnd, hdc);
+			EndPaint(hWnd, &ps);
         }
         break;
     case WM_DESTROY:
+		DeleteBitmap();
+		KillTimer(hWnd, 123);
         PostQuitMessage(0);
-		for (int i = 0; i < object.ListSize(); i++) {
-			object.removeFront();
-		}
-		KillTimer(hWnd, 1);
         break;
     default:
         return DefWindowProc(hWnd, message, wParam, lParam);
@@ -368,6 +412,383 @@ INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
     return (INT_PTR)FALSE;
 }
 
+void DrawRectText(HDC hdc)
+{
+	static int yPos = 0;
+	TCHAR strTest[] = _T("이미지 출력");
+	TextOut(hdc, 10, yPos, strTest, _tcslen(strTest));
+	yPos += 5;
+	if (yPos > rectView.bottom) yPos = 0;
+}
+
+void CreateBitmap()
+{
+	// >> : back image
+	hBackImage = (HBITMAP)LoadImage(NULL, TEXT("images/수지.bmp"),
+		IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE | LR_CREATEDIBSECTION);
+	GetObject(hBackImage, sizeof(BITMAP), &bitBack);
+	// << 
+
+	// >> : Transparent Image
+	hTransparentImage = (HBITMAP)LoadImage(NULL, TEXT("images/sigong.bmp"),
+		IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE | LR_CREATEDIBSECTION);
+	GetObject(hTransparentImage, sizeof(BITMAP), &bitTransparent);
+	// << :
+
+	// >> : Animation
+	hAniImage = (HBITMAP)LoadImage(NULL, TEXT("images/zero_run.bmp"),
+		IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE | LR_CREATEDIBSECTION);
+	GetObject(hAniImage, sizeof(BITMAP), &bitAni);
+	RUN_FRAME_MAX = bitAni.bmWidth / SPRITE_SIZE_X - 1;
+	RUN_FRAME_MIN = 2;
+	curframe = RUN_FRAME_MIN;
+	AniPos = { 200 ,400 };
+
+	//hAniImage = (HBITMAP)LoadImage(NULL, TEXT("images/8D.bmp"),
+	//	IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE | LR_CREATEDIBSECTION);
+	//GetObject(hAniImage, sizeof(BITMAP), &bitAni);
+
+	//RUN_FRAME_MAX = bitAni.bmWidth / SPRITE_SIZE_X / 2 - 1;
+	//RUN_FRAME_MIN = 0;
+	//curframe = RUN_FRAME_MIN;
+	//AniPos = { 200 ,400 };
+	// << :
+}
+
+void DrawBitmap(HWND hWnd, HDC hdc)
+{
+	HDC			hMemDC; // Double Buffering
+	HBITMAP		hOldBitmap;
+	int bx, by;
+
+	// back image
+	{
+		hMemDC = CreateCompatibleDC(hdc);
+		hOldBitmap = (HBITMAP)SelectObject(hMemDC, hBackImage);
+		bx = bitBack.bmWidth;
+		by = bitBack.bmHeight;
+
+		BitBlt(hdc, 0, 0, bx, by, hMemDC, 0, 0, SRCCOPY);
+		SelectObject(hMemDC, hOldBitmap);
+		DeleteDC(hMemDC);
+	}
+	//
+
+	// transparent image
+	{
+		hMemDC = CreateCompatibleDC(hdc);
+		hOldBitmap = (HBITMAP)SelectObject(hMemDC, hTransparentImage);
+		bx = bitTransparent.bmWidth;
+		by = bitTransparent.bmHeight;
+
+		BitBlt(hdc, 100, 200, bx, by, hMemDC, 0, 0, SRCCOPY);
+		TransparentBlt(hdc, 200, 200, bx, by, hMemDC, 0, 0, bx, by, RGB(255, 0, 255));
+		SelectObject(hMemDC, hOldBitmap);
+		DeleteDC(hMemDC);
+	}
+	//
+
+	// animation
+	{
+		hMemDC = CreateCompatibleDC(hdc);
+		hOldBitmap = (HBITMAP)SelectObject(hMemDC, hAniImage);
+		bx = SPRITE_SIZE_X;
+		by = SPRITE_SIZE_Y;
+		switch (flag)
+		{
+		case 1:
+			Start_Pos_X = (curframe + 6) * SPRITE_SIZE_X;
+			Start_Pos_Y = 1 * SPRITE_SIZE_Y;
+			break;
+		case 2:
+			Start_Pos_X = curframe * SPRITE_SIZE_X;
+			Start_Pos_Y = 0 * SPRITE_SIZE_Y;
+			break;
+		case 3:
+			Start_Pos_X = (curframe + 6) * SPRITE_SIZE_X;
+			Start_Pos_Y = 0 * SPRITE_SIZE_Y;
+			break;
+		case 4:
+			Start_Pos_X = curframe * SPRITE_SIZE_X;
+			Start_Pos_Y = 1 * SPRITE_SIZE_Y;
+			break;
+		case 6:
+			Start_Pos_X = curframe * SPRITE_SIZE_X;
+			Start_Pos_Y = 2 * SPRITE_SIZE_Y;
+			break;
+		case 7:
+			Start_Pos_X = (curframe + 6) * SPRITE_SIZE_X;
+			Start_Pos_Y = 2 * SPRITE_SIZE_Y;
+			break;
+		case 8:
+			Start_Pos_X = curframe * SPRITE_SIZE_X;
+			Start_Pos_Y = 3 * SPRITE_SIZE_Y;
+			break;
+		case 9:
+			Start_Pos_X = (curframe + 6) * SPRITE_SIZE_X;
+			Start_Pos_Y = 3 * SPRITE_SIZE_Y;
+			break;
+		default:
+			break;
+		}
+		TransparentBlt(hdc, AniPos.x, AniPos.y, bx, by, hMemDC,
+			Start_Pos_X, Start_Pos_Y, bx, by, RGB(255, 255, 255));
+		SelectObject(hMemDC, hOldBitmap);
+		DeleteDC(hMemDC);
+	}
+	// 
+}
+
+void DeleteBitmap()
+{
+	DeleteObject(hBackImage);
+	DeleteObject(hTransparentImage);
+	DeleteObject(hAniImage);
+}
+
+void UpdateFrame(HWND hWnd)
+{
+	curframe++;
+	if (curframe > RUN_FRAME_MAX)
+		curframe = RUN_FRAME_MIN;
+}
+
+VOID CALLBACK AniProc(HWND hWnd, UINT uMsg, UINT idEvent, DWORD dwTime)
+{
+	curframe++;
+	if (curframe > RUN_FRAME_MAX)
+		curframe = RUN_FRAME_MIN;
+	InvalidateRect(hWnd, NULL, false);
+}
+
+void DrawBitmapDoubleBuffering(HWND hWnd, HDC hdc)
+{
+	HDC hMemDC;
+	HBITMAP hOldBitmap;
+	int bx, by;
+
+	HDC hMemDC2;
+	HBITMAP hOldBitmap2;
+
+	hMemDC = CreateCompatibleDC(hdc);
+	if (!hMemDC) {
+		MessageBox(hWnd, _T("CreateCompatibleDC failed"),
+			_T("Error"), MB_OK);
+		return;
+	}
+	if (hDoubleBufferImage == NULL) {
+		hDoubleBufferImage = CreateCompatibleBitmap(hdc, rectView.right, rectView.bottom);
+	}
+
+	hOldBitmap = (HBITMAP)SelectObject(hMemDC, hDoubleBufferImage);
+	// >> : back
+	{
+		hMemDC2 = CreateCompatibleDC(hMemDC);
+		hOldBitmap2 = (HBITMAP)SelectObject(hMemDC2, hBackImage);
+		bx = bitBack.bmWidth;
+		by = bitBack.bmHeight;
+		BitBlt(hMemDC, 0, 0, bx, by, hMemDC2, 0, 0, SRCCOPY);
+
+		SelectObject(hMemDC2, hOldBitmap2);
+		DeleteDC(hMemDC2);
+	}
+	// <<
+
+	// >> : sigong
+	{
+		hMemDC2 = CreateCompatibleDC(hMemDC);
+		hOldBitmap2 = (HBITMAP)SelectObject(hMemDC2, hTransparentImage);
+		bx = bitTransparent.bmWidth;
+		by = bitTransparent.bmHeight;
+		BitBlt(hMemDC, 100, 200, bx, by, hMemDC2, 0, 0, SRCCOPY);
+		TransparentBlt(hMemDC, 200, 200, bx, by, hMemDC2, 0, 0, bx, by, RGB(255, 0, 255));
+
+		SelectObject(hMemDC2, hOldBitmap2);
+		DeleteDC(hMemDC2);
+	}
+	// <<
+
+	// >> : animation
+	{
+		hMemDC2 = CreateCompatibleDC(hMemDC);
+		hOldBitmap2 = (HBITMAP)SelectObject(hMemDC2, hAniImage);
+
+		HDC hReverseMemDC;
+		HBITMAP hOldBitmap3;
+		hReverseMemDC = CreateCompatibleDC(hMemDC);
+		if (!hReverseImage) {
+			hReverseImage = CreateCompatibleBitmap(hMemDC2, bx, by);
+		}
+		hOldBitmap3 = (HBITMAP)SelectObject(hReverseMemDC, hReverseImage);
+
+		bx = bitAni.bmWidth / 16;
+		by = bitAni.bmHeight / 2;
+
+		int xStart = curframe * bx;
+		int yStart = 0;
+
+		//StretchBlt(hReverseMemDC, bx - 1, 0, -bx, by, hMemDC2, xStart, yStart, bx, by, SRCCOPY);
+
+		TransparentBlt(hMemDC, 200, 400, bx * 2, by * 2,
+			hMemDC2, xStart, yStart, bx, by, RGB(255, 0, 255));
+
+		//bx = SPRITE_SIZE_X;
+		//by = SPRITE_SIZE_Y;
+		//switch (flag)
+		//{
+		//case 1:
+		//	Start_Pos_X = (curframe + 6) * SPRITE_SIZE_X;
+		//	Start_Pos_Y = 1 * SPRITE_SIZE_Y;
+		//	break;
+		//case 2:
+		//	Start_Pos_X = curframe * SPRITE_SIZE_X;
+		//	Start_Pos_Y = 0 * SPRITE_SIZE_Y;
+		//	break;
+		//case 3:
+		//	Start_Pos_X = (curframe + 6) * SPRITE_SIZE_X;
+		//	Start_Pos_Y = 0 * SPRITE_SIZE_Y;
+		//	break;
+		//case 4:
+		//	Start_Pos_X = curframe * SPRITE_SIZE_X;
+		//	Start_Pos_Y = 1 * SPRITE_SIZE_Y;
+		//	break;
+		//case 6:
+		//	Start_Pos_X = curframe * SPRITE_SIZE_X;
+		//	Start_Pos_Y = 2 * SPRITE_SIZE_Y;
+		//	break;
+		//case 7:
+		//	Start_Pos_X = (curframe + 6) * SPRITE_SIZE_X;
+		//	Start_Pos_Y = 2 * SPRITE_SIZE_Y;
+		//	break;
+		//case 8:
+		//	Start_Pos_X = curframe * SPRITE_SIZE_X;
+		//	Start_Pos_Y = 3 * SPRITE_SIZE_Y;
+		//	break;
+		//case 9:
+		//	Start_Pos_X = (curframe + 6) * SPRITE_SIZE_X;
+		//	Start_Pos_Y = 3 * SPRITE_SIZE_Y;
+		//	break;
+		//default:
+		//	break;
+		//}
+		//TransparentBlt(hMemDC, AniPos.x, AniPos.y, 2*bx, 2*by, hMemDC2,
+		//	Start_Pos_X, Start_Pos_Y, bx, by, RGB(255, 255, 255));
+
+		SelectObject(hMemDC2, hOldBitmap2);
+		DeleteDC(hMemDC2);
+	}
+	// <<
+
+	Gdi_Draw(hMemDC);
+
+	BitBlt(hdc, 0, 0, rectView.right, rectView.bottom,
+		hMemDC, 0, 0, SRCCOPY);
+	SelectObject(hMemDC, hOldBitmap);
+	DeleteDC(hMemDC);
+}
+
+// >> GDI+
+void Gdi_Init()
+{
+	GdiplusStartupInput gpsi;
+	GdiplusStartup(&g_GdiToken, &gpsi, NULL);
+}
+
+void Gdi_Draw(HDC hdc)
+{
+	OnGdi_Paint(hdc);
+}
+
+void Gdi_End()
+{
+	GdiplusShutdown(g_GdiToken);
+}
+
+void OnGdi_Paint(HDC hdc)
+{
+	Graphics graphics(hdc);
+
+	// text print
+	SolidBrush brush(Color(255, 255, 0, 0));
+	FontFamily fontFamily(L"Times New Roman");
+	Font font(&fontFamily, 24, FontStyleRegular, UnitPixel);
+	PointF pointF(10.0f, 20.0f);
+	graphics.DrawString(L"Hello GDI+", -1, &font, pointF, &brush);
+
+	// line
+	Pen pen(Color(255, 0, 255, 255)); // 불투명도, R, G, B
+	graphics.DrawLine(&pen, 0, 0, 200, 100);
+
+	// image
+	Image img((WCHAR*)L"images/sigong.png");
+	int w = img.GetWidth();
+	int h = img.GetHeight();
+	graphics.DrawImage(&img, 100, 100, w, h);
+
+	Image* pImg = nullptr;
+	pImg = Image::FromFile(((WCHAR*)L"images/sigong.png"));
+
+	Gdiplus::Matrix mat;
+	static int rot = 0;
+	int xPos = 200;
+	int yPos = 100;
+	mat.RotateAt(rot % 360, Gdiplus::PointF(xPos + (float)w / 2, yPos + (float)h / 2));
+	graphics.SetTransform(&mat);
+	graphics.DrawImage(pImg, 200, 100, w, h);
+
+	mat.RotateAt(-(rot % 360), Gdiplus::PointF(xPos + (float)w / 2, yPos + (float)h / 2));
+	graphics.SetTransform(&mat);
+	rot += 100;
+
+	// >> : 배경 제거
+	ImageAttributes imgAttr;
+	imgAttr.SetColorKey(Color(240, 0, 240), Color(255, 10, 255));
+	xPos = 300;
+	graphics.DrawImage(pImg, Rect(xPos, yPos, w, h),
+		0, 0, w, h, UnitPixel, &imgAttr);
+	// <<
+
+	// >> :
+	brush.SetColor(Color(128, 255, 0, 0));
+	graphics.FillRectangle(&brush, 400, 300, 200, 300);
+	// <<
+
+	// >> : 투명화
+	static REAL transparency = 0.5f;
+	transparency += 0.1f;
+	if (transparency > 1.0f) transparency = 0.0f;
+	ColorMatrix colorMatrix =
+	{
+		//	  R		G	  B     A
+			1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
+			0.0f, 1.0f, 0.0f, 0.0f, 0.0f,
+			0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
+			0.0f, 0.0f, 0.0f, transparency, 0.0f,
+			0.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+	};
+	imgAttr.SetColorMatrix(&colorMatrix);
+	xPos = 400;
+	graphics.DrawImage(pImg, Rect(xPos, yPos, w, h),
+		0, 0, w, h, UnitPixel, &imgAttr);
+	
+	colorMatrix =
+	{
+		//	  R		G	  B     A
+			0.3f, 0.3f, 0.3f, 0.0f, 0.0f,
+			0.6f, 0.6f, 0.6f, 0.0f, 0.0f,
+			0.1f, 0.1f, 0.1f, 0.0f, 0.0f,
+			0.0f, 0.0f, 0.0f, 1.0f, 0.0f,
+			0.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+	};
+	imgAttr.SetColorMatrix(&colorMatrix);
+	xPos = 500;
+	graphics.DrawImage(pImg, Rect(xPos, yPos, w, h),
+		0, 0, w, h, UnitPixel, &imgAttr);
+	// <<
+
+	if (pImg) delete pImg;
+}
+// <<
 
 void OutFromFile(TCHAR filename[], HWND hWnd) {
 	FILE *fPtr;
