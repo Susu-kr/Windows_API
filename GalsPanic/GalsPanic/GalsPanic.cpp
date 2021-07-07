@@ -3,7 +3,6 @@
 
 #include "framework.h"
 #include "GalsPanic.h"
-#include "GDIPLUS.h"
 #include "DrawImage.h"
 #define MAX_LOADSTRING 100
 #define windowWidth 800
@@ -48,15 +47,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	Gdi_Init();
 
 	// 기본 메시지 루프입니다:
-	//while (GetMessage(&msg, nullptr, 0, 0))
-	//{
-	//    if (!TranslateAccelerator(msg.hwnd, hAccelTable, &msg))
-	//    {
-	//        TranslateMessage(&msg);
-	//        DispatchMessage(&msg);
-	//    }
-	//}
-
 	while (true) {
 		if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE)) {
 			if (msg.message == WM_QUIT) {

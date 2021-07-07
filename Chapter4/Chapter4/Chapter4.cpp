@@ -82,6 +82,9 @@ void				UpdateFrame(HWND hWnd);
 VOID CALLBACK		AniProc(HWND hWnd, UINT uMsg, UINT idEvent, DWORD dwTime);
 // <<
 
+BOOL CALLBACK		MyDlg_Proc(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lParam);
+
+
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,
                      _In_ LPWSTR    lpCmdLine,
@@ -297,7 +300,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
                 DestroyWindow(hWnd);
                 break;
 			case ID_FUNC1:
-				MessageBox(hWnd, _T("기본설정으로 작동합니다."), _T("기능 선택"), MB_OK);
+			{
+				DialogBox(hInst, MAKEINTRESOURCE(IDD_MYDIALOG), hWnd, MyDlg_Proc);
+			}
 				break;
 			case ID_FUNC2:
 			{
@@ -559,6 +564,94 @@ VOID CALLBACK AniProc(HWND hWnd, UINT uMsg, UINT idEvent, DWORD dwTime)
 	if (curframe > RUN_FRAME_MAX)
 		curframe = RUN_FRAME_MIN;
 	InvalidateRect(hWnd, NULL, false);
+}
+
+BOOL CALLBACK MyDlg_Proc(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lParam)
+{
+	static int Check[3], Radio;
+	TCHAR hobby[][30] = { _T("독서"), _T("음악감상") , _T("게임") };
+	TCHAR sex[][30] = { _T("여성") , _T("남성") };
+	TCHAR output[256];
+
+	switch (iMsg) {
+	case WM_INITDIALOG: {
+		HWND hWndBtn = GetDlgItem(hDlg, IDC_PAUSE_BTN);
+		EnableWindow(hWndBtn, false);
+	}
+	{
+		CheckRadioButton(hDlg, IDC_RADIO_FEMALE, IDC_RADIO_MALE, IDC_RADIO_FEMALE);
+	}
+		return 1;
+	case WM_COMMAND:
+	{
+		switch (LOWORD(wParam)) {
+		case IDC_CHECK_READ:
+			Check[0] = 1 - Check[0];
+			break;
+		case IDC_CHECK_MUSIC:
+			Check[1] = 1 - Check[1];
+			break;
+		case IDC_CHECK_GAME:
+			Check[2] = 1 - Check[2];
+			break;
+		case IDC_RADIO_FEMALE:
+			Radio = 0;
+			break;
+		case IDC_RADIO_MALE:
+			Radio = 1;
+			break;
+		case IDC_OUTPUT_BTN:
+			_stprintf_s(output, _T("선택한 취미는 %s %s %s 입니다.\r\n")
+				 _T("선택한 성별은 %s 입니다.")
+				, Check[0] ? hobby[0] : _T("")
+				, Check[1] ? hobby[1] : _T("")
+				, Check[2] ? hobby[2] : _T("")
+				, sex[Radio]);
+			SetDlgItemText(hDlg, IDC_EDIT_OUTPUT, output);
+		case IDC_COPY_BTN:
+		{
+			TCHAR text[128];
+			GetDlgItemText(hDlg, IDC_INPUT_EDIT, text, 128);
+			SetDlgItemText(hDlg, IDC_OUTPUT_EDIT, text);
+			SetDlgItemText(hDlg, IDC_INPUT_EDIT, _T(""));
+
+		}
+			break;
+		case IDC_CLEAR_BTN:
+			SetDlgItemText(hDlg, IDC_INPUT_EDIT, _T(""));
+			SetDlgItemText(hDlg, IDC_OUTPUT_EDIT, _T(""));
+
+			break;
+
+		case IDC_START_BTN:
+			SetDlgItemText(hDlg, IDC_MYDLG_STATIC, _T("시작"));
+			{
+				HWND hWndBtn = GetDlgItem(hDlg, IDC_START_BTN);
+				EnableWindow(hWndBtn, false);
+
+				hWndBtn = GetDlgItem(hDlg, IDC_PAUSE_BTN);
+				EnableWindow(hWndBtn, true);
+			}
+			break;
+		case IDC_PAUSE_BTN:
+			SetDlgItemText(hDlg, IDC_MYDLG_STATIC, _T("정지"));
+			{
+				HWND hWndBtn = GetDlgItem(hDlg, IDC_START_BTN);
+				EnableWindow(hWndBtn, true);
+
+				hWndBtn = GetDlgItem(hDlg, IDC_PAUSE_BTN);
+				EnableWindow(hWndBtn, false);
+			}
+			break;
+		case IDC_STOP_BTN:
+			EndDialog(hDlg, 0);
+			break;
+		}
+		break;
+	}
+		break;
+	}
+	return 0;
 }
 
 void DrawBitmapDoubleBuffering(HWND hWnd, HDC hdc)

@@ -44,19 +44,22 @@ void OnGdi_Paint(HDC hdc)
 	//graphics.DrawLine(&pen, 0, 0, 200, 100);
 
 	//// image
-	Image img((WCHAR*)L"images/수지.png");
+	Image img((WCHAR*)L"images/수지2.bmp");
 	int w = img.GetWidth();
 	int h = img.GetHeight();
 	//graphics.DrawImage(&img, 100, 100, w, h);
-
+	Point points[] = {
+	 Point(250, 20), Point(150, 100), Point(300, 50)
+	};
+	graphics.DrawImage(&img, points, 3);
 	//Image* pImg = nullptr;
 	//pImg = Image::FromFile(((WCHAR*)L"images/sigong.png"));
 	//int w = pImg->GetWidth();
 	//int h = pImg->GetHeight();
 	//Gdiplus::Matrix mat;
 	//static int rot = 0;
-	int xPos = 200;
-	int yPos = 100;
+	int xPos = 0;
+	int yPos = 0;
 	//mat.RotateAt(rot % 360, Gdiplus::PointF(xPos + (float)w / 2, yPos + (float)h / 2));
 	//graphics.SetTransform(&mat);
 	//graphics.DrawImage(pImg, 200, 100, w, h);
@@ -67,50 +70,46 @@ void OnGdi_Paint(HDC hdc)
 
 	// >> : 배경 제거
 	ImageAttributes imgAttr;
-	imgAttr.SetColorKey(Color(240, 0, 240), Color(255, 10, 255));
-	xPos = 300;
-	graphics.DrawImage(&img, Rect(xPos, yPos, w, h),
-		0, 0, w, h, UnitPixel, &imgAttr);
+	//imgAttr.SetColorKey(Color(240, 0, 240), Color(255, 10, 255));
+	//graphics.DrawImage(&img, Rect(0, 0, w, h),
+	//	0, 0, w, h, UnitPixel, &imgAttr);
 	// <<
 
 	// >> :
-	brush.SetColor(Color(128, 255, 0, 0));
-	graphics.FillRectangle(&brush, 400, 300, 200, 300);
+	//brush.SetColor(Color(128, 255, 0, 0));
+	//graphics.FillRectangle(&brush, 400, 300, 200, 300);
 	// <<
 
 	// >> : 투명화
 	static REAL transparency = 0.5f;
-	transparency += 0.1f;
-	if (transparency > 1.0f) transparency = 0.0f;
-	ColorMatrix colorMatrix =
-	{
-		//	  R		G	  B     A
-			1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
-			0.0f, 1.0f, 0.0f, 0.0f, 0.0f,
-			0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
-			0.0f, 0.0f, 0.0f, transparency, 0.0f,
-			0.0f, 0.0f, 0.0f, 0.0f, 1.0f,
-	};
-	imgAttr.SetColorMatrix(&colorMatrix);
-	xPos = 400;
-	graphics.DrawImage(&img, Rect(xPos, yPos, w, h),
-		0, 0, w, h, UnitPixel, &imgAttr);
+	//transparency += 0.1f;
+	//if (transparency > 1.0f) transparency = 0.0f;
+	//ColorMatrix colorMatrix =
+	//{
+	//	//	  R		G	  B     A
+	//		1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
+	//		0.0f, 1.0f, 0.0f, 0.0f, 0.0f,
+	//		0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
+	//		0.0f, 0.0f, 0.0f, transparency, 0.0f,
+	//		0.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+	//};
+	//imgAttr.SetColorMatrix(&colorMatrix);
+	//graphics.DrawImage(&img, Rect(100, 100, 100, 100),
+	//	0, 0, 100, 100, UnitPixel, &imgAttr);
 
-	colorMatrix =
-	{
-		//	  R		G	  B     A
-			0.3f, 0.3f, 0.3f, 0.0f, 0.0f,
-			0.6f, 0.6f, 0.6f, 0.0f, 0.0f,
-			0.1f, 0.1f, 0.1f, 0.0f, 0.0f,
-			0.0f, 0.0f, 0.0f, 1.0f, 0.0f,
-			0.0f, 0.0f, 0.0f, 0.0f, 1.0f,
-	};
-	imgAttr.SetColorMatrix(&colorMatrix);
-	xPos = 500;
-	graphics.DrawImage(&img, Rect(xPos, yPos, w, h),
-		0, 0, w, h, UnitPixel, &imgAttr);
+	//colorMatrix =
+	//{
+	//	//	  R		G	  B     A
+	//		0.3f, 0.3f, 0.3f, 0.0f, 0.0f,
+	//		0.6f, 0.6f, 0.6f, 0.0f, 0.0f,
+	//		0.1f, 0.1f, 0.1f, 0.0f, 0.0f,
+	//		0.0f, 0.0f, 0.0f, 1.0f, 0.0f,
+	//		0.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+	//};
+	//imgAttr.SetColorMatrix(&colorMatrix);
+	//graphics.DrawImage(&img, Rect(xPos, yPos, w, h),
+	//	0, 0, w, h, UnitPixel, &imgAttr);
 	// <<
-
 	//if (pImg) delete pImg;
 }
 // <<

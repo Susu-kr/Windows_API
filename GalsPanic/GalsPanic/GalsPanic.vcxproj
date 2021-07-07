@@ -155,13 +155,11 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="GalsPanic.h" />
     <ClInclude Include="GDIPLUS.h" />
-    <ClInclude Include="player.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GalsPanic.cpp" />
-    <ClCompile Include="player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GalsPanic.rc" />

@@ -12,6 +12,22 @@
 #define IDI_SMALL                       108
 #define IDC_CHAPTER4                    109
 #define IDR_MAINFRAME                   128
+#define IDD_MYDIALOG                    129
+#define IDC_START_BTN                   1000
+#define IDC_PAUSE_BTN                   1001
+#define IDC_STOP_BTN                    1002
+#define IDC_MYDLG_STATIC                1003
+#define IDC_CHECK_READ                  1004
+#define IDC_CHECK_MUSIC                 1005
+#define IDC_CHECK_GAME                  1006
+#define IDC_COPY_BTN                    1007
+#define IDC_CLEAR_BTN                   1008
+#define IDC_RADIO_FEMALE                1009
+#define IDC_RADIO_MALE                  1010
+#define IDC_EDIT_OUTPUT                 1011
+#define IDC_INPUT_EDIT                  1012
+#define IDC_OUTPUT_EDIT                 1013
+#define IDC_OUTPUT_BTN                  1014
 #define ID_FUNC1                        32774
 #define ID_FUNC2                        32775
 #define ID_FUNC3                        32776
@@ -25,9 +41,9 @@
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NO_MFC                     1
-#define _APS_NEXT_RESOURCE_VALUE        129
+#define _APS_NEXT_RESOURCE_VALUE        130
 #define _APS_NEXT_COMMAND_VALUE         32788
-#define _APS_NEXT_CONTROL_VALUE         1000
+#define _APS_NEXT_CONTROL_VALUE         1015
 #define _APS_NEXT_SYMED_VALUE           110
 #endif
 #endif
