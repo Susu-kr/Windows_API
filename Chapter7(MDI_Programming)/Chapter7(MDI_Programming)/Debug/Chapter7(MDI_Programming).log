@@ -1,0 +1,11 @@
+﻿  Chapter7(MDI_Programming).cpp
+d:\github\windows_api\chapter7(mdi_programming)\chapter7(mdi_programming)\chapter7(mdi_programming).cpp(240): warning C4101: 'hdc' :참조되지 않은 지역 변수입니다.
+d:\github\windows_api\chapter7(mdi_programming)\chapter7(mdi_programming)\chapter7(mdi_programming).cpp(298): warning C4244: '인수': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\chapter7(mdi_programming)\chapter7(mdi_programming)\chapter7(mdi_programming).cpp(299): warning C4244: '인수': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\chapter7(mdi_programming)\chapter7(mdi_programming)\chapter7(mdi_programming).cpp(300): warning C4244: '인수': 'double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\chapter7(mdi_programming)\chapter7(mdi_programming)\chapter7(mdi_programming).cpp(315): warning C4101: 'hdc' :참조되지 않은 지역 변수입니다.
+d:\github\windows_api\chapter7(mdi_programming)\chapter7(mdi_programming)\chapter7(mdi_programming).cpp(355): warning C4244: '인수': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\chapter7(mdi_programming)\chapter7(mdi_programming)\chapter7(mdi_programming).cpp(358): warning C4244: '인수': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\chapter7(mdi_programming)\chapter7(mdi_programming)\chapter7(mdi_programming).cpp(368): warning C4244: '=': 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\github\windows_api\chapter7(mdi_programming)\chapter7(mdi_programming)\chapter7(mdi_programming).cpp(369): warning C4244: '=': 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Chapter7(MDI_Programming).vcxproj -> D:\GitHub\Windows_API\Chapter7(MDI_Programming)\Debug\Chapter7(MDI_Programming).exe

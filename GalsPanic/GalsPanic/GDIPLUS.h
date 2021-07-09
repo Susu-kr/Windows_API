@@ -44,14 +44,33 @@ void OnGdi_Paint(HDC hdc)
 	//graphics.DrawLine(&pen, 0, 0, 200, 100);
 
 	//// image
-	Image img((WCHAR*)L"images/수지2.bmp");
-	int w = img.GetWidth();
-	int h = img.GetHeight();
+	Image img1((WCHAR*)L"images/수지1.bmp");
+	Image img2((WCHAR*)L"images/수지2.bmp");
+	int w = img1.GetWidth();
+	int h = img1.GetHeight();
+	graphics.DrawImage(&img2, 0, 0, w, h);
+	// Create a path that consists of a single polygon.
+	Point polyPoints[] = { Point(150, 450), Point(450, 550),
+	   Point(550, 550), Point(550, 450) };
+	GraphicsPath path;
+	path.AddPolygon(polyPoints, 4);
+	// Construct a region based on the path.
+	Region region(&path);
+	// Draw the outline of the region.
+	Pen pen(Color(255, 0, 0, 0));
+	graphics.DrawPath(&pen, &path);
+	// Set the clipping region of the Graphics object.
+	graphics.SetClip(&region);
+	graphics.DrawImage(&img1, 0, 0, w, h);
+
+	graphics.DrawImage(&img2, 0, 0, w, h);
+	Point polyPoints2[] = { Point(150, 150), Point(150, 250),
+   Point(250, 250), Point(250, 150) };
+	path.AddPolygon(polyPoints2, 4);
+	graphics.DrawPath(&pen, &path);
+	graphics.SetClip(&region);
+	graphics.DrawImage(&img1, 0, 0, w, h);
 	//graphics.DrawImage(&img, 100, 100, w, h);
-	Point points[] = {
-	 Point(250, 20), Point(150, 100), Point(300, 50)
-	};
-	graphics.DrawImage(&img, points, 3);
 	//Image* pImg = nullptr;
 	//pImg = Image::FromFile(((WCHAR*)L"images/sigong.png"));
 	//int w = pImg->GetWidth();

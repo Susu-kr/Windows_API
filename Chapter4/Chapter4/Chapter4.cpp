@@ -7,6 +7,8 @@
 #include <cmath>
 #include <time.h>
 #include <commdlg.h>
+#include <CommCtrl.h>
+
 // >> : GDI+
 #include <ObjIdl.h>
 #include <gdiplus.h>
@@ -83,7 +85,17 @@ VOID CALLBACK		AniProc(HWND hWnd, UINT uMsg, UINT idEvent, DWORD dwTime);
 // <<
 
 BOOL CALLBACK		MyDlg_Proc(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lParam);
+BOOL CALLBACK		CONTROL_Proc(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lParam);
+BOOL CALLBACK		CONTROL_Proc2(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lParam);
+static HWND			hModallessDlg;
 
+void MakeColumn(HWND hDlg);
+void InsertData(HWND hDlg);
+int SelectItem(HWND hDlg, LPARAM lParam);
+void ModifyItem(HWND hDlg, int selection);
+void DeleteItem(HWND hDlg, int selection);
+
+BOOL CALLBACK		ListControl_Proc(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lParam);
 
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,
@@ -256,7 +268,6 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
 	static RECT			rcRect;
-
 	OPENFILENAME		OFN;
 	TCHAR				str[100], lpstrFile[100] = _T("");
 	TCHAR				filter[] = _T("Every File(*.*)\0*.*\0Text File\0*.txt;*.doc\0");
@@ -327,7 +338,23 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			case ID_FUNC4:
 				MessageBox(hWnd, _T("기능4설정으로 작동합니다."), _T("기능 선택"), MB_OK);
 				break;
-
+			case ID_FUNC5:
+				DialogBox(hInst, MAKEINTRESOURCE(IDD_CONTROL_DIALOG), hWnd, CONTROL_Proc);
+				break;
+			case ID_FUNC6:
+			{
+				if (!IsWindow(hModallessDlg))
+				{
+					hModallessDlg = CreateDialog(hInst, MAKEINTRESOURCE(IDD_CONTROL_DIALOG), hWnd, CONTROL_Proc2);
+					ShowWindow(hModallessDlg, SW_SHOW);
+				}
+			}
+				break;
+			case ID_FUNC7:
+			{
+				DialogBox(hInst, MAKEINTRESOURCE(IDD_LIST_CONTROL), hWnd, ListControl_Proc);
+			}
+			break;
 			case ID_FILEOPEN:
 			{
 				memset(&OFN, 0, sizeof(OPENFILENAME));
@@ -650,6 +677,259 @@ BOOL CALLBACK MyDlg_Proc(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lParam)
 		break;
 	}
 		break;
+	}
+	return 0;
+}
+
+// 컨트롤 전용
+BOOL CALLBACK CONTROL_Proc(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lParam)
+{
+	static HWND hCombo;
+	static int	selection;
+	TCHAR		name[20];
+
+	static HWND hList;
+	static int	selection2;
+
+	switch (iMsg) {
+	case WM_INITDIALOG:
+		hCombo = GetDlgItem(hDlg, IDC_COMBO_LIST);
+		hList = GetDlgItem(hDlg, IDC_LIST_NAME);
+		return 1;
+	case WM_COMMAND:
+		switch (LOWORD(wParam))
+		{
+			case IDOK:
+				EndDialog(hDlg, 0);
+				return 0;
+
+			case IDC_INSERT_BTN: 
+			{
+				GetDlgItemText(hDlg, IDC_EDIT_NAME, name, 20);
+				if (_tcscmp(name, _T(""))) 
+				{
+					SendMessage(hCombo, CB_ADDSTRING, 0, (LPARAM)name);
+					SendMessage(hList, LB_ADDSTRING, 0, (LPARAM)name);
+					SetDlgItemText(hDlg, IDC_EDIT_NAME, _T(""));
+					return 0;
+				}
+			}
+			break;
+			case IDC_DELETE_BTN:
+			{
+				SendMessage(hCombo, CB_DELETESTRING, selection, 0);
+				return 0;
+			}
+			break;
+			case IDC_COMBO_LIST:
+			{
+				if (HIWORD(wParam) == CBN_SELCHANGE) {
+					selection = (int)SendMessage(hCombo, CB_GETCURSEL, 0, 0);
+				}
+			}
+			break;
+			case IDC_DELETE_BTN2:
+			{
+				SendMessage(hList, LB_DELETESTRING, selection2, 0);
+				return 0;
+			}
+			break;
+			case IDC_LIST_NAME:
+			{
+				if (HIWORD(wParam) == LBN_SELCHANGE) {
+					selection2 = (int)SendMessage(hList, LB_GETCURSEL, 0, 0);
+				}
+			}
+			break;
+		}
+	}
+	return 0;
+}
+// : 모달 다이얼로그 전용
+BOOL CALLBACK CONTROL_Proc2(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lParam)
+{
+	static HWND hCombo;
+	static int	selection;
+	TCHAR		name[20];
+
+	static HWND hList;
+	static int	selection2;
+
+	switch (iMsg) {
+	case WM_INITDIALOG:
+		hCombo = GetDlgItem(hDlg, IDC_COMBO_LIST);
+		hList = GetDlgItem(hDlg, IDC_LIST_NAME);
+		return 1;
+	case WM_COMMAND:
+		switch (LOWORD(wParam))
+		{
+		case IDOK:
+			EndDialog(hDlg, 0);
+			DestroyWindow(hModallessDlg);
+			hModallessDlg = NULL;
+			return 0;
+
+		case IDC_INSERT_BTN:
+		{
+			GetDlgItemText(hDlg, IDC_EDIT_NAME, name, 20);
+			if (_tcscmp(name, _T("")))
+			{
+				SendMessage(hCombo, CB_ADDSTRING, 0, (LPARAM)name);
+				SendMessage(hList, LB_ADDSTRING, 0, (LPARAM)name);
+				SetDlgItemText(hDlg, IDC_EDIT_NAME, _T(""));
+				return 0;
+			}
+		}
+		break;
+		case IDC_DELETE_BTN:
+		{
+			SendMessage(hCombo, CB_DELETESTRING, selection, 0);
+			return 0;
+		}
+		break;
+		case IDC_COMBO_LIST:
+		{
+			if (HIWORD(wParam) == CBN_SELCHANGE) {
+				selection = (int)SendMessage(hCombo, CB_GETCURSEL, 0, 0);
+			}
+		}
+		break;
+		case IDC_DELETE_BTN2:
+		{
+			SendMessage(hList, LB_DELETESTRING, selection2, 0);
+			return 0;
+		}
+		break;
+		case IDC_LIST_NAME:
+		{
+			if (HIWORD(wParam) == LBN_SELCHANGE) {
+				selection2 = (int)SendMessage(hList, LB_GETCURSEL, 0, 0);
+			}
+		}
+		break;
+		}
+	}
+	return 0;
+}
+void MakeColumn(HWND hDlg)
+{
+	LPTSTR		name[2] = { (LPTSTR)_T("이름"), (LPTSTR)_T("전화번호") };
+	LVCOLUMN	lvCol = { 0, };
+	HWND		hList;
+	int			i;
+	hList = GetDlgItem(hDlg, IDC_LIST_MEMBER);
+	lvCol.mask = LVCF_FMT | LVCF_WIDTH | LVCF_TEXT | LVCF_SUBITEM;
+	lvCol.fmt = LVCFMT_LEFT;
+
+	for (i = 0; i < 2; i++) {
+		lvCol.cx = 90;
+		lvCol.iSubItem = i;
+		lvCol.pszText = name[i];
+		SendMessage(hList, LVM_INSERTCOLUMN, (WPARAM)i, (LPARAM)&lvCol);
+	}
+}
+
+void InsertData(HWND hDlg)
+{
+	int			count;
+	LVITEM		item;
+	HWND		hList;
+	TCHAR		name[20], phone[20];
+
+	GetDlgItemText(hDlg, IDC_EDIT_NAME, name, 20);
+	SetDlgItemText(hDlg, IDC_EDIT_NAME, _T(""));
+	if (_tcscmp(name, _T("")) == 0) return;
+
+	GetDlgItemText(hDlg, IDC_EDIT_PHONE, phone, 20);
+	SetDlgItemText(hDlg, IDC_EDIT_PHONE, _T(""));
+
+
+	hList = GetDlgItem(hDlg, IDC_LIST_MEMBER);
+	count = ListView_GetItemCount(hList);
+	item.mask = LVIF_TEXT;
+	item.iItem = count;
+	item.iSubItem = 0;
+	item.pszText = name;
+	ListView_InsertItem(hList, &item);
+	ListView_SetItemText(hList, count, 1, phone);
+}
+
+int SelectItem(HWND hDlg, LPARAM lParam)
+{
+	LPNMLISTVIEW	nlv;
+	HWND			hList;
+	TCHAR			name[20], phone[20];
+	hList = GetDlgItem(hDlg, IDC_LIST_MEMBER);
+	nlv = (LPNMLISTVIEW)lParam;
+	ListView_GetItemText(hList, nlv->iItem, 0, name, 20);
+	SetDlgItemText(hDlg, IDC_EDIT_NAME, name);
+	ListView_GetItemText(hList, nlv->iItem, 1, phone, 20);
+	SetDlgItemText(hDlg, IDC_EDIT_PHONE, phone);
+	return(nlv->iItem);
+}
+
+void ModifyItem(HWND hDlg, int selection)
+{
+	static HWND		hList;
+	TCHAR			name[20], phone[20];
+	hList = GetDlgItem(hDlg, IDC_LIST_MEMBER);
+	GetDlgItemText(hDlg, IDC_EDIT_NAME, name, 20);
+	GetDlgItemText(hDlg, IDC_EDIT_PHONE, phone, 20);
+	if (_tcscmp(name, _T("")) == 0) return;
+	ListView_SetItemText(hList, selection, 0, name);
+	ListView_SetItemText(hList, selection, 1, phone);
+	SetDlgItemText(hDlg, IDC_EDIT_NAME, _T(""));
+	SetDlgItemText(hDlg, IDC_EDIT_PHONE, _T(""));
+	return;
+}
+
+void DeleteItem(HWND hDlg, int selection)
+{
+	static HWND hList;
+	hList = GetDlgItem(hDlg, IDC_LIST_MEMBER);
+	ListView_DeleteItem(hList, selection);
+	SetDlgItemText(hDlg, IDC_EDIT_NAME, _T(""));
+	SetDlgItemText(hDlg, IDC_EDIT_PHONE, _T(""));
+	return;
+}
+
+#define UNSELECTED -1
+BOOL CALLBACK ListControl_Proc(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lParam)
+{
+	LPNMHDR			hdr;
+	static HWND			hList;
+	static int		selection;
+
+	switch (iMsg) {
+	case WM_INITDIALOG:
+		MakeColumn(hDlg);
+		selection = UNSELECTED;
+		return 1;
+	case WM_NOTIFY:
+		hdr = (LPNMHDR)lParam;
+		hList = GetDlgItem(hDlg, IDC_LIST_MEMBER);
+		if (hdr->hwndFrom == hList && hdr->code == LVN_ITEMCHANGING) selection = SelectItem(hDlg, lParam);
+		return 1;
+	case WM_COMMAND:
+		switch (LOWORD(wParam)) {
+		case IDC_BUTTON_INSERT:
+			InsertData(hDlg);
+			return 0;
+		case IDC_BUTTON_MODIFY:
+			if (selection == UNSELECTED) break;
+			ModifyItem(hDlg, selection);
+			selection = UNSELECTED;
+			return 0;
+		case IDC_BUTTON_DELETE:
+			if (selection == UNSELECTED) break;
+			DeleteItem(hDlg, selection);
+			selection = UNSELECTED;
+			return 0;
+		case IDCLOSE:
+			DestroyWindow(hDlg);
+			hDlg = NULL;
+			return 0;
+		}
 	}
 	return 0;
 }
