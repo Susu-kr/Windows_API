@@ -1,2 +1,5 @@
-﻿  GalsPanic.cpp
-  GalsPanic.vcxproj -> D:\GitHub\Windows_API\GalsPanic\Debug\GalsPanic.exe
+﻿  GameManager.cpp
+d:\windows_api\galspanic\galspanic\gamemanager.cpp(83): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Player.cpp
+  코드를 생성하고 있습니다...
+  GalsPanic.vcxproj -> D:\Windows_API\GalsPanic\Debug\GalsPanic.exe

@@ -154,12 +154,20 @@
     <ClInclude Include="DrawImage.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="GalsPanic.h" />
+    <ClInclude Include="GameManager.h" />
     <ClInclude Include="GDIPLUS.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Util.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GalsPanic.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Util.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GalsPanic.rc" />
