@@ -1,0 +1,3 @@
+﻿  Win_Client.cpp
+d:\windows_api\win_client\win_client\win_client.cpp(355): warning C4715: 'ChatNICKNAMEProc': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  Win_Client.vcxproj -> D:\Windows_API\Win_Client\Debug\Win_Client.exe

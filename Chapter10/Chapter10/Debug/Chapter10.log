@@ -1,0 +1,7 @@
+﻿  Chapter10.cpp
+d:\windows_api\chapter10\chapter10\chapter10.cpp(139): warning C4101: 'hdc' :참조되지 않은 지역 변수입니다.
+d:\windows_api\chapter10\chapter10\chapter10.cpp(140): warning C4101: 'ps' :참조되지 않은 지역 변수입니다.
+d:\windows_api\chapter10\chapter10\chapter10.cpp(223): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\windows_api\chapter10\chapter10\chapter10.cpp(267): warning C4244: '=': 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\windows_api\chapter10\chapter10\chapter10.cpp(268): warning C4244: '=': 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Chapter10.vcxproj -> D:\Windows_API\Chapter10\Debug\Chapter10.exe
