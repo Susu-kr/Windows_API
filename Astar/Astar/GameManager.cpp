@@ -230,7 +230,7 @@ void GameManager::PathFinding()
 		CurNode = OpenList[0];
 		int cnt = 0;
 		for (int i = 1; i < OpenList.size(); i++) {
-			if (OpenList[i].F < CurNode.F)
+			if (OpenList[i].F <= CurNode.F)
 			{
 				CurNode = OpenList[i];
 				cnt = i;
@@ -275,38 +275,37 @@ void GameManager::PathFinding()
 void GameManager::OpenListAdd(int c_X, int c_Y)
 {
 	// 상하좌우 범위를 벗어나지 않고, 벽이 아니면서
-	if (c_X >= topLeft.x && c_X < bottomRight.x + 1 && c_Y >= topLeft.y && c_Y < bottomRight.y + 1
-		&& !NodeArray[c_Y - topLeft.y][c_X - topLeft.x].isWall)
+	if (c_X >= 0 && c_X < bottomRight.x + 1 && c_Y >= 0 && c_Y < bottomRight.y + 1
+		&& !NodeArray[c_Y][c_X].isWall)
 	{
 		// CloseList에 없다면
 		for (int i = 0; i < CloseList.size(); i++) {
 			if (CloseList[i].x == c_X && CloseList[i].y == c_Y) return;
 		}	
-		// 벽 사이로 통과가 안됌
-		if (NodeArray[CurNode.y - topLeft.y][c_X - topLeft.x].isWall
-			&& NodeArray[c_Y - topLeft.y][CurNode.x - topLeft.x].isWall) return;
+		//// 벽 사이로 통과가 안됌
+		//if (NodeArray[CurNode.y - topLeft.y][c_X - topLeft.x].isWall
+		//	&& NodeArray[c_Y - topLeft.y][CurNode.x - topLeft.x].isWall) return;
 
 		// 이웃노드에 넣고, 상하좌우 = 10, 대각선 = 14
-		Node N_Node(false, c_X - topLeft.x, c_Y - topLeft.y);
+		Node N_Node(false, c_X, c_Y);
 		int MoveCost = CurNode.G + (CurNode.x - c_X == 0 || CurNode.y - c_Y == 0 ? 10 : 14);
-
+		int NextH = GetDistance(N_Node.x, N_Node.y, TargetNode.x, TargetNode.y);
 		// 이동비용이 이웃노드 G 보다 작거나 또는 OpenList에 이웃노드가 없다면 G, H, ParentNode를 설정 후 OpenList에 추가
-		bool check = false;
 		for (int i = 0; i < OpenList.size(); i++) {
-			if (OpenList[i] == N_Node) return;
+			if (OpenList[i] == N_Node && OpenList[i].F > MoveCost + NextH) {
+				OpenList[i].G = MoveCost;
+				OpenList[i].H = NextH;
+				OpenList[i].F = OpenList[i].G + OpenList[i].H;
+				OpenList[i].ParentNode = { CurNode.x, CurNode.y };
+				return;
+			}
 		}
-		check = true;
-		if (MoveCost < N_Node.G || check)
-		{
-			N_Node.G = MoveCost;
-			N_Node.H = GetDistance(N_Node.x, N_Node.y, TargetNode.x, TargetNode.y);
-			N_Node.F = N_Node.G + N_Node.H;
-
-			N_Node.ParentNode = { CurNode.x, CurNode.y };
-
-			OpenList.push_back(N_Node);
-			CheckList.push_back(N_Node);
-		}
+		N_Node.G = MoveCost;
+		N_Node.H = NextH;
+		N_Node.F = N_Node.G + N_Node.H;
+		N_Node.ParentNode = { CurNode.x, CurNode.y };
+		OpenList.push_back(N_Node);
+		CheckList.push_back(N_Node);
 	}
 }
 

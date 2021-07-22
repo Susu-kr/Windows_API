@@ -1,9 +1,1 @@
-﻿  Astar.cpp
-  GameManager.cpp
-d:\windows_api\astar\astar\gamemanager.cpp(126): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-d:\windows_api\astar\astar\gamemanager.cpp(139): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-d:\windows_api\astar\astar\gamemanager.cpp(232): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-d:\windows_api\astar\astar\gamemanager.cpp(282): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-d:\windows_api\astar\astar\gamemanager.cpp(295): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-  코드를 생성하고 있습니다...
-  Astar.vcxproj -> D:\Windows_API\Astar\Debug\Astar.exe
+﻿  Astar.vcxproj -> D:\Windows_API\Astar\Debug\Astar.exe
