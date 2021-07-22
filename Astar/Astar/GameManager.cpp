@@ -220,7 +220,7 @@ void GameManager::Start_to_Target(int x, int y, int state)
 void GameManager::PathFinding()
 {
 	StartNode.G = 0;
-	StartNode.H = (abs(StartNode.x - TargetNode.x) + abs(StartNode.y - TargetNode.y)) * 10;
+	StartNode.H = GetDistance(StartNode.x, StartNode.y, TargetNode.x, TargetNode.y);
 	StartNode.F = StartNode.G + StartNode.H;
 	OpenList.push_back(StartNode);
 
@@ -233,7 +233,7 @@ void GameManager::PathFinding()
 			if (OpenList[i].F < CurNode.F)
 			{
 				CurNode = OpenList[i];
-				cnt = i - 1;
+				cnt = i;
 			}
 		}
 		OpenList.erase(OpenList.begin() + cnt);
@@ -299,7 +299,7 @@ void GameManager::OpenListAdd(int c_X, int c_Y)
 		if (MoveCost < N_Node.G || check)
 		{
 			N_Node.G = MoveCost;
-			N_Node.H = (abs(N_Node.x - TargetNode.x) + abs(N_Node.y - TargetNode.y)) * 10;
+			N_Node.H = GetDistance(N_Node.x, N_Node.y, TargetNode.x, TargetNode.y);
 			N_Node.F = N_Node.G + N_Node.H;
 
 			N_Node.ParentNode = { CurNode.x, CurNode.y };
@@ -312,4 +312,25 @@ void GameManager::OpenListAdd(int c_X, int c_Y)
 
 void GameManager::Draw_Path()
 {
+}
+
+int GameManager::GetDistance(int sx, int sy, int dx, int dy)
+{
+	int absX = abs(sx - dx);
+	int absY = abs(sy - dy);
+
+	int minV, maxV;
+
+	if (absX < absY)
+	{
+		minV = absX;
+		maxV = absY;
+	}
+	else
+	{
+		minV = absY;
+		maxV = absX;
+	}
+
+	return minV * 14 + (maxV - minV) * 10;
 }

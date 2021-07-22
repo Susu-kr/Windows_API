@@ -60,4 +60,5 @@ public:
 	void PathFinding();
 	void OpenListAdd(int c_X, int c_Y);
 	void Draw_Path();
+	int GetDistance(int sx, int sy, int dx, int dy);
 };
