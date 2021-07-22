@@ -9,7 +9,7 @@ class Node
 {
 public:
 	bool	isWall;
-	INT_POS	ParentNode;
+	vector<int> ParentNode;
 
 	int		x, y;
 	// G : 시작부터 이동거리
@@ -27,7 +27,7 @@ public:
 		return false;
 	}
 	bool operator != (const Node& other) {
-		if (x != other.x && y != other.y) return true;
+		if (x != other.x || y != other.y) return true;
 		return false;
 	}
 };
@@ -41,7 +41,6 @@ public:
 	// bottomLeft, topRight : 가장자리 범위
 	// startPos, targetPos : 시작좌표, 도착좌표
 	INT_POS bottomRight, topLeft, startPos, targetPos;
-
 	// 블록의 갯수
 	int sizeX, sizeY;
 	// 전체적인 MAP

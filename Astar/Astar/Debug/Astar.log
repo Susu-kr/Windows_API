@@ -1,1 +1,8 @@
-﻿  Astar.vcxproj -> D:\Windows_API\Astar\Debug\Astar.exe
+﻿  GameManager.cpp
+d:\windows_api\astar\astar\gamemanager.cpp(128): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\windows_api\astar\astar\gamemanager.cpp(141): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\windows_api\astar\astar\gamemanager.cpp(233): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\windows_api\astar\astar\gamemanager.cpp(257): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\windows_api\astar\astar\gamemanager.cpp(293): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+d:\windows_api\astar\astar\gamemanager.cpp(305): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Astar.vcxproj -> D:\Windows_API\Astar\Debug\Astar.exe

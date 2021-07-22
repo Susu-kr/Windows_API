@@ -40,8 +40,10 @@ void GameManager::Init(RECT R)
 {
 	// NodeArray의 크기 설정, isWall, x, y 대입
 
-	sizeX = (R.right - R.left)/ 30 + 1;
-	sizeY = (R.bottom - R.top) / 30 + 1;
+	//sizeX = (R.right - R.left)/ 30 + 1;
+	//sizeY = (R.bottom - R.top) / 30 + 1;
+	sizeX = 30;
+	sizeY = 20;
 	topLeft = { 0, 0 };
 	bottomRight = { sizeY, sizeX };
 	NodeArray = new Node*[sizeY];
@@ -50,9 +52,9 @@ void GameManager::Init(RECT R)
 
 	int i = 0, j = 0;
 	int y_pos = 15;
-	for (int i = 0; i < sizeY; i++) {
+	for (int i = 0; i < sizeY-1; i++) {
 		int x_pos = 15;
-		for (int j = 0; j < sizeX; j++) {
+		for (int j = 0; j < sizeX-1; j++) {
 			NodeArray[i][j].isWall = false;
 			NodeArray[i][j].x = x_pos;
 			NodeArray[i][j].y = y_pos;
@@ -78,8 +80,8 @@ void GameManager::Reset(RECT R)
 void GameManager::Delete_Map()
 {
 	for (int i = 0; i < sizeY; i++)
-		delete NodeArray[i];
-	delete NodeArray;
+		delete[] NodeArray[i];
+	delete[] NodeArray;
 }
 
 void GameManager::Draw_Map(HWND hWnd, RECT rect, HDC hdc)
@@ -172,21 +174,14 @@ void GameManager::Draw_Map(HWND hWnd, RECT rect, HDC hdc)
 
 void GameManager::CreateBlock(int x, int y, bool d_flag)
 {
-	for (int i = 0; i < sizeY; i++) {
-		for (int j = 0; j < sizeX; j++) {
-			if (NodeArray[i][j].x - 15 < x && NodeArray[i][j].x + 15 > x
-				&& NodeArray[i][j].y - 15 < y && NodeArray[i][j].y + 15 > y)
-			{
-				if (!NodeArray[i][j].isWall)
-					if (!d_flag)
-						NodeArray[i][j].isWall = true;
-				else 
-					if (d_flag) 
-						NodeArray[i][j].isWall = false;
-				return;
-			}
-		}
-	}
+	int i = y / 30;
+	int j = x / 30;
+	if (!NodeArray[i][j].isWall)
+		if (!d_flag)
+			NodeArray[i][j].isWall = true;
+		else
+			if (d_flag)
+				NodeArray[i][j].isWall = false;
 }
 
 void GameManager::Start_to_Target(int x, int y, int state)
@@ -222,6 +217,12 @@ void GameManager::PathFinding()
 	StartNode.G = 0;
 	StartNode.H = GetDistance(StartNode.x, StartNode.y, TargetNode.x, TargetNode.y);
 	StartNode.F = StartNode.G + StartNode.H;
+	StartNode.ParentNode.push_back(0);
+	StartNode.ParentNode.push_back(0);
+	StartNode.ParentNode.push_back(0);
+	StartNode.ParentNode.push_back(0);
+	StartNode.ParentNode.push_back(0);
+
 	OpenList.push_back(StartNode);
 
 	while (OpenList.size() > 0)
@@ -230,10 +231,17 @@ void GameManager::PathFinding()
 		CurNode = OpenList[0];
 		int cnt = 0;
 		for (int i = 1; i < OpenList.size(); i++) {
-			if (OpenList[i].F <= CurNode.F)
+			if (OpenList[i].F < CurNode.F)
 			{
 				CurNode = OpenList[i];
 				cnt = i;
+			}
+			else if (OpenList[i].F == CurNode.F) {
+				if (OpenList[i].H < CurNode.H)
+				{
+					CurNode = OpenList[i];
+					cnt = i;
+				}
 			}
 		}
 		OpenList.erase(OpenList.begin() + cnt);
@@ -246,8 +254,12 @@ void GameManager::PathFinding()
 			while (TargetCurNode != StartNode)
 			{
 				FinalNodelist.push_back(TargetCurNode);
-				for (int i = CloseList.size() - 1; i >= 0; i--) {
-					if (CloseList[i].x == TargetCurNode.ParentNode.x && CloseList[i].y == TargetCurNode.ParentNode.y)
+				for (int i = 0; i < CloseList.size(); i++) {
+					if (CloseList[i].x == TargetCurNode.ParentNode[0]
+						&& CloseList[i].y == TargetCurNode.ParentNode[1]
+						&& CloseList[i].G == TargetCurNode.ParentNode[2]
+						&& CloseList[i].H == TargetCurNode.ParentNode[3]
+						&& CloseList[i].F == TargetCurNode.ParentNode[4])
 					{
 						TargetCurNode = CloseList[i];
 						break;
@@ -255,7 +267,6 @@ void GameManager::PathFinding()
 				}
 			}
 			FinalNodelist.push_back(StartNode);
-
 			return;
 		}
 
@@ -296,14 +307,23 @@ void GameManager::OpenListAdd(int c_X, int c_Y)
 				OpenList[i].G = MoveCost;
 				OpenList[i].H = NextH;
 				OpenList[i].F = OpenList[i].G + OpenList[i].H;
-				OpenList[i].ParentNode = { CurNode.x, CurNode.y };
+				OpenList[i].ParentNode.push_back(CurNode.x);
+				OpenList[i].ParentNode.push_back(CurNode.y);
+				OpenList[i].ParentNode.push_back(CurNode.G);
+				OpenList[i].ParentNode.push_back(CurNode.H);
+				OpenList[i].ParentNode.push_back(CurNode.F);
+
 				return;
 			}
 		}
 		N_Node.G = MoveCost;
 		N_Node.H = NextH;
 		N_Node.F = N_Node.G + N_Node.H;
-		N_Node.ParentNode = { CurNode.x, CurNode.y };
+		N_Node.ParentNode.push_back(CurNode.x);
+		N_Node.ParentNode.push_back(CurNode.y);
+		N_Node.ParentNode.push_back(CurNode.G);
+		N_Node.ParentNode.push_back(CurNode.H);
+		N_Node.ParentNode.push_back(CurNode.F);
 		OpenList.push_back(N_Node);
 		CheckList.push_back(N_Node);
 	}
