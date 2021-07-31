@@ -1,0 +1,57 @@
+{
+"skeleton": { "hash": "huoWLBTysxLPkg5oQacEM5pXkJo", "spine": "2.1.27", "width": 25, "height": 3, "images": "./img_iphone/" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "iphone_light", "bone": "root" },
+	{ "name": "iphone_ground", "bone": "root", "attachment": "iphone_ground" }
+],
+"skins": {
+	"default": {
+		"iphone_ground": {
+			"iphone_ground": { "x": -0.07, "y": 1.58, "width": 25, "height": 3 }
+		},
+		"iphone_light": {
+			"iphone_light": { "x": -1.27, "y": 8.32, "width": 24, "height": 12 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"iphone_light": {
+				"attachment": [
+					{ "time": 0.1, "name": "iphone_light" }
+				],
+				"color": [
+					{ "time": 0.1, "color": "ffffff00" },
+					{ "time": 0.1666, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.5666, "color": "ffffffff" },
+					{ "time": 0.6333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 0.2666, "angle": 0 },
+					{ "time": 0.3, "angle": 6.26 },
+					{ "time": 0.3666, "angle": -4.47 },
+					{ "time": 0.5, "angle": 0, "curve": "stepped" },
+					{ "time": 0.6666, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.2666, "x": 0, "y": 0 },
+					{ "time": 0.3, "x": -0.26, "y": 0.53 },
+					{ "time": 0.3666, "x": -0.33, "y": 1.07 },
+					{ "time": 0.5, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,61 @@
+{
+"skeleton": { "hash": "nUg/VcPmbLyYEa41Ce9pqNzuH4k", "spine": "2.1.27", "width": 109, "height": 97.37, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "electricity", "parent": "root", "x": 26.3, "y": 35.29 }
+],
+"slots": [
+	{ "name": "electric_shield", "bone": "root", "attachment": "img_electric_shield/shield_open" },
+	{ "name": "electricity", "bone": "electricity", "attachment": "img_electric_shield/elecricity_01" },
+	{ "name": "light", "bone": "electricity", "attachment": "img_electric_shield/shield_light" }
+],
+"skins": {
+	"default": {
+		"electric_shield": {
+			"img_electric_shield/shield_open": { "y": 43.66, "width": 109, "height": 92 }
+		},
+		"electricity": {
+			"img_electric_shield/elecricity_01": { "width": 47, "height": 86 },
+			"img_electric_shield/elecricity_02": { "x": 5.67, "y": 2.83, "width": 61, "height": 91 },
+			"img_electric_shield/elecricity_03": { "x": -2.13, "y": 1.77, "width": 56, "height": 92 }
+		},
+		"light": {
+			"img_electric_shield/shield_light": { "x": 0.64, "y": 9.84, "width": 50, "height": 85 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"electricity": {
+				"attachment": [
+					{ "time": 0, "name": "img_electric_shield/elecricity_01" },
+					{ "time": 0.3, "name": "img_electric_shield/elecricity_02" },
+					{ "time": 0.4333, "name": "img_electric_shield/elecricity_03" }
+				],
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.1, "color": "ffffffff" },
+					{ "time": 0.2, "color": "ffffff4e" },
+					{ "time": 0.3, "color": "ffffffff" },
+					{ "time": 0.3666, "color": "ffffff1f" },
+					{ "time": 0.4333, "color": "ffffffff" },
+					{ "time": 0.5, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.3333, "color": "ffffff00" }
+				]
+			},
+			"light": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.1, "color": "ffffff08" },
+					{ "time": 0.2, "color": "ffffff00" },
+					{ "time": 0.3, "color": "ffffff10" },
+					{ "time": 0.3666, "color": "ffffff00" },
+					{ "time": 0.4333, "color": "ffffff09" },
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			}
+		}
+	}
+}
+}

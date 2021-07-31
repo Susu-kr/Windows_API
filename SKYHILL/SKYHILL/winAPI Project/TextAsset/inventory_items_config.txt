@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<items>
+	<item type="weapon" skill="no" skill_border="2" name="hands" display_name="Hands" weapon_type="HANDFIGHT" damage_min="1" damage_max="2" />
+	<item type="weapon" skill="spd" skill_border="4" name="knife" display_name="Kitchen knife" weapon_type="cold" damage_min="4" damage_max="5" />
+	<item type="weapon" skill="str" skill_border="10" name="axe" display_name="Axe" weapon_type="cold" damage_min="6" damage_max="9" />
+	<item type="weapon" skill="str" skill_border="10" name="machete" display_name="Machete" weapon_type="cold" damage_min="9" damage_max="12" />
+	<item type="weapon" skill="str" skill_border="5" name="bat" display_name="Baseball bat" weapon_type="cold" damage_min="3" damage_max="8" />
+	<item type="weapon" skill="str" skill_border="7" name="nails_bat" display_name="Nails bat" weapon_type="cold" damage_min="5" damage_max="10" />
+	<item type="weapon" skill="no" skill_border="0" name="magnum44" display_name="Magnum 44" weapon_type="pistol" damage_min="30" damage_max="30" />
+	<item type="weapon" skill="no" skill_border="0" name="desert_eagle" display_name="Desert Eagle" weapon_type="pistol" damage_min="25" damage_max="25" />
+	<item type="weapon" skill="no" skill_border="0" name="shotgun" display_name="Shotgun" weapon_type="shotgun" damage_min="40" damage_max="80" />
+	
+	
+	<item type="food" name="fish" display_name="Fresh fish" energy="8" />
+	<item type="food" name="cooked_fish" display_name="Cooked fish" energy="25" />
+	<item type="food" name="piece_of_cake" display_name="Piece of cake" energy="10" />
+	<item type="food" name="bread" display_name="Bread" energy="5" />
+	<item type="food" name="milk_cocktail" display_name="Milk cocktail" energy="15" />
+	<item type="food" name="chocolate_bar" display_name="Chocolate bar" energy="8" />
+	
+	<item type="others" name="pan" display_name="Pan" />
+	<item type="others" name="matches" display_name="Matches" />
+	<item type="others" name="battery" display_name="Battery" />
+	<item type="others" name="card_key_empty" display_name="Blank keycard" />
+	<item type="others" name="audio_tape_1" display_name="Audio tape" />
+	<item type="others" name="audio_tape_2" display_name="Audio tape" />
+	<item type="others" name="gun_ammunition" display_name="Gun ammunition" />
+	<item type="others" name="shotgun_ammunition" display_name="Shotgun ammunition" />
+	<item type="others" name="programmator" display_name="Card recorder" />
+	<item type="others" name="programmator_no_battery" display_name="Card recorder without battery" />
+	<item type="others" name="programming_book" display_name="Password log book" />
+	<item type="others" name="dictaphone" display_name="Dictaphone" />
+	<item type="others" name="nails" display_name="Nails" />
+	
+	
+	<item type="medical" name="first_aid_kit" display_name="First aid kit" health="14" />
+	<item type="medical" name="drugs" display_name="Drugs" health="8" />
+	
+	<item type="special_using" name="door_locker_1_item" display_name="Recorded keycard"/>
+	<item type="special_using" name="door_locker_2_item" display_name="Door key" />
+	<item type="special_using" name="nippers" display_name="Nippers" />
+	<item type="special_using" name="vip_card" display_name="VIP-guest card" />
+	
+	
+</items>

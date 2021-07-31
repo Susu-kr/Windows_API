@@ -1,0 +1,57 @@
+{
+"skeleton": { "hash": "rlFyBWEWndk20j7CY0qzUwUy0i4", "spine": "2.1.27", "width": 487, "height": 343, "images": "./img_stairs_red_light/" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "root", "bone": "root" },
+	{ "name": "stairs_dark", "bone": "root", "attachment": "stairs_dark" },
+	{ "name": "stsirs_red_light", "bone": "root", "attachment": "stairs_red_light" }
+],
+"skins": {
+	"default": {
+		"stairs_dark": {
+			"stairs_dark": { "x": 243.69, "y": 171.5, "width": 487, "height": 343 }
+		},
+		"stsirs_red_light": {
+			"stairs_red_light": { "x": 243.22, "y": 171.97, "width": 486, "height": 342 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"stairs_dark": {
+				"color": [
+					{ "time": 0, "color": "ffffffdf" },
+					{ "time": 0.5, "color": "ffffff71" },
+					{ "time": 1, "color": "ffffffdf", "curve": "stepped" },
+					{ "time": 1.5, "color": "ffffffdf" }
+				]
+			},
+			"stsirs_red_light": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.5, "color": "ffffff00" }
+				]
+			}
+		}
+	},
+	"no_animation": {
+		"slots": {
+			"stairs_dark": {
+				"color": [
+					{ "time": 0, "color": "ffffffdf" }
+				]
+			},
+			"stsirs_red_light": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" }
+				]
+			}
+		}
+	}
+}
+}

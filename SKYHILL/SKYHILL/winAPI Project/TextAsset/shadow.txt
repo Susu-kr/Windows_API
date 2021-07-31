@@ -1,0 +1,34 @@
+{
+"skeleton": { "hash": "zkj4qRxQW7sv785uSZo8/Tf6sa0", "spine": "2.1.27", "width": 0, "height": 0, "images": "./img_guard_room/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone4", "parent": "root", "x": -462.47, "y": 581.58 }
+],
+"slots": [
+	{ "name": "m6", "bone": "bone4" }
+],
+"skins": {
+	"default": {
+		"m6": {
+			"monitor6_back1": { "width": 214, "height": 187 },
+			"monitor6_back2": { "width": 214, "height": 187 },
+			"monitor6_back3": { "width": 214, "height": 187 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"m6": {
+				"attachment": [
+					{ "time": 0, "name": "monitor6_back1" },
+					{ "time": 1.0666, "name": "monitor6_back2" },
+					{ "time": 1.3666, "name": "monitor6_back3" },
+					{ "time": 1.6666, "name": "monitor6_back1" },
+					{ "time": 43.3, "name": "monitor6_back1" }
+				]
+			}
+		}
+	}
+}
+}

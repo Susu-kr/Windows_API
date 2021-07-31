@@ -1,0 +1,186 @@
+{
+"skeleton": { "hash": "0IXUXszFtBBkWdRNlJjr86dg5Mg", "spine": "2.1.27", "width": 1170.77, "height": 442.85, "images": "./img_guard_room/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "x": 500.8, "y": 592.71 },
+	{ "name": "bone2", "parent": "root", "x": 178.14, "y": 609.75 },
+	{ "name": "bone3", "parent": "root", "x": -100.31, "y": 607.58 },
+	{ "name": "bone4", "parent": "root", "x": -462.47, "y": 581.58 },
+	{ "name": "bone5", "parent": "root", "x": 493.97, "y": 839.96 },
+	{ "name": "bone6", "parent": "root", "x": 273.14, "y": 845.48 },
+	{ "name": "bone7", "parent": "root", "x": 38.7, "y": 849.96 },
+	{ "name": "bone8", "parent": "root", "x": -201.54, "y": 851.55 },
+	{ "name": "bone9", "parent": "root", "x": -465.51, "y": 850.44 }
+],
+"slots": [
+	{ "name": "ьm1", "bone": "bone9", "attachment": "monitor1_01" },
+	{ "name": "m2", "bone": "bone8", "attachment": "monitor2_01" },
+	{ "name": "m3", "bone": "bone7", "attachment": "monitor3_01" },
+	{ "name": "m4", "bone": "bone6" },
+	{ "name": "m5", "bone": "bone5", "attachment": "monitor5_06" },
+	{ "name": "m6", "bone": "bone4", "attachment": "monitor6_01" },
+	{ "name": "m7", "bone": "bone3", "attachment": "monitor7_01" },
+	{ "name": "m8", "bone": "bone2", "attachment": "monitor8_01" },
+	{ "name": "m9", "bone": "bone", "attachment": "monitor9_01" }
+],
+"skins": {
+	"default": {
+		"m2": {
+			"monitor2_01": { "width": 185, "height": 144 },
+			"monitor2_02": { "width": 185, "height": 144 },
+			"monitor2_03": { "width": 185, "height": 144 },
+			"monitor2_04": { "width": 185, "height": 144 },
+			"monitor2_05": { "width": 185, "height": 144 },
+			"monitor2_06": { "width": 185, "height": 144 }
+		},
+		"m3": {
+			"monitor3_01": { "width": 180, "height": 141 },
+			"monitor3_02": { "width": 180, "height": 141 },
+			"monitor3_03": { "width": 180, "height": 141 },
+			"monitor3_04": { "width": 180, "height": 141 },
+			"monitor3_05": { "width": 180, "height": 141 },
+			"monitor3_06": { "width": 180, "height": 141 }
+		},
+		"m5": {
+			"monitor5_01": { "width": 171, "height": 146 },
+			"monitor5_02": { "width": 171, "height": 146 },
+			"monitor5_03": { "width": 171, "height": 146 },
+			"monitor5_04": { "width": 171, "height": 146 },
+			"monitor5_05": { "width": 171, "height": 146 },
+			"monitor5_06": { "width": 171, "height": 146 }
+		},
+		"m6": {
+			"monitor6_01": { "width": 214, "height": 187 },
+			"monitor6_02": { "width": 214, "height": 187 },
+			"monitor6_03": { "width": 214, "height": 187 },
+			"monitor6_04": { "width": 214, "height": 187 },
+			"monitor6_05": { "width": 214, "height": 187 },
+			"monitor6_06": { "width": 214, "height": 187 }
+		},
+		"m7": {
+			"monitor7_01": { "width": 214, "height": 150 },
+			"monitor7_02": { "width": 214, "height": 150 },
+			"monitor7_03": { "width": 214, "height": 150 },
+			"monitor7_04": { "width": 214, "height": 150 },
+			"monitor7_05": { "width": 214, "height": 150 },
+			"monitor7_06": { "width": 214, "height": 150 }
+		},
+		"m8": {
+			"monitor8_01": { "width": 207, "height": 148 },
+			"monitor8_02": { "width": 207, "height": 148 },
+			"monitor8_03": { "width": 207, "height": 148 },
+			"monitor8_04": { "width": 207, "height": 148 },
+			"monitor8_05": { "width": 207, "height": 148 },
+			"monitor8_06": { "width": 207, "height": 148 }
+		},
+		"m9": {
+			"monitor9_01": { "width": 201, "height": 183 },
+			"monitor9_02": { "width": 201, "height": 183 },
+			"monitor9_03": { "width": 201, "height": 183 },
+			"monitor9_04": { "width": 201, "height": 183 },
+			"monitor9_05": { "width": 201, "height": 183 },
+			"monitor9_06": { "width": 201, "height": 183 }
+		},
+		"ьm1": {
+			"monitor1_01": { "width": 195, "height": 161 },
+			"monitor1_02": { "width": 195, "height": 161 },
+			"monitor1_03": { "width": 195, "height": 161 },
+			"monitor1_04": { "width": 195, "height": 161 },
+			"monitor1_05": { "width": 195, "height": 161 },
+			"monitor1_06": { "width": 195, "height": 161 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"m2": {
+				"attachment": [
+					{ "time": 0, "name": "monitor2_01" },
+					{ "time": 0.1666, "name": "monitor2_02" },
+					{ "time": 0.3333, "name": "monitor2_03" },
+					{ "time": 0.5, "name": "monitor2_04" },
+					{ "time": 0.6666, "name": "monitor2_05" },
+					{ "time": 0.8333, "name": "monitor2_06" },
+					{ "time": 1, "name": "monitor2_01" }
+				]
+			},
+			"m3": {
+				"attachment": [
+					{ "time": 0, "name": "monitor3_01" },
+					{ "time": 0.1666, "name": "monitor3_02" },
+					{ "time": 0.3333, "name": "monitor3_03" },
+					{ "time": 0.5, "name": "monitor3_04" },
+					{ "time": 0.6666, "name": "monitor3_05" },
+					{ "time": 0.8333, "name": "monitor3_06" },
+					{ "time": 1, "name": "monitor3_01" }
+				]
+			},
+			"m5": {
+				"attachment": [
+					{ "time": 0, "name": "monitor5_01" },
+					{ "time": 0.1666, "name": "monitor5_02" },
+					{ "time": 0.3333, "name": "monitor5_03" },
+					{ "time": 0.5, "name": "monitor5_04" },
+					{ "time": 0.7333, "name": "monitor5_05" },
+					{ "time": 0.9333, "name": "monitor5_06" }
+				]
+			},
+			"m6": {
+				"attachment": [
+					{ "time": 0, "name": "monitor6_01" },
+					{ "time": 0.2333, "name": "monitor6_02" },
+					{ "time": 0.4333, "name": "monitor6_04" },
+					{ "time": 0.6, "name": "monitor6_05" },
+					{ "time": 0.8, "name": "monitor6_06" },
+					{ "time": 1, "name": "monitor6_01" }
+				]
+			},
+			"m7": {
+				"attachment": [
+					{ "time": 0, "name": "monitor7_01" },
+					{ "time": 0.1333, "name": "monitor7_02" },
+					{ "time": 0.3, "name": "monitor7_03" },
+					{ "time": 0.4666, "name": "monitor7_04" },
+					{ "time": 0.6333, "name": "monitor7_05" },
+					{ "time": 0.8333, "name": "monitor7_06" },
+					{ "time": 1, "name": "monitor7_01" }
+				]
+			},
+			"m8": {
+				"attachment": [
+					{ "time": 0, "name": "monitor8_01" },
+					{ "time": 0.1333, "name": "monitor8_02" },
+					{ "time": 0.2666, "name": "monitor8_03" },
+					{ "time": 0.4666, "name": "monitor8_04" },
+					{ "time": 0.6333, "name": "monitor8_05" },
+					{ "time": 0.8, "name": "monitor8_06" },
+					{ "time": 1, "name": "monitor8_01" }
+				]
+			},
+			"m9": {
+				"attachment": [
+					{ "time": 0, "name": "monitor9_01" },
+					{ "time": 0.1666, "name": "monitor9_02" },
+					{ "time": 0.3333, "name": "monitor9_03" },
+					{ "time": 0.5, "name": "monitor9_04" },
+					{ "time": 0.6666, "name": "monitor9_05" },
+					{ "time": 0.8333, "name": "monitor9_06" },
+					{ "time": 1, "name": "monitor9_01" }
+				]
+			},
+			"ьm1": {
+				"attachment": [
+					{ "time": 0, "name": "monitor1_01" },
+					{ "time": 0.1666, "name": "monitor1_02" },
+					{ "time": 0.3333, "name": "monitor1_03" },
+					{ "time": 0.5, "name": "monitor1_04" },
+					{ "time": 0.6666, "name": "monitor1_05" },
+					{ "time": 0.8333, "name": "monitor1_06" },
+					{ "time": 1, "name": "monitor1_01" }
+				]
+			}
+		}
+	}
+}
+}

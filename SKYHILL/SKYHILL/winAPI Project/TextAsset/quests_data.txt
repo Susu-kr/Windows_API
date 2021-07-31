@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<questions>
+	<question name="pc_8" bat_name="pc_8_1">
+		<text>pc_8_1</text>
+		<answers>
+			<a text="Yes">
+				<text>pc_8_4</text>
+			</a>
+			<a text="No">
+				<text>pc_8_2</text>
+				<answers>
+					<a text="Yes">
+						<text>pc_8_4</text>
+					</a>
+					<a text="No">
+						<text>pc_8_3</text>
+						<answers>
+							<a text="Yes">
+								<text>pc_8_4</text>
+							</a>
+							<a text="No">
+								<text>pc_8_5</text>
+							</a>
+						</answers>
+					</a>
+				</answers>
+			</a>
+		</answers>
+	</question>
+	<question name="pc_9" bat_name="pc_9">
+		<text>pc_9_1</text>
+		<answers>
+			<a text="Yes">
+				<text>pc_9_5</text>
+			</a>
+			<a text="No">
+				<text>pc_9_2</text>
+				<answers>
+					<a text="Yes">
+						<text>pc_9_6</text>
+					</a>
+					<a text="No">
+						<text>pc_9_3</text>
+						<answers>
+							<a text="Yes">
+								<text>pc_9_7</text>
+							</a>
+							<a text="No">
+								<text>pc_9_4</text>
+								<answers>
+									<a text="Yes">
+										<text>pc_9_8</text>
+									</a>
+									<a text="No">
+										<text>pc_9_9</text>
+									</a>
+								</answers>
+							</a>
+						</answers>
+					</a>
+				</answers>
+			</a>
+		</answers>
+	</question>
+	<question name="pc_10" bat_name="pc_10">
+		<text>pc_10_1</text>
+		<answers>
+			<a text="Hide">
+				<text>pc_10_2</text>
+			</a>
+			<a text="Run">
+				<text>pc_10_3</text>
+			</a>
+			<a text="Fight">
+				<text>pc_10_4</text>
+			</a>
+		</answers>
+	</question>
+	<question name="pc_11" bat_name="pc_11">
+		<text>pc_11_1</text>
+		<answers>
+			<a text="Yes">
+				<text>pc_11_2</text>
+				<answers>
+					<a text="Good">
+						<text>pc_11_4</text>
+					</a>
+					<a text="Good">
+						<text>pc_11_4</text>
+					</a>
+				</answers>
+			</a>
+			<a text="No">
+				<text>pc_11_3</text>
+			</a>
+		</answers>
+	</question>
+	<question name="pc_12" bat_name="pc_12">
+		<text>pc_12_1</text>
+		<answers>
+			<a text="Yes">
+				<text>pc_12_2</text>
+				<answers>
+					<a text="Yes">
+						<text>pc_12_3</text>
+						<answers>
+							<a text="Yes">
+								<text>pc_12_7</text>
+							</a>
+							<a text="No">
+								<text>pc_12_6</text>
+							</a>
+						</answers>
+					</a>
+					<a text="No">
+						<text>pc_12_5</text>
+					</a>
+				</answers>
+			</a>
+			<a text="No">
+				<text>pc_12_4</text>
+			</a>
+		</answers>
+	</question>
+	<question name="pc_13" bat_name="pc_13">
+		<text>pc_13_1</text>
+		<answers>
+			<a text="Yes">
+				<text>pc_13_2</text>
+				<answers>
+					<a text="Yes">
+						<text>pc_13_3</text>
+					</a>
+					<a text="No">
+						<text>pc_13_3</text>
+					</a>
+				</answers>
+			</a>
+			<a text="No">
+				<text>pc_13_2</text>
+				<answers>
+					<a text="Yes">
+						<text>pc_13_3</text>
+					</a>
+					<a text="No">
+						<text>pc_13_3</text>
+					</a>
+				</answers>
+			</a>
+		</answers>
+	</question>
+</questions>
+

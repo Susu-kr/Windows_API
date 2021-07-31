@@ -176,38 +176,32 @@ void GameManager::CreateBlock(int x, int y, bool d_flag)
 {
 	int i = y / 30;
 	int j = x / 30;
-	if (!NodeArray[i][j].isWall)
-		if (!d_flag)
-			NodeArray[i][j].isWall = true;
-		else
-			if (d_flag)
-				NodeArray[i][j].isWall = false;
+	if (!d_flag && !NodeArray[i][j].isWall)
+		NodeArray[i][j].isWall = true;
+	else if(d_flag && NodeArray[i][j].isWall)
+		NodeArray[i][j].isWall = false;
 }
 
 void GameManager::Start_to_Target(int x, int y, int state)
 {
-	for (int i = 0; i < sizeY; i++) {
-		for (int j = 0; j < sizeX; j++) {
-			if (NodeArray[i][j].x - 15 < x && NodeArray[i][j].x + 15 > x
-				&& NodeArray[i][j].y - 15 < y && NodeArray[i][j].y + 15 > y)
-				switch (state)
-				{
-				case 1:
-					{
-						startPos = { NodeArray[i][j].x, NodeArray[i][j].y };
-						StartNode.x = j;
-						StartNode.y = i;
-						return;
-					}
-				case 2:
-					{
-						targetPos = { NodeArray[i][j].x, NodeArray[i][j].y };
-						TargetNode.x = j;
-						TargetNode.y = i;
-						PathFinding();
-						return;
-					}
-				}
+	int i = y / 30;
+	int j = x / 30;
+	switch (state)
+	{
+		case 1:
+		{
+			startPos = { NodeArray[i][j].x, NodeArray[i][j].y };
+			StartNode.x = j;
+			StartNode.y = i;
+			return;
+		}
+		case 2:
+		{
+			targetPos = { NodeArray[i][j].x, NodeArray[i][j].y };
+			TargetNode.x = j;
+			TargetNode.y = i;
+			PathFinding();
+			return;
 		}
 	}
 }

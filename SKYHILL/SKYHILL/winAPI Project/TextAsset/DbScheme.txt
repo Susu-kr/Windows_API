@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<system>
+		<field name="db_version"/>
+	</system>
+	<settings>
+		<field name="difficulty" />
+		<field name="is_hc_available" />
+		<field name="sound" />
+		<field name="music" />
+		<field name="lang" />
+		<field name="passive_perk" />
+		<field name="active_perk" />
+		<field name="resol_w" />
+		<field name="resol_h" />
+		<field name="is_windowed" />
+		<field name="tutorial" />
+		<field name="markers" />
+		<field name="tutor_prgrs" />
+	</settings>
+	<character>
+		<field name="name" />
+		<field name="health" />
+		<field name="max_health" />
+		<field name="food" />
+		<field name="max_food" />
+		<field name="is_poison" />
+		<field name="damage" />
+		<field name="attack_factor" />
+		<field name="hunge_factor" />
+		<field name="hunge_to_health_factor" />
+		<field name="floor_name" />
+		<field name="room_name" />
+		<field name="current_weapon" />
+		<field name="fighting_item_1" />
+		<field name="fighting_item_2" />
+	</character>
+	<character_specs>
+		<field name="speed" />
+		<field name="speed_factor" />
+		<field name="dexterity" />
+		<field name="dexterity_factor" />
+		<field name="strength" />
+		<field name="strength_factor" />
+		<field name="accuracy" />
+		<field name="accuracy_factor" />
+		<field name="weapon_bonus_factor" />
+		<field name="double_weapon_factor" />
+		<field name="tripple_weapon_factor" />
+		<field name="level_num" />
+		<field name="experience_points" />
+		<field name="experience_points_max" />
+		<field name="free_skill_points" />
+	</character_specs>
+	<home_progress>
+		<field name="table" />
+		<field name="table_max" />
+		<field name="door" />
+		<field name="door_max" />
+		<field name="bed" />
+		<field name="bed_max" />
+		<field name="kitchen" />
+		<field name="kitchen_max" />
+		<field name="rose" />
+	</home_progress>
+	<quests>
+		<field name="name"/>
+		<field name="a1" />
+		<field name="a2" />
+		<field name="a3" />
+		<field name="a4" />
+		<field name="a5" />
+		<field name="a6" />
+		<field name="a7" />
+		<field name="a8" />
+		<field name="a9" />
+		<field name="a10" />
+		<field name="state" />
+	</quests>
+	<events>
+		<field name="name" />
+		<field name="type" />
+		<field name="percent" />
+	</events>
+	<perks>
+		<field name="name" />
+		<field name="type" />
+		<field name="is_available" />
+		<field name="state" />
+		<field name="is_new" />
+	</perks>
+	<cutscenes>
+		<field name="name" />
+		<field name="type" />
+		<field name="is_unlocked" />
+		<field name="is_current" />
+	</cutscenes>
+	<achievement_vars>
+		<field name="name" />
+		<field name="value" />
+	</achievement_vars>
+	<floors>
+		<field name="name" />
+		<field name="left_background" />
+		<field name="right_background" />
+		<field name="lift_enabled" />
+		<field name="shield_enabled" />
+		<field name="left_known" />
+		<field name="right_known" />
+		<field name="center_known" />
+	</floors>
+	<room_objects>
+		<field name="floor_index"/>
+		<field name="room"/>
+		<field name="name"/>
+		<field name="x"/>
+		<field name="y"/>
+		<field name="state" />
+	</room_objects>
+	<character_inventory>
+		<field name="identity"/>
+		<field name="count"/>
+	</character_inventory>
+	<journal>
+		<field name="identity"/>
+		<field name="is_new"/>
+	</journal>
+	<dictaphone>
+		<field name="name" />
+		<field name="isKnown" />
+		<field name="en" />
+		<field name="ru" />
+	</dictaphone>
+	<drop>
+		<field name="list_name"/>
+		<field name="identity"/>
+		<field name="count"/>
+	</drop>
+	<object_storage>
+		<field name="name"/>
+		<field name="type"/>
+		<field name="prefab"/>
+		<field name="interactive_component"/>
+		<field name="base_state"/>
+		<field name="loot"/>
+	</object_storage>
+	<enemies>
+		<field name="name" />
+		<field name="base_health" />
+		<field name="damage" />
+		<field name="exp" />
+		<field name="left_x" />
+		<field name="right_x" />
+		<field name="can_be_in_center" />
+		<field name="center_x" />
+		<field name="zone_1_prcnt" />
+		<field name="zone_1_koeff" />
+		<field name="zone_2_prcnt" />
+		<field name="zone_2_koeff" />
+		<field name="zone_3_prcnt" />
+		<field name="zone_3_koeff" />
+	</enemies>
+	<game_items>
+		<field name="identity"/>
+		<field name="canUse"/>
+		<field name="storage"/>
+		<field name="sprite"/>
+		<field name="dysplay_name"/>
+		<field name="type" />
+		<field name="can_drop" />
+		<field name="drop_percent" />
+		<field name="description" />
+		<field name="size" />
+	</game_items>
+	<weapons>
+		<field name="name" />
+		<field name="skill" />
+		<field name="skill_border" />
+		<field name="weapon_type" />
+		<field name="damage_min" />
+		<field name="damage_max" />
+		<field name="dex" />
+		<field name="str" />
+		<field name="spd" />
+	</weapons>
+	<food>
+		<field name="name" />
+		<field name="energy" />
+	</food>
+	<medical>
+		<field name="name" />
+		<field name="health" />
+	</medical>
+	<craft>
+		<field name="identity_1"/>
+		<field name="identity_2"/>
+		<field name="identity_3"/>
+		<field name="identity_4"/>
+		<field name="result_identity"/>
+		<field name="category"/>
+		<field name="need_home"/>
+		<field name="is_known"/>
+		<field name="need" />
+	</craft>
+	<unique_containers>
+		<field name="name" />
+		<field name="loot" />
+		<field name="can_empty" />
+		<field name="can_more" />
+	</unique_containers>
+	<random_generation_loot>
+		<field name="unique_percent" />
+		<field name="unique_compensation" />
+		<field name="empty_percent" />
+		<field name="empty_compensation" />
+		<field name="food_percent" />
+		<field name="food_koeff" />
+		<field name="medical_percent" />
+		<field name="medical_koeff" />
+		<field name="weapon_percent" />
+		<field name="weapon_koeff" />
+		<field name="material_percent" />
+		<field name="material_koeff" />
+		<field name="others_percent" />
+		<field name="others_koeff" />
+		<field name="storyline_percent" />
+		<field name="storyline_koeff" />
+	</random_generation_loot>
+	<random_generation_enemies>
+		<field name="base_chance" />
+		<field name="chance_compensation" />
+	</random_generation_enemies>
+	<random_generation_vars>
+		<field name="name" />
+		<field name="value" />
+	</random_generation_vars>
+	<categories>
+		<field name="name_of_category" />
+		<field name="from" />
+		<field name="to" />
+	</categories>
+	<items_in_categories>
+		<field name="item_name" />
+		<field name="a" />
+		<field name="b" />
+		<field name="c" />
+		<field name="d" />
+		<field name="e" />
+		<field name="f" />
+		<field name="g" />
+		<field name="h" />
+		<field name="i" />
+		<field name="j" />
+	</items_in_categories>
+	<enemies_in_categories>
+		<field name="enemy_name" />
+		<field name="a" />
+		<field name="b" />
+		<field name="c" />
+		<field name="d" />
+		<field name="e" />
+		<field name="f" />
+		<field name="g" />
+		<field name="h" />
+		<field name="i" />
+		<field name="j" />
+	</enemies_in_categories>
+	<weapon_in_categories>
+		<field name="name" />
+		<field name="a" />
+		<field name="b" />
+		<field name="c" />
+		<field name="d" />
+		<field name="e" />
+		<field name="f" />
+		<field name="g" />
+		<field name="h" />
+		<field name="i" />
+		<field name="j" />
+	</weapon_in_categories>
+	<food_in_categories>
+		<field name="name" />
+		<field name="a" />
+		<field name="b" />
+		<field name="c" />
+		<field name="d" />
+		<field name="e" />
+		<field name="f" />
+		<field name="g" />
+		<field name="h" />
+		<field name="i" />
+		<field name="j" />
+	</food_in_categories>
+	<medical_in_categories>
+		<field name="name" />
+		<field name="a" />
+		<field name="b" />
+		<field name="c" />
+		<field name="d" />
+		<field name="e" />
+		<field name="f" />
+		<field name="g" />
+		<field name="h" />
+		<field name="i" />
+		<field name="j" />
+	</medical_in_categories>
+	<material_in_categories>
+		<field name="name" />
+		<field name="a" />
+		<field name="b" />
+		<field name="c" />
+		<field name="d" />
+		<field name="e" />
+		<field name="f" />
+		<field name="g" />
+		<field name="h" />
+		<field name="i" />
+		<field name="j" />
+	</material_in_categories>
+	<others_in_categories>
+		<field name="name" />
+		<field name="a" />
+		<field name="b" />
+		<field name="c" />
+		<field name="d" />
+		<field name="e" />
+		<field name="f" />
+		<field name="g" />
+		<field name="h" />
+		<field name="i" />
+		<field name="j" />
+	</others_in_categories>
+	<achievements>
+		<field name="id" />
+		<field name="is_unlocked" />
+	</achievements>
+</root>
+<!-- CHECK END -->

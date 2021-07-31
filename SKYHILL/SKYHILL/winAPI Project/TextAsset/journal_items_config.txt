@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<items>
+	<item name="NOTE_1" icon="note_1" type="text" />
+	<item name="NOTE_2" icon="note_1" type="text" />
+	<item name="NOTE_3" icon="note_1" type="text" />
+	<item name="NOTE_4" icon="note_1" type="text" />
+	<item name="NOTE_5" icon="note_1" type="text" />
+	<item name="NOTE_6" icon="note_1" type="text" />
+	<item name="NOTE_7" icon="note_1" type="text" />
+	<item name="NOTE_8" icon="note_1" type="text" />
+	<item name="NOTE_9" icon="note_1" type="text" />
+	<item name="NOTE_10" icon="note_1" type="text" />
+	<item name="NOTE_11" icon="note_1" type="text" />
+	<item name="NOTE_12" icon="note_1" type="text" />
+	<item name="NOTE_13" icon="note_1" type="text" />
+	<item name="NOTE_14" icon="note_1" type="text" />
+	<item name="NOTE_15" icon="note_1" type="text" />
+	<item name="NOTE_16" icon="note_1" type="text" />
+	<item name="NOTE_17" icon="note_1" type="text" />
+	<item name="NOTE_18" icon="note_1" type="text" />
+	<item name="NOTE_19" icon="note_1" type="text" />
+	<item name="NOTE_20" icon="note_1" type="text" />
+	<item name="NOTE_21" icon="note_1" type="text" />
+	<item name="NOTE_22" icon="note_1" type="text" />
+	<item name="NOTE_23" icon="note_1" type="text" />
+	<item name="NOTE_24" icon="note_1" type="text" />
+	<item name="NOTE_25" icon="note_1" type="text" />
+	<item name="NOTE_26" icon="note_1" type="text" />
+	<item name="NOTE_27" icon="note_1" type="text" />
+	<item name="NOTE_28" icon="note_1" type="text" />
+	<item name="NOTE_29" icon="note_1" type="text" />
+	<item name="NOTE_30" icon="note_1" type="text" />
+	<item name="NOTE_31" icon="note_1" type="text" />
+	<item name="NOTE_32" icon="note_1" type="text" />
+	<item name="NOTE_33" icon="note_1" type="text" />
+	<item name="NOTE_34" icon="note_1" type="text" />
+	<item name="NOTE_35" icon="note_1" type="text" />
+	<item name="NOTE_36" icon="note_1" type="text" />
+	<item name="NOTE_37" icon="note_1" type="text" />
+	<item name="NOTE_38" icon="note_1" type="text" />
+	<item name="NOTE_39" icon="note_1" type="text" />
+	<item name="NOTE_40" icon="note_1" type="text" />
+	<item name="NOTE_41" icon="note_1" type="text" />
+	<item name="NOTE_42" icon="note_1" type="text" />
+	<item name="NOTE_43" icon="note_1" type="text" />
+	<item name="NOTE_44" icon="note_1" type="text" />
+	<item name="NOTE_45" icon="note_1" type="text" />
+	<item name="NOTE_46" icon="note_1" type="text" />
+	<item name="NOTE_47" icon="note_1" type="text" />
+	<item name="NOTE_48" icon="note_1" type="text" />
+	<item name="NOTE_49" icon="note_1" type="text" />
+	<item name="NOTE_50" icon="note_1" type="text" />
+	<item name="NOTE_51" icon="note_1" type="text" />
+	<item name="EXPERIMENT_NOTE_1" icon="note_1" type="text" />
+</items>
+

@@ -1,0 +1,3014 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <left>
+    <main_point x="0" y="0" can_empty="False">
+      <var name="ceilinglight_14" x="148.9" y="162.8" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="-24.8" y="-162" can_empty="False">
+          <var name="bed_28" x="0" y="0" use_indpndnt="False" />
+          <var name="bed_30" x="5" y="0" use_indpndnt="False" />
+          <var name="bed_15" x="0" y="0" use_indpndnt="False" />
+          <var name="bed_6" x="6" y="0" use_indpndnt="False" />
+          <var name="bed_12" x="0" y="0" use_indpndnt="False" />
+          <var name="chair_5" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_2" x="-90.2" y="-161.7" can_empty="False">
+          <var name="case_1" x="0" y="0" use_indpndnt="True">
+          </var>
+          <var name="floorlamp_13" x="10" y="0" use_indpndnt="False" />
+          <var name="floorlamp_10" x="7" y="0" use_indpndnt="False" />
+          <var name="floorlamp_14" x="7" y="0" use_indpndnt="False" />
+          <var name="shelving_5" x="-25.7" y="0" use_indpndnt="True" />
+          <var name="case_53" x="-37.6" y="0" use_indpndnt="True" />
+          <var name="case_51" x="-47.2" y="0" use_indpndnt="True" />
+          <var name="floorlamp_7" x="25" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_3" x="22.6" y="-64.7" can_empty="True">
+          <var name="blood_2" x="70.74457" y="-82.11429" use_indpndnt="False" />
+          <var name="hand" x="16.53381" y="-22.94473" use_indpndnt="False" />
+          <var name="book_1" x="85.86829" y="-96.27925" use_indpndnt="False" />
+          <var name="floorlamp_6" x="85.86829" y="-96.27925" use_indpndnt="False" />
+          <var name="watch_1" x="71.89709" y="19.62161" use_indpndnt="False" />
+        </point>
+      </var>
+      <var name="wedding_bed" x="98.7" y="0" bg="bg11" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="27.2" y="164" can_empty="False">
+          <var name="ceilinglight_13" x="100.3" y="-16" use_indpndnt="False">
+            <point name="point_1" x="-153" y="0" can_empty="False">
+              <var name="ceilinglight_13" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="ceilinglight_9" x="100.3" y="-5.4" use_indpndnt="False">
+            <point name="point_1" x="-147.8" y="0" can_empty="False">
+              <var name="ceilinglight_9" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+        </point>
+        <point name="point_2" x="-60.6" y="0" can_empty="False">
+          <var name="case_2" x="6.2" y="0" use_indpndnt="True">
+          </var>
+          <var name="shelving_1" x="-9.3" y="0" use_indpndnt="True" />
+          <var name="case_11" x="-9.3" y="0" use_indpndnt="True" />
+          <var name="floorlamp_14" x="7.6" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_3" x="146" y="0" can_empty="True">
+          <var name="column_3" x="0" y="0" use_indpndnt="False" />
+          <var name="hand" x="0" y="0" use_indpndnt="False" />
+          <var name="pictures_4" x="0" y="62.8" use_indpndnt="False" />
+          <var name="stereosystem" x="0" y="0" use_indpndnt="False" />
+          <var name="videocamera" x="0" y="0" use_indpndnt="False" />
+        </point>
+      </var>
+      <var name="cooker_2" x="79.1" y="0" bg="any" is_unique="True" use_indpndnt="False">
+        <point name="point_1" x="46.3" y="0" can_empty="False">
+          <var name="kitchentable_2" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="16.2" y="47.7" can_empty="False">
+              <var name="case_48" x="0" y="0" use_indpndnt="False" />
+              <var name="coffeemaker" x="0" y="0" use_indpndnt="False" />
+              <var name="cup_1" x="0" y="0" use_indpndnt="False" />
+              <var name="microwave" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="73.9" y="47.7" can_empty="False">
+              <var name="toster" x="8.8" y="0" use_indpndnt="False" />
+              <var name="teapot" x="8.8" y="0" use_indpndnt="False" />
+              <var name="phone" x="8.8" y="0" use_indpndnt="False" />
+              <var name="retromixer" x="8.8" y="0" use_indpndnt="False" />
+              <var name="flower_1" x="8.8" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+        </point>
+        <point name="point_2" x="-74.5" y="0" can_empty="False">
+          <var name="refrigerator" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_3" x="-19.1" y="150" can_empty="False">
+          <var name="drawing" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_4" x="45.9" y="104.8" can_empty="False">
+          <var name="case_8" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="72.1" y="0" can_empty="False">
+              <var name="case_8" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+        </point>
+      </var>
+      <var name="table_3" x="88.2" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_3" x="-63.5" y="0" can_empty="False">
+          <var name="column_4" x="36.3" y="0" use_indpndnt="False">
+            <point name="point_1" x="211.9" y="0" can_empty="False">
+              <var name="column_4" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="-39.4" y="0" can_empty="False">
+              <var name="basket" x="0" y="0" use_indpndnt="False" />
+              <var name="stand" x="-11.7" y="0" use_indpndnt="False" />
+              <var name="tree" x="-20.01" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_3" x="60.9" y="87.4" can_empty="False">
+              <var name="case_66" x="0" y="0" use_indpndnt="True" />
+              <var name="pictures_3" x="9.320793" y="-11.06847" use_indpndnt="False" />
+            </point>
+            <point name="point_4" x="166.6" y="41.4" can_empty="False">
+              <var name="flower_2" x="0" y="0" use_indpndnt="False" />
+              <var name="book_1" x="-97.3" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="column_5" x="-7.1" y="0" use_indpndnt="False">
+            <point name="point_1" x="-0.8" y="26.8" can_empty="False">
+              <var name="bonsai" x="0" y="0" use_indpndnt="False" />
+              <var name="book_1" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="27.3" y="-1.5" can_empty="True">
+                  <var name="photo" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+            </point>
+            <point name="point_2" x="97.5" y="82.1" can_empty="False">
+              <var name="sideboard_7" x="0" y="0" use_indpndnt="True" />
+            </point>
+            <point name="point_3" x="-25.9" y="58.9" can_empty="False">
+              <var name="blood_1" x="-8.117357" y="2.53669" use_indpndnt="False" />
+              <var name="corner_1" x="29.71562" y="64.20701" use_indpndnt="False" />
+            </point>
+            <point name="point_4" x="187" y="41.1" can_empty="False">
+              <var name="coffeemaker" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="-17" y="0" can_empty="False">
+                  <var name="cup_4" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+              <var name="boombox" x="-65.4" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="plazma" x="89.3" y="79" use_indpndnt="False">
+            <point name="point_1" x="0" y="-37.6" can_empty="False">
+              <var name="rocket_1" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="46.7" y="0" can_empty="False">
+                  <var name="gamepad" x="0" y="0" use_indpndnt="False">
+                    <point name="point_1" x="24.4" y="0" can_empty="False">
+                      <var name="xbox" x="0" y="0" use_indpndnt="False" />
+                    </point>
+                  </var>
+                  <var name="tuner_1" x="0" y="0" use_indpndnt="False">
+                    <point name="point_1" x="4.4" y="11.7" can_empty="False">
+                      <var name="tuner_3" x="0" y="0" use_indpndnt="False" />
+                    </point>
+                  </var>
+                </point>
+                <point name="point_2" x="10.6" y="-24.8" can_empty="False">
+                  <var name="book_1" x="0" y="0" use_indpndnt="False">
+                    <point name="point_1" x="85.6" y="0" can_empty="False">
+                      <var name="book_4" x="0" y="0" use_indpndnt="False" />
+                    </point>
+                    <point name="point_2" x="25.1" y="0" can_empty="False">
+                      <var name="headphones" x="0" y="0" use_indpndnt="False" />
+                    </point>
+                  </var>
+                  <var name="gramophone_1" x="0" y="0" use_indpndnt="False">
+                    <point name="point_1" x="89.5" y="0" can_empty="False">
+                      <var name="watch_7" x="0" y="0" use_indpndnt="False" />
+                    </point>
+                  </var>
+                </point>
+              </var>
+              <var name="videocamera" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="103.5" y="0.1" can_empty="False">
+                  <var name="bonsai" x="0" y="0" use_indpndnt="False">
+                    <point name="point_1" x="-35.3" y="0" can_empty="False">
+                      <var name="book_1" x="0" y="0" use_indpndnt="False" />
+                    </point>
+                  </var>
+                  <var name="boombox" x="-18.1" y="0" use_indpndnt="False">
+                    <point name="point_1" x="-15.5" y="0" can_empty="False">
+                      <var name="camera_1" x="0" y="0" use_indpndnt="False" />
+                    </point>
+                  </var>
+                </point>
+                <point name="point_2" x="28.8" y="-25.6" can_empty="False">
+                  <var name="iron" x="0" y="0" use_indpndnt="False" />
+                  <var name="printer" x="23.2" y="0" use_indpndnt="False" />
+                  <var name="tuner_3" x="55.2" y="0" use_indpndnt="False">
+                    <point name="point_1" x="-87.5" y="0" can_empty="False">
+                      <var name="tuner_2" x="0" y="0" use_indpndnt="False" />
+                    </point>
+                  </var>
+                </point>
+              </var>
+            </point>
+            <point name="point_2" x="-103.5" y="-78.2" can_empty="False">
+              <var name="warbdone_5" x="0" y="0" use_indpndnt="True" />
+              <var name="floorlamp_2" x="24.4" y="0" use_indpndnt="False">
+                <point name="point_1" x="-8.9" y="104.5" can_empty="False">
+                  <var name="shelf_5" x="0" y="0" use_indpndnt="True" />
+                </point>
+              </var>
+            </point>
+          </var>
+        </point>
+      </var>
+      <var name="case_42" x="10.7" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="153.3" y="0" can_empty="False">
+          <var name="bed_30" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="48.4" y="52.4" can_empty="False">
+              <var name="blood_2" x="0" y="0" use_indpndnt="False" />
+              <var name="pictures_6" x="-21.11768" y="25.51719" use_indpndnt="False" />
+              <var name="plazma" x="-34.2" y="25.5" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="-139.6" y="100.4" can_empty="False">
+              <var name="basket" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="75.2" y="0" can_empty="False">
+                  <var name="gramophone_2" x="0" y="0" use_indpndnt="False" />
+                  <var name="iron_stay" x="-26.3" y="0" use_indpndnt="False" />
+                  <var name="sewingmachine" x="-6.7" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+              <var name="rocket_2" x="95.3" y="0" use_indpndnt="False">
+                <point name="point_1" x="-71.6" y="0" can_empty="False">
+                  <var name="floorlamp_6" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+            </point>
+          </var>
+          <var name="bed_6" x="10.3" y="0" use_indpndnt="False">
+            <point name="point_1" x="0" y="0" can_empty="False">
+              <var name="floorlamp_4" x="-14.8" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="40.4" y="95.3" can_empty="False">
+              <var name="watch_2" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_3" x="-151" y="100.4" can_empty="False">
+              <var name="fallen_stand" x="-7.9" y="0" use_indpndnt="False">
+                <point name="point_1" x="80.4" y="0" can_empty="True">
+                  <var name="box_1" x="0" y="0" use_indpndnt="False" />
+                  <var name="column_5" x="1" y="0" use_indpndnt="False" />
+                  <var name="globus" x="10.7" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+            </point>
+          </var>
+          <var name="table_2" x="50.3" y="0" use_indpndnt="False">
+            <point name="point_1" x="-61.9" y="0" can_empty="False">
+              <var name="fallen_chair" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="0" y="0" can_empty="False">
+              <var name="flower_1" x="12.6" y="45.1" use_indpndnt="False" />
+              <var name="lavlamp_3" x="26.6" y="45.1" use_indpndnt="False" />
+              <var name="iphone_2" x="12.6" y="45.1" use_indpndnt="False" />
+            </point>
+            <point name="point_3" x="0" y="0" can_empty="True">
+              <var name="paper" x="-37.29844" y="77.5153" use_indpndnt="False" />
+            </point>
+            <point name="point_4" x="35.8" y="166.8" can_empty="False">
+              <var name="walllamp_5" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="-168" y="0" can_empty="False">
+                  <var name="walllamp_5" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+            </point>
+          </var>
+        </point>
+      </var>
+      <var name="case_49" x="103" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="-83.4" y="0" can_empty="False">
+          <var name="warbdone_4" x="0" y="0" use_indpndnt="True" />
+          <var name="case_4" x="7.6" y="0" use_indpndnt="True" />
+          <var name="shelving_2" x="7.6" y="0" use_indpndnt="True" />
+        </point>
+        <point name="point_2" x="90.5" y="0" can_empty="False">
+          <var name="bed_1" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="-28.8" y="76.9" can_empty="False">
+              <var name="pictures_1" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="-36" y="-24.2" can_empty="False">
+                  <var name="cup_2" x="0" y="0" use_indpndnt="False" />
+                  <var name="desklamp_10" x="0" y="0" use_indpndnt="False" />
+                  <var name="phone" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+              <var name="ceilinglight_22" x="75" y="78.7" use_indpndnt="False">
+                <point name="point_1" x="-101.6" y="0" can_empty="False">
+                  <var name="ceilinglight_22" x="0" y="0" use_indpndnt="False" />
+                </point>
+                <point name="point_2" x="-107.5" y="-102.8" can_empty="False">
+                  <var name="watch_7" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+            </point>
+          </var>
+          <var name="chair_16" x="36.7" y="0" use_indpndnt="False">
+            <point name="point_1" x="-27.4" y="0" can_empty="False">
+              <var name="manecan" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="-93.6" y="52.9" can_empty="False">
+              <var name="candle_3" x="0" y="0" use_indpndnt="False" />
+              <var name="desklamp_13" x="29.8" y="0" use_indpndnt="False" />
+              <var name="desklamp_2" x="10.6" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+        </point>
+      </var>
+      <var name="case_57" x="178.3" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="-160" y="0" can_empty="False">
+          <var name="bed_21" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="166" y="38.5" can_empty="False">
+              <var name="rocket_1" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="14.9" y="0" can_empty="False">
+                  <var name="rocket_2" x="0" y="0" use_indpndnt="False">
+                    <point name="point_1" x="0" y="0" can_empty="False">
+                      <var name="paper" x="17.2678" y="30.55083" use_indpndnt="False">
+                        <point name="point_1" x="1.7" y="-30.6" can_empty="True">
+                          <var name="phone" x="0" y="0" use_indpndnt="False" />
+                        </point>
+                      </var>
+                    </point>
+                  </var>
+                </point>
+              </var>
+              <var name="sewingmachine" x="14.6" y="0" use_indpndnt="False">
+                <point name="point_1" x="-23.1" y="0" can_empty="False">
+                  <var name="book_1" x="0" y="0" use_indpndnt="False">
+                    <point name="point_1" x="14.6" y="21.7" can_empty="False">
+                      <var name="candle_2" x="0" y="0" use_indpndnt="False" />
+                      <var name="glass" x="-10.3" y="0" use_indpndnt="False" />
+                    </point>
+                  </var>
+                  <var name="camera_2" x="5.5" y="0" use_indpndnt="False" />
+                  <var name="cup_1" x="5.5" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+              <var name="photo" x="13.3" y="32.6" use_indpndnt="False">
+                <point name="point_1" x="13.1" y="-32.2" can_empty="False">
+                  <var name="watch_7" x="0" y="0" use_indpndnt="False" />
+                  <var name="ring" x="-27" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+              <var name="shelf_5" x="-5.3" y="32.6" use_indpndnt="True" />
+            </point>
+            <point name="point_2" x="27" y="136.5" can_empty="False">
+              <var name="walllamp_6" x="0" y="0" use_indpndnt="False" />
+              <var name="walllamp_5" x="34.9" y="27.8" use_indpndnt="False">
+                <point name="point_1" x="123.7" y="0" can_empty="False">
+                  <var name="walllamp_5" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+              <var name="watch_3" x="32.5" y="4.1" use_indpndnt="False" />
+              <var name="basket" x="-25.19142" y="-34.21413" use_indpndnt="False" />
+              <var name="boombox" x="21" y="-34.2" use_indpndnt="False">
+                <point name="point_1" x="0" y="0" can_empty="True">
+                  <var name="headphones" x="-17.2" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+              <var name="box_1" x="3.913345" y="-33.31923" use_indpndnt="False" />
+            </point>
+            <point name="point_3" x="46.4" y="44.5" can_empty="True">
+              <var name="hand" x="-30.79003" y="-3.315842" use_indpndnt="False">
+                <point name="point_1" x="40.7" y="15.2" can_empty="True">
+                  <var name="forgotten_shoe" x="-8" y="-55.6" use_indpndnt="False" />
+                </point>
+              </var>
+              <var name="nosmoking" x="16.57923" y="7.105392" use_indpndnt="False" />
+              <var name="rocket_1" x="42.1" y="-7.4" use_indpndnt="False" />
+              <var name="walllamp_9" x="1.127235" y="17.18364" use_indpndnt="False" />
+              <var name="forgotten_shoe" x="18.46186" y="-7.084854" use_indpndnt="False" />
+              <var name="gamepad" x="-42.05175" y="8.989059" use_indpndnt="False" />
+              <var name="fallen_chair" x="-17.01504" y="-6.499741" use_indpndnt="False" />
+            </point>
+            <point name="point_4" x="237.8" y="0" can_empty="True">
+              <var name="floorlamp_9" x="0" y="0" use_indpndnt="False" />
+              <var name="floorlamp_11" x="-10.1" y="0" use_indpndnt="False" />
+              <var name="forgotten_shoe" x="-155.8" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="bed_28" x="-4.2" y="0" use_indpndnt="False">
+            <point name="point_1" x="226.9" y="0" can_empty="False">
+              <var name="cart_used" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="-59.2" y="41.4" can_empty="False">
+                  <var name="blood_1" x="0" y="0" use_indpndnt="False">
+                    <point name="point_1" x="-1.2" y="-3" can_empty="False">
+                      <var name="basket" x="0" y="0" use_indpndnt="False" />
+                      <var name="coffeemaker" x="13.43232" y="0.2534561" use_indpndnt="False" />
+                      <var name="flower_1" x="9.3" y="0.3" use_indpndnt="False" />
+                    </point>
+                  </var>
+                  <var name="iron_stay" x="36.2" y="-3.8" use_indpndnt="False" />
+                  <var name="iron" x="-2" y="-3.2" use_indpndnt="False" />
+                  <var name="book_1" x="-2" y="-3.2" use_indpndnt="False" />
+                </point>
+                <point name="point_2" x="-110" y="0" can_empty="False">
+                  <var name="floorlamp_14" x="0" y="0" use_indpndnt="False" />
+                  <var name="broken_tree" x="-5.8" y="0" use_indpndnt="False" />
+                  <var name="broken_cupboard" x="-5.8" y="0" use_indpndnt="False" />
+                  <var name="box_1" x="-24.3" y="0" use_indpndnt="False" />
+                  <var name="boombox" x="-0.4" y="0" use_indpndnt="False" />
+                  <var name="manecan" x="23.5" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+              <var name="column_4" x="7.5" y="0" use_indpndnt="False">
+                <point name="point_1" x="-87.9" y="0" can_empty="False">
+                  <var name="column_4" x="0" y="0" use_indpndnt="False" />
+                </point>
+                <point name="point_2" x="-55.9" y="38.5" can_empty="False">
+                  <var name="amplifier" x="0" y="0" use_indpndnt="False" />
+                  <var name="tuner_1" x="-5.8" y="0" use_indpndnt="False">
+                    <point name="point_1" x="-7.9" y="0.4" can_empty="False">
+                      <var name="lavlamp_1" x="0" y="0" use_indpndnt="False">
+                        <point name="point_1" x="34.6" y="11.3" can_empty="False">
+                          <var name="cup_3" x="0" y="0" use_indpndnt="False" />
+                          <var name="desklamp_8" x="3.3" y="0" use_indpndnt="False" />
+                          <var name="globus" x="-19.7" y="0" use_indpndnt="False" />
+                          <var name="tuner_3" x="-19.7" y="0" use_indpndnt="False" />
+                        </point>
+                      </var>
+                      <var name="phone" x="12.86828" y="11.33177" use_indpndnt="False" />
+                      <var name="forgotten_shoe" x="81.2" y="-38.7" use_indpndnt="False" />
+                      <var name="headphones" x="39.14563" y="11.54182" use_indpndnt="False" />
+                    </point>
+                  </var>
+                  <var name="desklamp_14" x="28.1" y="0" use_indpndnt="False">
+                    <point name="point_1" x="-41.6" y="0" can_empty="False">
+                      <var name="book_3" x="0" y="0" use_indpndnt="False">
+                        <point name="point_1" x="22.1" y="0" can_empty="False">
+                          <var name="book_2" x="0" y="0" use_indpndnt="False" />
+                          <var name="camera_1" x="-0.8" y="0" use_indpndnt="False" />
+                          <var name="walllamp_7" x="-0.4199142" y="0.5700989" use_indpndnt="False" />
+                          <var name="webcamera_1" x="2.4" y="0.6" use_indpndnt="False" />
+                        </point>
+                      </var>
+                      <var name="bonsai" x="0" y="0" use_indpndnt="False">
+                        <point name="point_1" x="-17.7" y="28.2" can_empty="True">
+                          <var name="cup_1" x="0" y="0" use_indpndnt="False" />
+                          <var name="cup_3" x="0" y="0" use_indpndnt="False" />
+                        </point>
+                      </var>
+                      <var name="cup_2" x="14.6" y="0" use_indpndnt="False" />
+                    </point>
+                  </var>
+                  <var name="glass" x="28.1" y="0" use_indpndnt="False" />
+                  <var name="desklamp_1" x="13.4" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+              <var name="chair_10" x="-99.9" y="0" use_indpndnt="False">
+                <point name="point_1" x="0" y="0" can_empty="False">
+                  <var name="retroradio" x="42.89918" y="38.79582" use_indpndnt="False">
+                    <point name="point_1" x="37.3" y="0" can_empty="False">
+                      <var name="lavlamp_3" x="0" y="0" use_indpndnt="False" />
+                      <var name="floorlamp_6" x="-5.3" y="0" use_indpndnt="False">
+                        <point name="point_1" x="36.5" y="-38.9" can_empty="False">
+                          <var name="floorlamp_8" x="0" y="0" use_indpndnt="False" />
+                          <var name="fallen_stand" x="-10.6" y="0" use_indpndnt="False" />
+                          <var name="bonsai" x="-3.5" y="0" use_indpndnt="False" />
+                        </point>
+                      </var>
+                      <var name="desklamp_6" x="-5.3" y="0" use_indpndnt="False" />
+                      <var name="corner_1" x="67.6" y="84" use_indpndnt="False" />
+                    </point>
+                  </var>
+                  <var name="recorder" x="42.9" y="38.1" use_indpndnt="False">
+                    <point name="point_1" x="0" y="0" can_empty="False">
+                      <var name="cup_1" x="3.6" y="34.9" use_indpndnt="False" />
+                      <var name="column_1" x="63.64999" y="-37.5742" use_indpndnt="False" />
+                      <var name="chair_17" x="63.64999" y="-37.5742" use_indpndnt="False" />
+                      <var name="basket" x="63.64999" y="-37.5742" use_indpndnt="False" />
+                    </point>
+                  </var>
+                </point>
+              </var>
+            </point>
+            <point name="point_2" x="0" y="80.5" can_empty="False">
+              <var name="sideboard_8" x="-6" y="0" use_indpndnt="True" />
+              <var name="pictures_1" x="19.9" y="-6.1" use_indpndnt="False" />
+              <var name="shelf_2" x="14.7" y="13.5" use_indpndnt="True" />
+              <var name="shelf_7" x="25.14753" y="6.618729" use_indpndnt="True" />
+              <var name="electric_shield_2" x="-13.2" y="6.6" use_indpndnt="False">
+                <point name="point_1" x="47.5" y="62.4" can_empty="False">
+                  <var name="ceilinglight_18" x="0" y="0" use_indpndnt="False" />
+                  <var name="ceilinglight_5" x="116.5" y="7.2" use_indpndnt="False" />
+                  <var name="case_64" x="-31.06996" y="-40.46321" use_indpndnt="True" />
+                </point>
+              </var>
+            </point>
+          </var>
+          <var name="bed_32" x="8.588303" y="0" use_indpndnt="False">
+            <point name="point_1" x="33" y="84.1" can_empty="False">
+              <var name="pictures_6" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="127.2" y="-45.2" can_empty="False">
+                  <var name="flower_2" x="0" y="0" use_indpndnt="False">
+                    <point name="point_1" x="28.2" y="0" can_empty="False">
+                      <var name="desklamp_5" x="0" y="0" use_indpndnt="False">
+                        <point name="point_1" x="0" y="0" can_empty="False">
+                          <var name="chair_1" x="27.55682" y="-38.45142" use_indpndnt="False" />
+                          <var name="column_6" x="32.7" y="-38.5" use_indpndnt="False" />
+                          <var name="chair_4" x="80.8" y="-38.5" use_indpndnt="False" />
+                        </point>
+                      </var>
+                      <var name="fallen_chair" x="26.84887" y="-39.11319" use_indpndnt="False">
+                        <point name="point_1" x="18.9" y="83.2" can_empty="False">
+                          <var name="walllamp_4" x="0" y="0" use_indpndnt="False" />
+                          <var name="stand" x="-260.8286" y="-82.02963" use_indpndnt="False" />
+                          <var name="iron_stay" x="23.7" y="-82.7" use_indpndnt="False" />
+                        </point>
+                      </var>
+                    </point>
+                  </var>
+                  <var name="gramophone_2" x="5.1" y="0" use_indpndnt="False">
+                    <point name="point_1" x="-32.1" y="59.6" can_empty="False">
+                      <var name="case_66" x="0" y="0" use_indpndnt="False" />
+                      <var name="ceilinglight_6" x="6.408552" y="57.67712" use_indpndnt="False" />
+                      <var name="blood_2" x="92.32896" y="-96.13115" use_indpndnt="False" />
+                    </point>
+                  </var>
+                  <var name="iron_stay" x="96" y="-1.7" use_indpndnt="False">
+                    <point name="point_1" x="-38.9" y="-36.6" can_empty="False">
+                      <var name="table_10" x="0" y="0" use_indpndnt="False" />
+                      <var name="table_14" x="3.094505" y="-0.2361679" use_indpndnt="False" />
+                    </point>
+                    <point name="point_2" x="-99.8" y="1.5" can_empty="False">
+                      <var name="basket" x="0" y="0" use_indpndnt="False" />
+                      <var name="printer" x="26.4" y="0" use_indpndnt="False">
+                        <point name="point_1" x="-12.1" y="0" can_empty="False">
+                          <var name="rocket_2" x="0" y="0" use_indpndnt="False" />
+                          <var name="flower_2" x="-18.4" y="0" use_indpndnt="False" />
+                          <var name="iphone_1" x="-12" y="0.8" use_indpndnt="False" />
+                        </point>
+                      </var>
+                    </point>
+                  </var>
+                  <var name="floorlamp_8" x="60.5" y="-39.5" use_indpndnt="False">
+                    <point name="point_1" x="-53.2" y="39.3" can_empty="False">
+                      <var name="videocamera" x="0" y="0" use_indpndnt="False" />
+                      <var name="teapot" x="0" y="0" use_indpndnt="False" />
+                      <var name="watch_6" x="-1.898037" y="49.34848" use_indpndnt="False" />
+                    </point>
+                  </var>
+                </point>
+              </var>
+              <var name="plazma" x="-20.6701" y="-9.760872" use_indpndnt="False">
+                <point name="point_1" x="-37.9" y="-74.6" can_empty="False">
+                  <var name="blood_3" x="0" y="0" use_indpndnt="False">
+                    <point name="point_1" x="83.8" y="155.6" can_empty="False">
+                      <var name="ceilinglight_2" x="10.9" y="0" use_indpndnt="False">
+                        <point name="point_1" x="111.9" y="0" can_empty="False">
+                          <var name="ceilinglight_2" x="0" y="0" use_indpndnt="False" />
+                        </point>
+                      </var>
+                    </point>
+                    <point name="point_2" x="182.6" y="38.6" can_empty="False">
+                      <var name="retromixer" x="0" y="0" use_indpndnt="False" />
+                      <var name="projector" x="0" y="0" use_indpndnt="False" />
+                      <var name="fallen_fire_extinguisher" x="0" y="0" use_indpndnt="False" />
+                    </point>
+                  </var>
+                  <var name="box_1" x="180.3817" y="38.26278" use_indpndnt="False">
+                    <point name="point_1" x="-29.4" y="62.9" can_empty="False">
+                      <var name="electric_shield_2" x="0" y="0" use_indpndnt="False" />
+                      <var name="column_4" x="108.3" y="-98.5" use_indpndnt="False" />
+                    </point>
+                  </var>
+                  <var name="chair_15" x="250.5" y="1.3" use_indpndnt="False">
+                    <point name="point_1" x="-57.2" y="38.2" can_empty="False">
+                      <var name="gramophone_1" x="0" y="0" use_indpndnt="False">
+                        <point name="point_1" x="-14.8" y="40" can_empty="False">
+                          <var name="shelf_3" x="0" y="0" use_indpndnt="True" />
+                          <var name="floorlamp_3" x="99.9" y="-78.8" use_indpndnt="False" />
+                          <var name="ceilinglight_18" x="-27.16302" y="79.69446" use_indpndnt="False" />
+                        </point>
+                      </var>
+                      <var name="desklamp_20" x="0" y="0" use_indpndnt="False" />
+                      <var name="column_5" x="-9.4" y="0" use_indpndnt="False">
+                        <point name="point_1" x="26.1" y="26.8" can_empty="False">
+                          <var name="book_1" x="0" y="0" use_indpndnt="False" />
+                          <var name="camera_2" x="-18.1" y="0" use_indpndnt="False" />
+                          <var name="desklamp_1" x="-7.6" y="0" use_indpndnt="False" />
+                        </point>
+                      </var>
+                    </point>
+                  </var>
+                </point>
+              </var>
+            </point>
+          </var>
+        </point>
+      </var>
+      <var name="dead_man" x="148" y="54" bg="bg1" is_unique="True" use_indpndnt="False">
+        <point name="point_1" x="10" y="-53" can_empty="False">
+          <var name="chair_4" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_2" x="-82" y="55.4" can_empty="False">
+          <var name="watch_1" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_3" x="-120" y="-54" can_empty="True">
+          <var name="bed_6" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_4" x="73.3" y="-53.6" can_empty="False">
+          <var name="case_3" x="0" y="0" use_indpndnt="True" />
+        </point>
+      </var>
+      <var name="cycle_2" x="18" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="150.6" y="43.3" can_empty="False">
+          <var name="punchingball" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="-29.4" y="73.5" can_empty="False">
+              <var name="shelf_2" x="0" y="0" use_indpndnt="True" />
+            </point>
+            <point name="point_2" x="20" y="-43.3" can_empty="False">
+              <var name="sport_bag" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="-129.5" y="90.1" can_empty="False">
+                  <var name="poster_1" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+              <var name="guitar" x="-56.9" y="0" use_indpndnt="False">
+                <point name="point_1" x="58.4" y="0" can_empty="False">
+                  <var name="fallen_stand" x="0" y="0" use_indpndnt="False" />
+                </point>
+                <point name="point_2" x="-93.9" y="82.7" can_empty="False">
+                  <var name="plazma" x="-23.27275" y="-4.654541" use_indpndnt="False" />
+                  <var name="hand" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+            </point>
+          </var>
+          <var name="bed_6" x="7.4" y="-43" use_indpndnt="False">
+            <point name="point_1" x="-45.2" y="0" can_empty="False">
+              <var name="palm_1" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="-60.6" y="0" can_empty="False">
+                  <var name="bag" x="0" y="0" use_indpndnt="False" />
+                  <var name="t_shirt_4" x="111.2328" y="46.73362" use_indpndnt="False" />
+                  <var name="shelf_8" x="128.172" y="65.7056" use_indpndnt="True" />
+                </point>
+                <point name="point_2" x="-68.2" y="155.5" can_empty="False">
+                  <var name="ceilinglight_22" x="0" y="0" use_indpndnt="False">
+                    <point name="point_1" x="151" y="0" can_empty="False">
+                      <var name="ceilinglight_22" x="0" y="0" use_indpndnt="False" />
+                    </point>
+                  </var>
+                </point>
+              </var>
+              <var name="case_66" x="42.88118" y="76.95123" use_indpndnt="False">
+                <point name="point_1" x="-47.8" y="-11.3" can_empty="False">
+                  <var name="cuckoo" x="0" y="0" use_indpndnt="False" />
+                  <var name="pictures_4" x="-71.62486" y="9.275159" use_indpndnt="False" />
+                </point>
+                <point name="point_2" x="62.1" y="37.7" can_empty="False">
+                  <var name="shparkling" x="0" y="0" use_indpndnt="False">
+                    <point name="point_1" x="-23.1" y="-37" can_empty="False">
+                      <var name="alarmclock" x="0" y="0" use_indpndnt="False" />
+                      <var name="toy_2" x="-27.8048" y="36.46092" use_indpndnt="False" />
+                      <var name="floorlamp_6" x="-27.8048" y="36.46092" use_indpndnt="False" />
+                    </point>
+                  </var>
+                  <var name="sport_bag" x="-57.7" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+            </point>
+          </var>
+          <var name="piano" x="-27.31018" y="-42.76883" use_indpndnt="False">
+            <point name="point_1" x="93.7" y="67.9" can_empty="False">
+              <var name="book_1" x="0" y="0" use_indpndnt="False" />
+              <var name="cup_1" x="-89.66734" y="-7.629395E-06" use_indpndnt="False" />
+              <var name="hand" x="14.15797" y="-7.079018" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="-92.7" y="88.7" can_empty="False">
+              <var name="sideboard_10" x="0" y="0" use_indpndnt="True" />
+            </point>
+          </var>
+        </point>
+      </var>
+      <var name="floorlamp_13" x="230.5" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="-84" y="0" can_empty="False">
+          <var name="bed_12" x="-66.6" y="0" use_indpndnt="False">
+            <point name="point_1" x="-61.5" y="0" can_empty="False">
+              <var name="shelving_2" x="-2.8" y="0" use_indpndnt="True" />
+              <var name="warbdone_4" x="-9.7" y="0" use_indpndnt="True" />
+            </point>
+            <point name="point_2" x="65" y="118.9" can_empty="True">
+              <var name="watch_3" x="-6.1" y="0" use_indpndnt="False" />
+              <var name="walllamp_3" x="-9.5" y="-29.7" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="case_53" x="-130" y="0" use_indpndnt="False">
+            <point name="point_1" x="97" y="0" can_empty="False">
+              <var name="chair_3" x="39" y="0" use_indpndnt="False">
+                <point name="point_1" x="-35" y="103" can_empty="False">
+                  <var name="sideboard_11" x="0" y="0" use_indpndnt="True" />
+                </point>
+              </var>
+              <var name="bed_32" x="-18" y="0" use_indpndnt="False">
+                <point name="point_1" x="79.9" y="50.8" can_empty="False">
+                  <var name="t_shirt_3" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+            </point>
+            <point name="point_2" x="10.9" y="102.4" can_empty="False">
+              <var name="box_1" x="-2.9" y="-1.3" use_indpndnt="False" />
+              <var name="desklamp_7" x="19.4" y="-1.3" use_indpndnt="False" />
+              <var name="glass" x="-2.9" y="-1.3" use_indpndnt="False" />
+              <var name="iron" x="31" y="-1.3" use_indpndnt="False" />
+            </point>
+          </var>
+        </point>
+      </var>
+      <var name="table_11" x="130" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="-24.3" y="0" can_empty="False">
+          <var name="chair_5" x="0" y="0" use_indpndnt="False" />
+          <var name="chair_12" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_2" x="-99.1" y="0" can_empty="False">
+          <var name="case_17" x="-4.7" y="0" use_indpndnt="True">
+          </var>
+          <var name="warbdone_5" x="-10.2" y="0" use_indpndnt="True" />
+        </point>
+        <point name="point_3" x="12.9" y="43.7" can_empty="False">
+          <var name="iron" x="39" y="0" use_indpndnt="False" />
+          <var name="retroradio" x="14.4" y="0" use_indpndnt="False" />
+          <var name="teapot" x="44.4" y="0" use_indpndnt="False" />
+          <var name="watch_7" x="-0.7" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_4" x="25.7" y="105.5" can_empty="False">
+          <var name="shelf_1" x="-39.6" y="-13.9" use_indpndnt="False">
+            <point name="point_1" x="66.4" y="22" can_empty="False">
+              <var name="shelf_1" x="0" y="0" use_indpndnt="True" />
+            </point>
+            <point name="point_2" x="4.9" y="13.6" can_empty="False">
+              <var name="glass" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="shelf_7" x="-10.6" y="-12.2" use_indpndnt="True" />
+          <var name="case_61" x="-51.83443" y="-8.690659" use_indpndnt="True" />
+        </point>
+      </var>
+      <var name="table_2" x="21" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="46.6" y="52" can_empty="False">
+          <var name="videocamera" x="0" y="-7.4" use_indpndnt="False">
+            <point name="point_1" x="65" y="-45" can_empty="False">
+              <var name="bed_32" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="143.4" y="114" can_empty="False">
+              <var name="ceilinglight_9" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="-93.8" y="0" can_empty="False">
+                  <var name="ceilinglight_9" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+            </point>
+            <point name="point_3" x="-29.6" y="64.7" can_empty="True">
+              <var name="watch_2" x="15.75034" y="13.71353" use_indpndnt="False" />
+              <var name="watch_6" x="12.2" y="4.8" use_indpndnt="False" />
+            </point>
+            <point name="point_4" x="-57.1" y="0" can_empty="True">
+              <var name="box_1" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="retromixer" x="11.8" y="-7.4" use_indpndnt="False">
+            <point name="point_1" x="-5.8" y="-0.9" can_empty="False">
+              <var name="projector" x="-47.5" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="34.8" y="-44.9" can_empty="False">
+              <var name="column_4" x="24.9" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_3" x="89.4" y="-44.3" can_empty="False">
+              <var name="column_5" x="12.5" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_4" x="178.4" y="-44.9" can_empty="True">
+              <var name="column_4" x="8.3" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_5" x="61.6" y="21.7" can_empty="False">
+              <var name="cup_3" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_6" x="114.2" y="-18.2" can_empty="False">
+              <var name="cup_4" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_7" x="105.8" y="-18" can_empty="False">
+              <var name="cup_1" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_8" x="96" y="10.2" can_empty="False">
+              <var name="blood_2" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_9" x="-57" y="26.2" can_empty="True">
+              <var name="hand" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="bed_21" x="77.85873" y="-50.81215" use_indpndnt="False">
+            <point name="point_1" x="0" y="-7.8" can_empty="False">
+              <var name="rocket_1" x="-109.5" y="51.39603" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="-54.5" y="43" can_empty="False">
+              <var name="rocket_2" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_3" x="-123.8" y="99.3" can_empty="False">
+              <var name="shelf_6" x="0" y="0" use_indpndnt="True" />
+            </point>
+          </var>
+        </point>
+      </var>
+      <var name="case_35" x="21" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="54" y="32.9" can_empty="False">
+          <var name="chair_9" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="-29.3" y="0" can_empty="False">
+              <var name="chair_10" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="148.5" y="-32" can_empty="False">
+              <var name="table_15" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="-0.8" y="29.2" can_empty="False">
+                  <var name="box_1" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+            </point>
+            <point name="point_3" x="62.1" y="-33.2" can_empty="False">
+              <var name="book_1" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="0" y="21.9" can_empty="False">
+                  <var name="glass" x="0" y="0" use_indpndnt="False" />
+                </point>
+                <point name="point_2" x="0" y="0" can_empty="True">
+                  <var name="case_48" x="25.1" y="0" use_indpndnt="False" />
+                </point>
+                <point name="point_3" x="43.1" y="0" can_empty="False">
+                  <var name="book_2" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+            </point>
+            <point name="point_4" x="83.9" y="121.7" can_empty="False">
+              <var name="ceilinglight_3" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="candle_3" x="-47.5" y="0" use_indpndnt="False">
+            <point name="point_1" x="45.7" y="0" can_empty="False">
+              <var name="candle_3" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="14.8" y="0" can_empty="False">
+              <var name="cup_1" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_3" x="54.6" y="0" can_empty="False">
+              <var name="cup_3" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_4" x="93.7" y="-32.2" can_empty="False">
+              <var name="bed_32" x="9.4" y="0" use_indpndnt="False" />
+              <var name="bed_20" x="17.3" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_5" x="115.4" y="33" can_empty="False">
+              <var name="pictures_6" x="20" y="0" use_indpndnt="False" />
+              <var name="watch_5" x="41.7" y="47.3" use_indpndnt="False" />
+            </point>
+            <point name="point_6" x="127.5" y="142.5" can_empty="False">
+              <var name="ceilinglight_23" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="case_35" x="-47.5" y="0" use_indpndnt="False">
+            <point name="point_1" x="96.7" y="-32.2" can_empty="False">
+              <var name="chair_6" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="27.6" y="0" can_empty="False">
+                  <var name="chair_8" x="0" y="0" use_indpndnt="False" />
+                </point>
+                <point name="point_2" x="33.8" y="29.3" can_empty="False">
+                  <var name="chair_10" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+              <var name="column_1" x="8.1" y="0" use_indpndnt="False">
+                <point name="point_1" x="24.2" y="0" can_empty="False">
+                  <var name="column_1" x="0" y="0" use_indpndnt="False" />
+                </point>
+                <point name="point_2" x="-1.3" y="29.2" can_empty="False">
+                  <var name="column_5" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+            </point>
+            <point name="point_2" x="-4.4" y="32.7" can_empty="False">
+              <var name="case_34" x="0" y="0" use_indpndnt="False" />
+              <var name="case_3" x="41.8" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_3" x="129.8" y="143" can_empty="True">
+              <var name="ceilinglight_4" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_4" x="176" y="-32" can_empty="False">
+              <var name="table_8" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="0" y="38" can_empty="False">
+                  <var name="table_8" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+              <var name="case_11" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+        </point>
+      </var>
+      <var name="bed_30" x="43" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="0" y="0" can_empty="False">
+          <var name="blood_3" x="-45" y="0" use_indpndnt="False">
+            <point name="point_1" x="93" y="105.4" can_empty="False">
+              <var name="watch_4" x="0" y="0" use_indpndnt="False" />
+              <var name="photo" x="7.2" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="warbdone_2" x="154.7" y="0" use_indpndnt="True" />
+          <var name="case_55" x="154.7" y="0" use_indpndnt="True" />
+          <var name="case_16" x="154.7" y="0" use_indpndnt="True" />
+          <var name="case_2" x="154.7" y="0" use_indpndnt="True" />
+        </point>
+        <point name="point_2" x="0" y="154.6" can_empty="False">
+          <var name="ceilinglight_2" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="236.7" y="0" can_empty="False">
+              <var name="ceilinglight_2" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="121.1" y="0" can_empty="False">
+              <var name="ceilinglight_2" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="ceilinglight_18" x="97.4" y="7.9" use_indpndnt="False" />
+          <var name="ceilinglight_20" x="108.9" y="0.5" use_indpndnt="False" />
+        </point>
+      </var>
+      <var name="chair_4" x="18" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="186.1" y="0" can_empty="False">
+          <var name="case_43" x="-110" y="0" use_indpndnt="True" />
+          <var name="bed_21" x="-100" y="0" use_indpndnt="False">
+            <point name="point_1" x="-93" y="106" can_empty="False">
+              <var name="shelf_2" x="0" y="0" use_indpndnt="True" />
+            </point>
+          </var>
+          <var name="floorlamp_13" x="-100" y="0" use_indpndnt="False">
+            <point name="point_1" x="48" y="0" can_empty="False">
+              <var name="chair_10" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="31.6" y="0" can_empty="False">
+                  <var name="table_6" x="0" y="0" use_indpndnt="True" />
+                </point>
+              </var>
+              <var name="table_14" x="-11" y="0" use_indpndnt="True" />
+            </point>
+          </var>
+          <var name="bed_11" x="-25.4" y="0" use_indpndnt="False">
+            <point name="point_1" x="-69.3" y="0" can_empty="False">
+              <var name="case_10" x="0" y="0" use_indpndnt="True" />
+            </point>
+            <point name="point_2" x="-100.4" y="0" can_empty="False">
+              <var name="floorlamp_8" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+        </point>
+        <point name="point_2" x="60" y="161" can_empty="False">
+          <var name="ceilinglight_15" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="182" y="0" can_empty="False">
+              <var name="ceilinglight_15" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+        </point>
+      </var>
+      <var name="bed_4" x="13" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="182" y="0" can_empty="False">
+          <var name="rocket_1" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="-19.8" y="80.3" can_empty="False">
+              <var name="shelf_3" x="0" y="0" use_indpndnt="True" />
+              <var name="shelf_5" x="0" y="0" use_indpndnt="True" />
+            </point>
+          </var>
+          <var name="box_1" x="0" y="0" use_indpndnt="False" />
+          <var name="globus" x="0" y="0" use_indpndnt="False" />
+          <var name="rocket_2" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="16.7" y="0" can_empty="False">
+              <var name="rocket_1" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="case_42" x="-32" y="0" use_indpndnt="True" />
+        </point>
+        <point name="point_2" x="78" y="155" can_empty="False">
+          <var name="ceilinglight_27" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="167" y="0" can_empty="False">
+              <var name="ceilinglight_27" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="ceilinglight_25" x="58.35226" y="16.72365" use_indpndnt="False" />
+        </point>
+      </var>
+      <var name="bed_25" x="75" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="132.8" y="141.4" can_empty="False">
+          <var name="walllamp_7" x="-94.9" y="-36" use_indpndnt="False">
+            <point name="point_1" x="91.9" y="0" can_empty="False">
+              <var name="walllamp_7" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="walllamp_9" x="29" y="21" use_indpndnt="False">
+            <point name="point_1" x="-164" y="0" can_empty="False">
+              <var name="walllamp_9" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="blood_3" x="-207.4919" y="-141.1681" use_indpndnt="False" />
+        </point>
+        <point name="point_2" x="-69.1" y="0" can_empty="False">
+          <var name="warbdone_3" x="0" y="0" use_indpndnt="True" />
+          <var name="case_11" x="0" y="0" use_indpndnt="True" />
+          <var name="case_22" x="11.2" y="0" use_indpndnt="True" />
+        </point>
+      </var>
+      <var name="bed_6" x="105.4" y="1" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="2" y="93" can_empty="False">
+          <var name="case_66" x="0" y="0" use_indpndnt="True" />
+          <var name="shelf_7" x="19.3" y="-19.7" use_indpndnt="True" />
+          <var name="sideboard_12" x="0.8381271" y="0.01100159" use_indpndnt="True" />
+        </point>
+        <point name="point_2" x="-79.5" y="0" can_empty="False">
+          <var name="shelving_2" x="0" y="0" use_indpndnt="True" />
+          <var name="case_57" x="-9.2" y="0" use_indpndnt="True" />
+          <var name="case_56" x="-9.2" y="0" use_indpndnt="True" />
+          <var name="case_51" x="-12" y="0" use_indpndnt="True" />
+        </point>
+        <point name="point_3" x="67.5" y="161.9" can_empty="False">
+          <var name="ceilinglight_19" x="0" y="0" use_indpndnt="False" />
+          <var name="ceilinglight_17" x="-36.1" y="0" use_indpndnt="False" />
+          <var name="ceilinglight_16" x="-5.30378" y="-7.699051" use_indpndnt="False" />
+        </point>
+      </var>
+      <var name="floorlamp_15" x="105.4" y="1" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="0" y="0" can_empty="False">
+          <var name="bed_6" x="25" y="0" use_indpndnt="False">
+            <point name="point_1" x="-117" y="0" can_empty="False">
+              <var name="warbdone_4" x="0" y="0" use_indpndnt="True" />
+              <var name="case_3" x="20" y="0" use_indpndnt="True" />
+              <var name="case_4" x="20" y="0" use_indpndnt="True" />
+            </point>
+            <point name="point_2" x="41.8" y="26" can_empty="False">
+              <var name="women_bag" x="0" y="0" use_indpndnt="False" />
+              <var name="swords" x="-25.29641" y="58.85295" use_indpndnt="False" />
+              <var name="t_shirt_2" x="-25.29641" y="21.1664" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="chair_2" x="-85.6" y="0" use_indpndnt="False">
+            <point name="point_1" x="114.1" y="0" can_empty="False">
+              <var name="sideboard_8" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="0" y="45.6" can_empty="False">
+                  <var name="sideboard_8" x="0" y="0" use_indpndnt="True" />
+                </point>
+                <point name="point_2" x="39.3" y="2" can_empty="False">
+                  <var name="book_1" x="0" y="0" use_indpndnt="False" />
+                  <var name="desklamp_23" x="20.8" y="23.1" use_indpndnt="False" />
+                  <var name="headphones" x="-20.5" y="23.1" use_indpndnt="False" />
+                </point>
+                <point name="point_3" x="80.3" y="26.7" can_empty="False">
+                  <var name="glass" x="0" y="0" use_indpndnt="False" />
+                  <var name="iphone_1" x="22.8" y="0" use_indpndnt="False" />
+                  <var name="gamepad" x="0.7" y="-24.4" use_indpndnt="False" />
+                </point>
+              </var>
+            </point>
+            <point name="point_2" x="-5" y="94" can_empty="False">
+              <var name="shelf_1" x="0" y="0" use_indpndnt="True" />
+              <var name="pictures_1" x="-5" y="-16" use_indpndnt="False" />
+            </point>
+          </var>
+        </point>
+      </var>
+      <var name="bed_23" x="78.2" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="-58.2" y="0" can_empty="False">
+          <var name="column_2" x="12.8" y="0" use_indpndnt="False">
+            <point name="point_1" x="4.8" y="41.9" can_empty="False">
+              <var name="book_1" x="0" y="0" use_indpndnt="False" />
+              <var name="cup_1" x="14.9" y="0" use_indpndnt="False" />
+              <var name="floorlamp_6" x="1.8" y="0" use_indpndnt="False" />
+              <var name="flower_2" x="1.8" y="0" use_indpndnt="False" />
+              <var name="photo" x="-2.1" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="floorlamp_2" x="21.2" y="0" use_indpndnt="False" />
+          <var name="warbdone_1" x="-15" y="0" use_indpndnt="True" />
+          <var name="table_8" x="-17.3" y="0" use_indpndnt="True" />
+          <var name="sideboard_6" x="-5.8" y="0" use_indpndnt="True" />
+        </point>
+        <point name="point_2" x="40.8" y="79.8" can_empty="False">
+          <var name="pictures_2" x="0" y="0" use_indpndnt="False" />
+          <var name="sideboard_7" x="-16.1" y="0" use_indpndnt="True" />
+          <var name="case_62" x="-9.5" y="12.4" use_indpndnt="True" />
+          <var name="watch_4" x="23.7" y="39.9" use_indpndnt="False" />
+          <var name="shelf_1" x="43.7" y="11.1" use_indpndnt="True" />
+        </point>
+        <point name="point_3" x="12.3" y="159.1" can_empty="False">
+          <var name="ceilinglight_12" x="-8" y="-11" use_indpndnt="False">
+            <point name="point_1" x="129.1" y="0" can_empty="False">
+              <var name="ceilinglight_12" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+          <var name="ceilinglight_8" x="-7.6" y="0" use_indpndnt="False">
+            <point name="point_1" x="126" y="0" can_empty="False">
+              <var name="ceilinglight_9" x="0" y="0" use_indpndnt="False" />
+              <var name="ceilinglight_8" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+        </point>
+      </var>
+      <var name="walllamp_4" x="38.2" y="98" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="-16.5" y="-97.2" can_empty="False">
+          <var name="chair_1" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="83.8" y="0" can_empty="False">
+              <var name="sideboard_9" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="0" y="48.1" can_empty="False">
+                  <var name="sideboard_9" x="0" y="-1.7" use_indpndnt="True" />
+                  <var name="bonsai" x="20.1" y="0.7" use_indpndnt="False" />
+                  <var name="boombox" x="53.7" y="0.7" use_indpndnt="False" />
+                </point>
+                <point name="point_2" x="2.2" y="1.9" can_empty="False">
+                  <var name="book_1" x="0" y="0" use_indpndnt="False" />
+                  <var name="headphones" x="16.9" y="0" use_indpndnt="False" />
+                  <var name="iron" x="36.66557" y="23.84417" use_indpndnt="False" />
+                  <var name="retroradio" x="78.7" y="23.8" use_indpndnt="False">
+                    <point name="point_1" x="-76.6" y="0" can_empty="False">
+                      <var name="toy" x="-2.2" y="-0.6" use_indpndnt="False" />
+                    </point>
+                  </var>
+                  <var name="gramophone_1" x="36.3" y="23.8" use_indpndnt="False">
+                    <point name="point_1" x="41.6" y="-23.6" can_empty="False">
+                      <var name="book_4" x="0" y="0" use_indpndnt="False" />
+                    </point>
+                  </var>
+                </point>
+              </var>
+              <var name="case_44" x="-19" y="0" use_indpndnt="True" />
+              <var name="bed_31" x="15" y="0" use_indpndnt="False">
+                <point name="point_1" x="57" y="115" can_empty="False">
+                  <var name="watch_3" x="0" y="0" use_indpndnt="False" />
+                  <var name="shelf_5" x="17" y="-23" use_indpndnt="False" />
+                  <var name="shelf_4" x="-56" y="-23" use_indpndnt="False" />
+                </point>
+              </var>
+            </point>
+          </var>
+        </point>
+        <point name="point_2" x="125.7" y="77.1" can_empty="False">
+          <var name="ceilinglight_4" x="0" y="0" use_indpndnt="False" />
+          <var name="ceilinglight_14" x="0" y="-13.2" use_indpndnt="False" />
+          <var name="ceilinglight_16" x="0" y="-19.57" use_indpndnt="False" />
+        </point>
+      </var>
+      <var name="pc" x="129.2" y="45.3" bg="any" is_unique="True" use_indpndnt="False">
+        <point name="point_1" x="-13.7" y="-44.4" can_empty="False">
+          <var name="case_15" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="-50.6" y="0" can_empty="False">
+              <var name="chair_2" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="122.2" y="0" can_empty="False">
+              <var name="shelving_1" x="0" y="0" use_indpndnt="True" />
+            </point>
+            <point name="point_3" x="42" y="154.1" can_empty="False">
+              <var name="ceilinglight_28" x="0" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+        </point>
+      </var>
+      <var name="camera_table" x="27" y="0" bg="any" is_unique="True" use_indpndnt="False">
+        <point name="point_1" x="134.4" y="106.5" can_empty="False">
+          <var name="cup_4" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_2" x="62.2" y="130.7" can_empty="False">
+          <var name="watch_2" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_3" x="154.5" y="0" can_empty="False">
+          <var name="chair_2" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_4" x="223.7" y="0" can_empty="False">
+          <var name="manecan" x="0" y="0" use_indpndnt="False" />
+        </point>
+      </var>
+      <var name="mummy_girl" x="106.2" y="0" bg="any" is_unique="True" use_indpndnt="False">
+        <point name="point_1" x="61.6" y="0" can_empty="False">
+          <var name="table_12" x="0" y="0" use_indpndnt="True" />
+        </point>
+        <point name="point_2" x="-78" y="0" can_empty="False">
+          <var name="warbdone_1" x="0" y="0" use_indpndnt="True" />
+        </point>
+        <point name="point_3" x="8.9" y="78.7" can_empty="False">
+          <var name="paper" x="0" y="0" use_indpndnt="False" />
+        </point>
+      </var>
+      <var name="macbook" x="124.5" y="50.5" bg="any" is_unique="True" use_indpndnt="False">
+        <point name="point_1" x="0" y="-50.8" can_empty="False">
+          <var name="case_50" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_2" x="61.3" y="1" can_empty="False">
+          <var name="book_1" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_3" x="-102.7" y="-50.8" can_empty="False">
+          <var name="stand" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_4" x="-70.2" y="-50.3" can_empty="False">
+          <var name="basket" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_5" x="40.3" y="125.2" can_empty="False">
+          <var name="ceilinglight_23" x="0" y="0" use_indpndnt="False" />
+        </point>
+      </var>
+    </main_point>
+  </left>
+  <right>
+    <main_point x="0" y="0" can_empty="False">
+      <var name="floorlamp_3" x="188.9" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="-90.8" y="0" can_empty="False">
+          <var name="bed_6" x="0" y="0" use_indpndnt="False" />
+          <var name="bed_20" x="-10.5" y="0" use_indpndnt="False" />
+          <var name="chair_2" x="55.4" y="0" use_indpndnt="False">
+            <point name="point_1" x="-54.5" y="0" can_empty="False">
+              <var name="case_3" x="0" y="0" use_indpndnt="True" />
+            </point>
+          </var>
+        </point>
+        <point name="point_2" x="53.1" y="0" can_empty="False">
+          <var name="case_14" x="-14.8" y="0" use_indpndnt="True" />
+          <var name="case_23" x="34" y="0" use_indpndnt="True" />
+          <var name="case_49" x="-6.4" y="0" use_indpndnt="True" />
+          <var name="shelving_3" x="-2.6" y="0" use_indpndnt="True" />
+          <var name="cycle_2" x="-13.3" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_3" x="-57.3" y="115.6" can_empty="False">
+          <var name="watch_6" x="0" y="0" use_indpndnt="False" />
+          <var name="shelf_7" x="-29.6" y="-40.8" use_indpndnt="True" />
+          <var name="hand" x="-29.6" y="-26" use_indpndnt="False" />
+        </point>
+        <point name="point_4" x="-23.3" y="155.9" can_empty="False">
+          <var name="ceilinglight_6" x="0" y="0" use_indpndnt="False" />
+          <var name="ceilinglight_18" x="-12.9" y="9.2" use_indpndnt="False" />
+        </point>
+      </var>
+      <var name="floorlamp_13" x="63" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="22.5" y="0" can_empty="False">
+          <var name="box_1" x="0" y="0" use_indpndnt="False" />
+          <var name="bonsai" x="0" y="0" use_indpndnt="False" />
+          <var name="book_1" x="0" y="0" use_indpndnt="False" />
+          <var name="case_3" x="7.6" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_2" x="89.2" y="0" can_empty="False">
+          <var name="bed_1" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="0" y="87.3" can_empty="False">
+              <var name="case_64" x="-15.7" y="0" use_indpndnt="False">
+                <point name="point_1" x="34.4" y="17.6" can_empty="False">
+                  <var name="case_62" x="0" y="0" use_indpndnt="True" />
+                </point>
+              </var>
+              <var name="pictures_5" x="19.4273" y="-19.41248" use_indpndnt="False" />
+              <var name="walllamp_9" x="35.1" y="-9.2" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="112.9" y="0" can_empty="False">
+              <var name="box_1" x="9.2" y="0" use_indpndnt="False" />
+              <var name="column_5" x="13.6" y="0" use_indpndnt="False">
+                <point name="point_1" x="0" y="26.5" can_empty="True">
+                  <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+                  <var name="desklamp_20" x="0" y="0" use_indpndnt="False" />
+                  <var name="flower_2" x="12.8" y="0" use_indpndnt="False" />
+                  <var name="box_1" x="-3.6" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+              <var name="table_2" x="-6.5" y="0" use_indpndnt="True" />
+              <var name="sideboard_1" x="9.3" y="0" use_indpndnt="True" />
+            </point>
+          </var>
+          <var name="bed_21" x="-8.2" y="0" use_indpndnt="False">
+            <point name="point_1" x="155.3" y="0" can_empty="False">
+              <var name="case_4" x="-4.3" y="0" use_indpndnt="True" />
+              <var name="rocket_1" x="0" y="0" use_indpndnt="False" />
+              <var name="flower_2" x="0" y="0" use_indpndnt="False" />
+              <var name="case_1" x="-1.6" y="0" use_indpndnt="True" />
+            </point>
+          </var>
+        </point>
+        <point name="point_3" x="85" y="164" can_empty="False">
+          <var name="ceilinglight_17" x="0" y="0" use_indpndnt="False" />
+          <var name="ceilinglight_1" x="12.9" y="-8.8" use_indpndnt="False" />
+          <var name="ceilinglight_9" x="12.9" y="-4.9" use_indpndnt="False" />
+        </point>
+      </var>
+      <var name="manecan" x="63" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="42.5" y="0" can_empty="False">
+          <var name="bed_12" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="148.2" y="0" can_empty="False">
+              <var name="case_33" x="-7.7" y="0" use_indpndnt="True" />
+              <var name="case_52" x="-7.7" y="0" use_indpndnt="True" />
+              <var name="sideboard_1" x="1.3" y="0" use_indpndnt="True" />
+              <var name="warbdone_5" x="1.3" y="0" use_indpndnt="True" />
+            </point>
+            <point name="point_2" x="16.6" y="74.4" can_empty="False">
+              <var name="case_66" x="0" y="0" use_indpndnt="True" />
+              <var name="pictures_1" x="16.5" y="0" use_indpndnt="False" />
+              <var name="shelf_8" x="16.5" y="0" use_indpndnt="True" />
+              <var name="shelf_6" x="4.6" y="13.8" use_indpndnt="True" />
+            </point>
+          </var>
+          <var name="bed_5" x="94.7" y="0" use_indpndnt="False">
+            <point name="point_1" x="-108.4" y="0" can_empty="False">
+              <var name="table_12" x="0" y="0" use_indpndnt="True" />
+              <var name="warbdone_4" x="0" y="0" use_indpndnt="True" />
+            </point>
+            <point name="point_2" x="16.6" y="89.2" can_empty="False">
+              <var name="case_61" x="0" y="0" use_indpndnt="True" />
+              <var name="photo" x="37.7" y="0" use_indpndnt="False" />
+              <var name="shelf_2" x="34" y="0" use_indpndnt="True" />
+            </point>
+          </var>
+          <var name="chair_5" x="-9.2" y="0" use_indpndnt="False">
+            <point name="point_1" x="125.9" y="0" can_empty="False">
+              <var name="bed_1" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="-62.5" y="0" can_empty="False">
+                  <var name="case_11" x="0" y="0" use_indpndnt="True" />
+                  <var name="case_1" x="11.4" y="0" use_indpndnt="True" />
+                  <var name="case_22" x="4.2" y="0" use_indpndnt="True" />
+                </point>
+                <point name="point_2" x="44.2" y="110.5" can_empty="False">
+                  <var name="watch_1" x="0" y="0" use_indpndnt="False" />
+                  <var name="walllamp_6" x="-12.8" y="-12.8" use_indpndnt="False" />
+                  <var name="sideboard_11" x="-34.9" y="-12.8" use_indpndnt="True" />
+                </point>
+              </var>
+              <var name="case_27" x="-48" y="0" use_indpndnt="True" />
+              <var name="case_54" x="-51.5" y="0" use_indpndnt="False">
+                <point name="point_1" x="15.9" y="102.2" can_empty="False">
+                  <var name="box_1" x="0" y="0" use_indpndnt="False" />
+                  <var name="boombox" x="0" y="0" use_indpndnt="False" />
+                  <var name="book_1" x="23.2" y="0" use_indpndnt="False" />
+                  <var name="flower_2" x="23.2" y="0" use_indpndnt="False" />
+                </point>
+                <point name="point_2" x="77.5" y="0" can_empty="False">
+                  <var name="floorlamp_5" x="31" y="0" use_indpndnt="False" />
+                  <var name="box_1" x="18.9" y="0" use_indpndnt="False" />
+                  <var name="rocket_1" x="24.6" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+            </point>
+          </var>
+          <var name="chair_11" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="31" y="0" can_empty="False">
+              <var name="table_11" x="0" y="0" use_indpndnt="True" />
+              <var name="table_9" x="8" y="0" use_indpndnt="True" />
+              <var name="box_1" x="15" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="123" y="0" can_empty="False">
+              <var name="bed_6" x="0" y="0" use_indpndnt="False" />
+              <var name="bed_29" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="24" y="86" can_empty="False">
+                  <var name="shelf_5" x="0" y="0" use_indpndnt="True" />
+                  <var name="shelf_3" x="0" y="0" use_indpndnt="True" />
+                </point>
+              </var>
+              <var name="case_55" x="17" y="0" use_indpndnt="True" />
+              <var name="shelving_2" x="17" y="0" use_indpndnt="True" />
+            </point>
+          </var>
+        </point>
+        <point name="point_2" x="97" y="175" can_empty="False">
+          <var name="ceilinglight_23" x="0" y="0" use_indpndnt="False" />
+        </point>
+      </var>
+      <var name="ceilinglight_10" x="163.9" y="149.5" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="-73.6" y="-149.3" can_empty="False">
+          <var name="bed_30" x="53" y="0" use_indpndnt="False">
+            <point name="point_1" x="135.2" y="0" can_empty="False">
+              <var name="floorlamp_3" x="0" y="0" use_indpndnt="False" />
+              <var name="floorlamp_7" x="13.9" y="0" use_indpndnt="False" />
+              <var name="case_2" x="13.9" y="0" use_indpndnt="True" />
+            </point>
+            <point name="point_2" x="2.3" y="77.3" can_empty="False">
+              <var name="shelf_6" x="0" y="0" use_indpndnt="True" />
+              <var name="shelf_7" x="0" y="0" use_indpndnt="True" />
+              <var name="pictures_3" x="29.35173" y="-19.31035" use_indpndnt="False" />
+            </point>
+            <point name="point_3" x="-62.6" y="0" can_empty="False">
+              <var name="case_23" x="0" y="0" use_indpndnt="True" />
+              <var name="case_17" x="-4.6" y="0" use_indpndnt="True" />
+              <var name="column_2" x="12.4" y="0" use_indpndnt="False">
+                <point name="point_1" x="0.9" y="40.9" can_empty="False">
+                  <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+                  <var name="amplifier" x="-4.6" y="0" use_indpndnt="False" />
+                  <var name="camera_2" x="13.2" y="0" use_indpndnt="False" />
+                  <var name="cup_3" x="13.2" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+              <var name="warbdone_2" x="-8.8" y="0" use_indpndnt="True" />
+            </point>
+          </var>
+          <var name="bed_24" x="-21" y="0" use_indpndnt="False">
+            <point name="point_1" x="191.9" y="0" can_empty="False">
+              <var name="case_36" x="-21.9" y="0" use_indpndnt="True" />
+              <var name="case_50" x="-21.9" y="0" use_indpndnt="True" />
+              <var name="case_60" x="-14.6" y="0" use_indpndnt="True" />
+              <var name="column_4" x="-14.6" y="0" use_indpndnt="False">
+                <point name="point_1" x="21.9" y="0" can_empty="False">
+                  <var name="case_4" x="0" y="0" use_indpndnt="True" />
+                </point>
+              </var>
+            </point>
+            <point name="point_2" x="45.1" y="56.4" can_empty="False">
+              <var name="pictures_7" x="0" y="0" use_indpndnt="False" />
+              <var name="sideboard_7" x="-36.9" y="10" use_indpndnt="True">
+              </var>
+              <var name="case_61" x="11.3" y="16.6" use_indpndnt="True" />
+            </point>
+          </var>
+          <var name="bed_7" x="-65.9" y="0" use_indpndnt="False">
+            <point name="point_1" x="132.5" y="0" can_empty="False">
+              <var name="box_1" x="0" y="0" use_indpndnt="False" />
+              <var name="boombox" x="0" y="0" use_indpndnt="False" />
+              <var name="bonsai" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_2" x="191.4" y="0" can_empty="False">
+              <var name="book_1" x="0" y="0" use_indpndnt="False">
+                <point name="point_1" x="-3.3" y="20.7" can_empty="True">
+                  <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+                  <var name="glass" x="10.6" y="0" use_indpndnt="False" />
+                </point>
+                <point name="point_2" x="33.6" y="0" can_empty="True">
+                  <var name="globus" x="-3.2" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+              <var name="box_1" x="0" y="0" use_indpndnt="False" />
+            </point>
+            <point name="point_3" x="268.1" y="0" can_empty="False">
+              <var name="case_21" x="-8.9" y="0" use_indpndnt="True" />
+              <var name="floorlamp_14" x="5.3" y="0" use_indpndnt="False" />
+              <var name="gramophone_2" x="5.3" y="0" use_indpndnt="False" />
+              <var name="rocket_2" x="-10.3" y="0" use_indpndnt="False" />
+              <var name="shelving_2" x="-9.4" y="0" use_indpndnt="True" />
+            </point>
+            <point name="point_4" x="107.8" y="94" can_empty="False">
+              <var name="case_63" x="0" y="-11.1" use_indpndnt="True" />
+              <var name="shelf_5" x="0" y="-11.1" use_indpndnt="True" />
+              <var name="pictures_6" x="-82.9" y="-32.3" use_indpndnt="True" />
+            </point>
+          </var>
+        </point>
+      </var>
+      <var name="chair_4" x="163.9" y="0" bg="any" is_unique="False" use_indpndnt="False">
+        <point name="point_1" x="29.9" y="0" can_empty="False">
+          <var name="bed_32" x="0" y="0" use_indpndnt="False">
+            <point name="point_1" x="42.3" y="121.9" can_empty="False">
+              <var name="corner_1" x="0" y="0" use_indpndnt="False" />
+              <var name="shelf_8" x="-40.7" y="-44" use_indpndnt="True" />
+              <var name="shelf_2" x="-40.7" y="-44" use_indpndnt="True" />
+            </point>
+          </var>
+          <var name="bed_4" x="0" y="0" use_indpndnt="False" />
+          <var name="case_44" x="0" y="0" use_indpndnt="True" />
+          <var name="bed_8" x="16.5" y="0" use_indpndnt="False">
+            <point name="point_1" x="2.6" y="70.3" can_empty="False">
+              <var name="case_66" x="0" y="16.5" use_indpndnt="True" />
+              <var name="sideboard_9" x="0" y="0" use_indpndnt="True" />
+              <var name="pictures_4" x="13" y="-8.7" use_indpndnt="False">
+                <point name="point_1" x="35.5" y="84.1" can_empty="False">
+                  <var name="walllamp_6" x="0" y="0" use_indpndnt="False" />
+                </point>
+              </var>
+            </point>
+          </var>
+        </point>
+        <point name="point_2" x="-70.5" y="0" can_empty="False">
+          <var name="box_1" x="0" y="0" use_indpndnt="False" />
+          <var name="case_29" x="-33.2" y="0" use_indpndnt="True" />
+          <var name="case_24" x="-5" y="0" use_indpndnt="True" />
+          <var name="case_59" x="-5" y="0" use_indpndnt="True" />
+          <var name="floorlamp_4" x="41.5" y="0" use_indpndnt="True">
+            <point name="point_1" x="-61.4" y="0" can_empty="False">
+              <var name="chair_1" x="0" y="0" use_indpndnt="False" />
+              <var name="cycle_2" x="-57.2" y="0" use_indpndnt="False" />
+              <var name="case_23" x="4.2" y="0" use_indpndnt="False" />
+            </point>
+          </var>
+        </point>
+        <point name="point_3" x="-7.8" y="163.1" can_empty="False">
+          <var name="ceilinglight_19" x="0" y="0" use_indpndnt="False" />
+          <var name="ceilinglight_18" x="0" y="0" use_indpndnt="False" />
+        </point>
+      </var>
+      <var name="tv" x="252" y="0" bg="any" is_unique="True" use_indpndnt="False">
+        <point name="point_1" x="-79.9" y="155.4" can_empty="False">
+          <var name="ceilinglight_22" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_2" x="-159.2" y="0" can_empty="False">
+          <var name="case_56" x="0" y="0" use_indpndnt="True" />
+        </point>
+        <point name="point_3" x="-71.1" y="0" can_empty="False">
+          <var name="chair_14" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_4" x="20.4" y="122.3" can_empty="True">
+          <var name="corner_1" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_6" x="27.2" y="43.7" can_empty="False">
+          <var name="rocket_1" x="0" y="0" use_indpndnt="False" />
+        </point>
+      </var>
+      <var name="chair_and_box" x="235.2" y="0" bg="bg1" is_unique="True" use_indpndnt="False">
+        <point name="point_1" x="-31.2" y="0" can_empty="False">
+          <var name="change_man" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_2" x="-75.8" y="156" can_empty="False">
+          <var name="ceilinglight_16" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_3" x="0" y="0" can_empty="False">
+          <var name="bed_6" x="-175.1" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_4" x="-173.4" y="74.5" can_empty="False">
+          <var name="case_66" x="0" y="0" use_indpndnt="True" />
+        </point>
+      </var>
+      <var name="med_bed_broken" x="43.3" y="0" bg="any" is_unique="True" use_indpndnt="False">
+        <point name="point_1" x="-43.1" y="38.5" can_empty="False">
+          <var name="blood_4" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_2" x="146.9" y="0" can_empty="False">
+          <var name="med_table_broken" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_3" x="191.2" y="0" can_empty="False">
+          <var name="med_locker_broken" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_4" x="116.1" y="91.7" can_empty="False">
+          <var name="med_kit" x="0" y="0" use_indpndnt="False" />
+        </point>
+      </var>
+      <var name="med_bed" x="43.3" y="0" bg="any" is_unique="True" use_indpndnt="False">
+        <point name="point_1" x="137.5" y="0" can_empty="False">
+          <var name="med_table" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_2" x="234.1" y="0" can_empty="False">
+          <var name="med_locker" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_3" x="107.3" y="95.6" can_empty="False">
+          <var name="med_kit" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_4" x="120" y="176.6" can_empty="False">
+          <var name="ceilinglight_4" x="0" y="0" use_indpndnt="False" />
+        </point>
+      </var>
+      <var name="electric_shield_2" x="277.1" y="108.6" bg="any" is_unique="True" use_indpndnt="False">
+        <point name="point_1" x="-33" y="-108.1" can_empty="False">
+          <var name="washingmachine_used" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_2" x="-34" y="-56.1" can_empty="False">
+          <var name="washingmachine" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_3" x="-87" y="-108.1" can_empty="False">
+          <var name="washingmachine" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_4" x="-87" y="-56.1" can_empty="False">
+          <var name="washingmachine" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_5" x="-140" y="-108.1" can_empty="False">
+          <var name="washingmachine" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_6" x="-140" y="-56.1" can_empty="False">
+          <var name="washingmachine" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_7" x="-267.9" y="-108.5" can_empty="False">
+          <var name="kitchentable_1" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_8" x="-133.5" y="-5.8" can_empty="False">
+          <var name="basket" x="0" y="0" use_indpndnt="False" />
+        </point>
+        <point name="point_9" x="-181" y="-58.7" can_empty="False">
+          <var name="iron_stay" x="0" y="0" use_indpndnt="False" />
+        </point>
+      </var>
+    </main_point>
+  </right>
+  <center>
+    <main_point x="0" y="0" can_empty="True">
+      <var name="box_1" x="91.1" y="0" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="cycle_1" x="65.9" y="0" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="ogn" x="144" y="0.2" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="hand" x="160.1186" y="34.59302" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="broken_tree" x="128" y="0" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="forgotten_shoe" x="128" y="0" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="tree" x="136.6" y="0" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="stand" x="91.3" y="0" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="paper" x="162.6" y="88.9" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="little_door" x="103.5" y="4.2" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="fallen_chair" x="103.5" y="0.2" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="fallen_fire_extinguisher" x="55.9" y="0.2" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="fallen_stand" x="104" y="0.2" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="cart" x="82.8" y="0.2" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="broken_shelf" x="217.7" y="0.2" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="broken_cupboard" x="168" y="0.2" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="nosmoking" x="131.5584" y="59.09801" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="food_trading_machine_broken" x="106.4" y="0" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="medic_trading_machine_broken" x="106.4" y="0" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="tech_trading_machine_broken" x="106.4" y="0" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="tech_trading_machine" x="106.4" y="0" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="medic_trading_machine" x="106.4" y="0" bg="any" is_unique="False" use_indpndnt="False" />
+      <var name="food_trading_machine" x="106.4" y="0" bg="any" is_unique="False" use_indpndnt="False" />
+    </main_point>
+  </center>
+  <indpndnt x="0" y="0" can_empty="False">
+    <var name="case_1" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="2.4" y="29.8" can_empty="True">
+        <var name="book_1" x="0" y="0" use_indpndnt="False" />
+        <var name="boombox" x="0" y="0" use_indpndnt="False" />
+        <var name="camera_2" x="23.4" y="0" use_indpndnt="False" />
+        <var name="candle_1" x="23.4" y="0" use_indpndnt="False" />
+        <var name="cup_2" x="7.2" y="0" use_indpndnt="False" />
+        <var name="desklamp_11" x="20.8" y="0" use_indpndnt="False" />
+        <var name="flower_1" x="6.7" y="0" use_indpndnt="False" />
+        <var name="phone" x="6.7" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_2" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="12.6" y="29" can_empty="False">
+        <var name="candle_2" x="-2.6" y="0" use_indpndnt="False" />
+        <var name="desklamp_6" x="1.2" y="0" use_indpndnt="False" />
+        <var name="desklamp_21" x="1.2" y="0" use_indpndnt="False" />
+        <var name="lavlamp_3" x="8.8" y="0" use_indpndnt="False" />
+        <var name="ring" x="-4.4" y="0" use_indpndnt="False" />
+        <var name="watch_7" x="-4.4" y="0" use_indpndnt="False" />
+        <var name="book_1" x="2.7" y="0" use_indpndnt="False" />
+        <var name="women_bag" x="-5.455896" y="0.6119843" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_3" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="5.6" y="46.2" can_empty="False">
+        <var name="phone" x="0" y="0" use_indpndnt="False" />
+        <var name="toy" x="0" y="0" use_indpndnt="False" />
+        <var name="walllamp_8" x="24" y="0" use_indpndnt="False" />
+        <var name="ring" x="24" y="0" use_indpndnt="False" />
+        <var name="retroradio" x="5.9" y="0" use_indpndnt="False" />
+        <var name="shparkling" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_4" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="5.6" y="60" can_empty="False">
+        <var name="bonsai" x="0" y="0" use_indpndnt="False" />
+        <var name="book_1" x="0" y="0" use_indpndnt="False" />
+        <var name="candle_3" x="0" y="0" use_indpndnt="False" />
+        <var name="column_1" x="6.1" y="0" use_indpndnt="False" />
+        <var name="cup_1" x="25.1" y="0" use_indpndnt="False" />
+        <var name="desklamp_8" x="20.5" y="0" use_indpndnt="False" />
+        <var name="desklamp_20" x="5.9" y="0" use_indpndnt="False" />
+        <var name="floorlamp_6" x="19.8" y="0" use_indpndnt="False" />
+        <var name="pencil" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_7" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="13.1" y="48.8" can_empty="True">
+        <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+        <var name="camera_2" x="20.1" y="0" use_indpndnt="False" />
+        <var name="candle_1" x="14.7" y="0" use_indpndnt="False" />
+        <var name="column_5" x="-2.6" y="0" use_indpndnt="False" />
+        <var name="glass" x="13.8" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="102.8" y="48.7" can_empty="True">
+        <var name="bonsai" x="-18.7" y="0" use_indpndnt="False" />
+        <var name="box_1" x="-22.3" y="0" use_indpndnt="False" />
+        <var name="cup_3" x="7.7" y="0" use_indpndnt="False" />
+        <var name="desklamp_8" x="7.7" y="0" use_indpndnt="False" />
+        <var name="desklamp_24" x="-7.3" y="0" use_indpndnt="False" />
+        <var name="globus" x="-19.1" y="0" use_indpndnt="False" />
+        <var name="toy_2" x="-18.7" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_9" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="9.7" y="89.8" can_empty="False">
+        <var name="amplifier" x="0" y="0" use_indpndnt="False" />
+        <var name="desklamp_6" x="0" y="0" use_indpndnt="False" />
+        <var name="gramophone_1" x="0" y="0" use_indpndnt="False" />
+        <var name="iron" x="15" y="0" use_indpndnt="False" />
+        <var name="lavlamp_1" x="6.3" y="0" use_indpndnt="False" />
+        <var name="phone" x="16.6" y="0" use_indpndnt="False" />
+        <var name="recorder" x="-6.9" y="0" use_indpndnt="False" />
+        <var name="rocket_1" x="23.4" y="0" use_indpndnt="False" />
+        <var name="toy_1" x="0" y="0" use_indpndnt="False" />
+        <var name="t_shirt_2" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_10" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="13.2" y="63" can_empty="True">
+        <var name="column_3" x="2.4" y="0" use_indpndnt="False" />
+        <var name="desklamp_7" x="2.4" y="0" use_indpndnt="False" />
+        <var name="desklamp_23" x="-7.6" y="0" use_indpndnt="False" />
+        <var name="headphones" x="20.7" y="0" use_indpndnt="False" />
+        <var name="photo" x="7.8" y="0" use_indpndnt="False" />
+        <var name="printer" x="7.8" y="0" use_indpndnt="False" />
+        <var name="ring" x="-1.5" y="0" use_indpndnt="False" />
+        <var name="t_shirt_4" x="13.9" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_11" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="14.2" y="63" can_empty="False">
+        <var name="cup_3" x="3" y="0" use_indpndnt="False" />
+        <var name="desklamp_13" x="19.8" y="0" use_indpndnt="False" />
+        <var name="gamepad" x="19.8" y="0" use_indpndnt="False" />
+        <var name="iphone_2" x="6" y="0" use_indpndnt="False" />
+        <var name="ogn" x="27.1" y="0" use_indpndnt="False" />
+        <var name="alarmclock" x="3" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_12" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="33.8" y="43.9" can_empty="False">
+        <var name="amplifier" x="-23.4" y="0" use_indpndnt="False" />
+        <var name="camera_1" x="24.2" y="0" use_indpndnt="False" />
+        <var name="retromixer" x="41.2" y="0" use_indpndnt="False" />
+        <var name="toy" x="-15" y="0" use_indpndnt="False" />
+        <var name="toy_2" x="-23.4" y="0" use_indpndnt="False" />
+        <var name="book_1" x="24.2" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_13" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="9.3" y="43.7" can_empty="False">
+        <var name="gramophone_2" x="0" y="0" use_indpndnt="False" />
+        <var name="iron" x="53.4" y="0" use_indpndnt="False" />
+        <var name="sewingmachine" x="23.7" y="0" use_indpndnt="False" />
+        <var name="tuner_1" x="23.7" y="0" use_indpndnt="False" />
+        <var name="watch_7" x="7.3" y="0" use_indpndnt="False" />
+        <var name="shparkling" x="66.7" y="0" use_indpndnt="False" />
+        <var name="cup_bronze_3" x="66.7" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_14" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="16.5" y="44.3" can_empty="True">
+        <var name="book_1" x="0" y="0" use_indpndnt="False" />
+        <var name="box_1" x="0" y="0" use_indpndnt="False" />
+        <var name="candle_3" x="0" y="0" use_indpndnt="False" />
+        <var name="desklamp_12" x="57" y="0" use_indpndnt="False" />
+        <var name="floorlamp_6" x="-1.6" y="0" use_indpndnt="False" />
+        <var name="headphones" x="-1.6" y="0" use_indpndnt="False" />
+        <var name="phone" x="50.3" y="0" use_indpndnt="False" />
+        <var name="basket_used" x="36.5" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_15" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="27.8" y="43.9" can_empty="False">
+        <var name="book_1" x="47.3" y="0" use_indpndnt="False" />
+        <var name="box_1" x="-25.5" y="0" use_indpndnt="False" />
+        <var name="candle_1" x="44.5" y="0" use_indpndnt="False">
+          <point name="point_1" x="-50.5" y="0" can_empty="True">
+            <var name="candle_1" x="0" y="0" use_indpndnt="False" />
+          </point>
+          <point name="point_2" x="0" y="0" can_empty="True">
+            <var name="cup_4" x="-15.4" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="desklamp_7" x="24.9" y="0" use_indpndnt="False" />
+        <var name="alarmclock" x="47.3" y="0" use_indpndnt="False" />
+        <var name="sport_bag" x="-20" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_16" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="16.4" y="63.5" can_empty="False">
+        <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+        <var name="camera_2" x="25.7" y="0" use_indpndnt="False" />
+        <var name="desklamp_23" x="12.1" y="0" use_indpndnt="False" />
+        <var name="flower_2" x="12.1" y="0" use_indpndnt="False" />
+        <var name="lavlamp_2" x="12.1" y="0" use_indpndnt="False" />
+        <var name="ring" x="-5.6" y="0" use_indpndnt="False" />
+        <var name="flower_3" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_17" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="15.2" y="62.6" can_empty="True">
+        <var name="bonsai" x="0" y="0" use_indpndnt="False" />
+        <var name="candle_2" x="0" y="0" use_indpndnt="False" />
+        <var name="desklamp_2" x="12" y="0" use_indpndnt="False" />
+        <var name="flower_1" x="-6.6" y="0" use_indpndnt="False" />
+        <var name="phone" x="10" y="0" use_indpndnt="False" />
+        <var name="cup_gold_3" x="0" y="0" use_indpndnt="False">
+          <point name="point_1" x="19.5" y="0" can_empty="True">
+            <var name="cup_bronze_2" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+      </point>
+    </var>
+    <var name="case_21" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="9.7" y="90.1" can_empty="False">
+        <var name="book_1" x="0" y="0" use_indpndnt="False" />
+        <var name="box_1" x="-11.4" y="0" use_indpndnt="False" />
+        <var name="globus" x="1.5" y="0" use_indpndnt="False" />
+        <var name="hand" x="1.5" y="0" use_indpndnt="False" />
+        <var name="rocket_2" x="24.8" y="0" use_indpndnt="False" />
+        <var name="goblet" x="0" y="0" use_indpndnt="False">
+          <point name="point_1" x="8.3" y="0" can_empty="False">
+            <var name="shparkling" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+      </point>
+    </var>
+    <var name="case_22" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="11.3" y="89.9" can_empty="False">
+        <var name="webcamera_2" x="0" y="0.5" use_indpndnt="False" />
+        <var name="videocamera" x="0" y="0.5" use_indpndnt="False" />
+        <var name="toster" x="0" y="0.5" use_indpndnt="False" />
+        <var name="toy" x="0" y="0.5" use_indpndnt="False" />
+        <var name="tuner_2" x="-4.3" y="0.5" use_indpndnt="False" />
+        <var name="ring" x="-4.3" y="0.5" use_indpndnt="False" />
+        <var name="toy_2" x="0" y="0.5" use_indpndnt="False" />
+        <var name="women_bag" x="0" y="0.5" use_indpndnt="False" />
+        <var name="t_shirt_1" x="0" y="0.5" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_23" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="10.7" y="90.6" can_empty="False">
+        <var name="book_1" x="0" y="0" use_indpndnt="False" />
+        <var name="boombox" x="0" y="0" use_indpndnt="False" />
+        <var name="candle_3" x="0" y="0" use_indpndnt="False" />
+        <var name="column_5" x="-7.4" y="0" use_indpndnt="False" />
+        <var name="cup_2" x="3.4" y="0" use_indpndnt="False" />
+        <var name="desklamp_21" x="3.4" y="0" use_indpndnt="False" />
+        <var name="flower_2" x="3.4" y="0" use_indpndnt="False" />
+        <var name="iphone_1" x="25" y="0" use_indpndnt="False" />
+        <var name="toy_1" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_24" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="11.2" y="90.1" can_empty="False">
+        <var name="book_4" x="9.932874" y="-0.2514725" use_indpndnt="False" />
+        <var name="glass" x="9.932874" y="-0.2514725" use_indpndnt="False" />
+        <var name="lavlamp_1" x="9.932874" y="-0.2514725" use_indpndnt="False" />
+        <var name="photo" x="9.932874" y="-0.2514725" use_indpndnt="False" />
+        <var name="retroradio" x="9.932874" y="-0.2514725" use_indpndnt="False" />
+        <var name="sport_bag" x="-10.9" y="-0.3" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_25" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="12" y="43.2" can_empty="False">
+        <var name="amplifier" x="0" y="0" use_indpndnt="False" />
+        <var name="camera_2" x="23.3" y="0" use_indpndnt="False" />
+        <var name="column_5" x="-1.3" y="0" use_indpndnt="False" />
+        <var name="desklamp_4" x="19" y="0" use_indpndnt="False" />
+        <var name="desklamp_21" x="19" y="0" use_indpndnt="False" />
+        <var name="desklamp_22" x="19" y="0" use_indpndnt="False" />
+        <var name="basket_used" x="0" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="104.1" y="42.9" can_empty="False">
+        <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+        <var name="cup_3" x="0" y="0" use_indpndnt="False" />
+        <var name="flower_2" x="11" y="0" use_indpndnt="False" />
+        <var name="iron" x="11" y="0" use_indpndnt="False" />
+        <var name="sewingmachine" x="-19.3" y="0" use_indpndnt="False" />
+        <var name="sugar" x="-5.3" y="0" use_indpndnt="False" />
+        <var name="alarmclock" x="27.8" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_26" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="57.5" y="42.6" can_empty="False">
+        <var name="stereosystem" x="-14.9" y="0" use_indpndnt="False" />
+        <var name="toy" x="-14.9" y="0" use_indpndnt="False" />
+        <var name="videocamera" x="33.1" y="0" use_indpndnt="False" />
+        <var name="tuner_3" x="33.1" y="0" use_indpndnt="False" />
+        <var name="teapot" x="-29.8" y="0" use_indpndnt="False" />
+        <var name="printer" x="-29.8" y="0" use_indpndnt="False" />
+        <var name="radio" x="32" y="0" use_indpndnt="False" />
+        <var name="t_shirt_2" x="-14.9" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_27" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="18.2" y="43.1" can_empty="False">
+        <var name="amplifier" x="0" y="0" use_indpndnt="False" />
+        <var name="book_1" x="90" y="0" use_indpndnt="False" />
+        <var name="box_1" x="3.9" y="0" use_indpndnt="False" />
+        <var name="boombox" x="31.5" y="0" use_indpndnt="False" />
+        <var name="cup_2" x="92.2" y="0" use_indpndnt="False" />
+        <var name="desklamp_15" x="92.2" y="0" use_indpndnt="False" />
+        <var name="glass" x="92.2" y="0" use_indpndnt="False" />
+        <var name="alarmclock" x="0" y="0" use_indpndnt="False" />
+        <var name="shparkling" x="0" y="0" use_indpndnt="False" />
+        <var name="women_bag" x="20.8" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_28" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="34.3" y="43.4" can_empty="False">
+        <var name="imac" x="12.9" y="0" use_indpndnt="False" />
+        <var name="iphone_1" x="12.9" y="0" use_indpndnt="False" />
+        <var name="headphones" x="72.3" y="0" use_indpndnt="False" />
+        <var name="hand" x="-18.1" y="0" use_indpndnt="False" />
+        <var name="gamepad" x="0.5" y="0" use_indpndnt="False" />
+        <var name="goblet" x="12.9" y="0" use_indpndnt="False" />
+        <var name="pencil" x="12.9" y="0" use_indpndnt="False" />
+        <var name="toy" x="12.9" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_29" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="34.1" y="36" can_empty="False">
+        <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+        <var name="bonsai" x="17.2" y="0" use_indpndnt="False" />
+        <var name="camera_2" x="17.2" y="0" use_indpndnt="False" />
+        <var name="candle_1" x="-18.8" y="0" use_indpndnt="False" />
+        <var name="column_1" x="-15" y="0" use_indpndnt="False">
+          <point name="point_1" x="35.2" y="0" can_empty="True">
+            <var name="book_1" x="3.8" y="0" use_indpndnt="False" />
+            <var name="camera_1" x="3.8" y="0" use_indpndnt="False" />
+            <var name="cup_4" x="34.6" y="0" use_indpndnt="False" />
+            <var name="cup_3" x="-30.55616" y="29.44292" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="desklamp_20" x="24.5" y="0" use_indpndnt="False" />
+        <var name="bag" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_30" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="8.5" y="36.3" can_empty="False">
+        <var name="book_1" x="0" y="0" use_indpndnt="False">
+          <point name="point_1" x="0" y="21.6" can_empty="True">
+            <var name="camera_1" x="10" y="0" use_indpndnt="False" />
+            <var name="candle_1" x="3.3" y="0" use_indpndnt="False" />
+            <var name="cup_1" x="66.32666" y="-21.26198" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="box_1" x="0" y="0" use_indpndnt="False" />
+        <var name="candle_2" x="0" y="0" use_indpndnt="False" />
+        <var name="cup_silver_3" x="0" y="0" use_indpndnt="False">
+          <point name="point_1" x="36.1" y="0" can_empty="False">
+            <var name="cup_silver_1" x="0" y="0" use_indpndnt="False" />
+            <var name="cup_gold_1" x="0" y="0" use_indpndnt="False" />
+            <var name="cup_bronze_1" x="0" y="0" use_indpndnt="False" />
+          </point>
+          <point name="point_2" x="16.9" y="0" can_empty="False">
+            <var name="cup_silver_2" x="0" y="0" use_indpndnt="False" />
+            <var name="cup_bronze_2" x="0" y="0" use_indpndnt="False" />
+            <var name="cup_gold_2" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+      </point>
+    </var>
+    <var name="case_31" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="15.5" y="35.9" can_empty="False">
+        <var name="desklamp_6" x="0" y="0" use_indpndnt="False" />
+        <var name="glass" x="0" y="0" use_indpndnt="False" />
+        <var name="iphone_1" x="0" y="0" use_indpndnt="False" />
+        <var name="iron" x="36.2" y="0" use_indpndnt="False" />
+        <var name="headphones" x="36.2" y="0" use_indpndnt="False" />
+        <var name="lavlamp_1" x="36.2" y="0" use_indpndnt="False" />
+        <var name="flower_3" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_32" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="28.6" y="36.7" can_empty="True">
+        <var name="bonsai" x="0" y="0" use_indpndnt="False" />
+        <var name="box_1" x="10.3" y="0" use_indpndnt="False" />
+        <var name="boombox" x="-22.6" y="0" use_indpndnt="False" />
+        <var name="gramophone_2" x="25.3" y="0" use_indpndnt="False" />
+        <var name="iphone_2" x="-20.5" y="0" use_indpndnt="False" />
+        <var name="pencil" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_33" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="23.7" y="33.8" can_empty="True">
+        <var name="tuner_1" x="0" y="0" use_indpndnt="False" />
+        <var name="rocket_1" x="-9.8" y="0" use_indpndnt="False" />
+        <var name="recorder" x="6.7" y="0" use_indpndnt="False" />
+        <var name="projector" x="6.7" y="0" use_indpndnt="False" />
+        <var name="women_bag" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_34" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="26.6" y="32.7" can_empty="False">
+        <var name="book_1" x="30.3" y="0" use_indpndnt="False" />
+        <var name="cup_3" x="30.3" y="0" use_indpndnt="False" />
+        <var name="phone" x="-6.6" y="0" use_indpndnt="False" />
+        <var name="microwave" x="-6.6" y="0" use_indpndnt="False" />
+        <var name="printer" x="23.6" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_35" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="24.8" y="32.6" can_empty="False">
+        <var name="chair_4" x="0" y="0" use_indpndnt="False" />
+        <var name="phone" x="0" y="0" use_indpndnt="False" />
+        <var name="sewingmachine" x="0" y="0" use_indpndnt="False" />
+        <var name="alarmclock" x="0" y="0" use_indpndnt="False" />
+        <var name="basket_used" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_36" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="24.5" y="32.5" can_empty="False">
+        <var name="coffeemaker" x="0" y="0" use_indpndnt="False" />
+        <var name="cup_4" x="43.6" y="0" use_indpndnt="False" />
+        <var name="floorlamp_6" x="-10.6" y="0" use_indpndnt="False" />
+        <var name="glass" x="4.6" y="0" use_indpndnt="False" />
+        <var name="lavlamp_2" x="4.6" y="0" use_indpndnt="False" />
+        <var name="cup_gold_3" x="0" y="0" use_indpndnt="False" />
+        <var name="palm_3_used" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_37" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="12" y="63.4" can_empty="False">
+        <var name="box_1" x="-8.1" y="0" use_indpndnt="False" />
+        <var name="cup_1" x="-8.1" y="0" use_indpndnt="False" />
+        <var name="desklamp_5" x="1.2" y="0" use_indpndnt="False" />
+        <var name="gramophone_1" x="1.2" y="0" use_indpndnt="False" />
+        <var name="radio" x="1.2" y="0" use_indpndnt="False" />
+        <var name="ring" x="1.2" y="0" use_indpndnt="False" />
+        <var name="flower_3" x="19.06" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_38" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="17.5" y="44.2" can_empty="True">
+        <var name="webcamera_2" x="-15.3" y="0" use_indpndnt="False" />
+        <var name="watch_7" x="-5" y="0" use_indpndnt="False" />
+        <var name="webcamera_1" x="21.8" y="0" use_indpndnt="False" />
+        <var name="teapot" x="-1.2" y="0" use_indpndnt="False" />
+        <var name="cup_3" x="-1.2" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="62.3" y="44.1" can_empty="False">
+        <var name="printer" x="0" y="0" use_indpndnt="False" />
+        <var name="projector" x="-5.5" y="0" use_indpndnt="False" />
+        <var name="tuner_1" x="-12.7" y="0" use_indpndnt="False" />
+        <var name="videocamera" x="7.5" y="0" use_indpndnt="False" />
+        <var name="shparkling" x="0" y="0" use_indpndnt="False" />
+        <var name="toy_2" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_40" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="138.4" y="47.7" can_empty="True">
+        <var name="cup_4" x="0" y="0" use_indpndnt="False" />
+        <var name="cup_2" x="-21.19022" y="52.72332" use_indpndnt="False" />
+        <var name="shparkling" x="0" y="0" use_indpndnt="False" />
+        <var name="alarmclock" x="0" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="28" y="100.3" can_empty="False">
+        <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+        <var name="book_1" x="-17.7" y="0" use_indpndnt="False" />
+        <var name="camera_2" x="-17.7" y="0" use_indpndnt="False" />
+        <var name="column_5" x="3.8" y="0" use_indpndnt="False" />
+        <var name="desklamp_7" x="3.8" y="0" use_indpndnt="False" />
+        <var name="bag" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_41" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="56.5" y="99.3" can_empty="False">
+        <var name="globus" x="31.3" y="0" use_indpndnt="False" />
+        <var name="printer" x="-26.6" y="0" use_indpndnt="False" />
+        <var name="retroradio" x="49.9" y="0" use_indpndnt="False" />
+        <var name="ring" x="49.9" y="0" use_indpndnt="False" />
+        <var name="goblet" x="31.3" y="0" use_indpndnt="False" />
+        <var name="guitar" x="31.3" y="0" use_indpndnt="False" />
+        <var name="swords" x="21.28" y="8.3" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_42" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="53.7" y="99.8" can_empty="False">
+        <var name="gramophone_2" x="38.7" y="0" use_indpndnt="False" />
+        <var name="iron" x="43.4" y="0" use_indpndnt="False" />
+        <var name="headphones" x="43.4" y="0" use_indpndnt="False" />
+        <var name="phone" x="-31.7" y="0" use_indpndnt="False" />
+        <var name="rocket_1" x="-5.1" y="0" use_indpndnt="False" />
+        <var name="poster_2" x="24" y="9.6" use_indpndnt="False" />
+        <var name="poster_1" x="24" y="9.6" use_indpndnt="False" />
+        <var name="toy_1" x="24" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_43" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="-5.1" y="47.5" can_empty="True">
+        <var name="cup_1" x="0" y="0" use_indpndnt="False" />
+        <var name="glass" x="143.8" y="0" use_indpndnt="False" />
+        <var name="photo" x="80.69924" y="52.68318" use_indpndnt="False" />
+        <var name="sewingmachine" x="80.69924" y="52.68318" use_indpndnt="False" />
+        <var name="iphone_2" x="4.7" y="0" use_indpndnt="False">
+          <point name="point_1" x="52.9" y="52.6" can_empty="True">
+            <var name="bonsai" x="44.4" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+      </point>
+    </var>
+    <var name="case_44" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="49.1" y="99.4" can_empty="False">
+        <var name="aquahouse_1" x="60" y="0" use_indpndnt="False" />
+        <var name="coffeemaker" x="60" y="0" use_indpndnt="False">
+          <point name="point_1" x="-12.8" y="0" can_empty="False">
+            <var name="cup_3" x="0" y="0" use_indpndnt="False" />
+            <var name="cup_4" x="-36.4" y="0" use_indpndnt="False" />
+            <var name="cup_1" x="34" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="desklamp_10" x="60" y="0" use_indpndnt="False" />
+        <var name="flower_2" x="-27.3" y="0" use_indpndnt="False" />
+        <var name="globus" x="39.1" y="0" use_indpndnt="False" />
+        <var name="bag" x="60" y="0" use_indpndnt="False" />
+        <var name="cup_bronze_2" x="18.8" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_45" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="15.9" y="99.3" can_empty="True">
+        <var name="glass" x="0" y="0" use_indpndnt="False" />
+        <var name="lavlamp_1" x="0" y="0" use_indpndnt="False" />
+        <var name="phone" x="22.7" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="92.1" y="99.4" can_empty="False">
+        <var name="cup_1" x="0" y="0" use_indpndnt="False" />
+        <var name="desklamp_23" x="0" y="0" use_indpndnt="False" />
+        <var name="gramophone_1" x="-4.7" y="0" use_indpndnt="False" />
+        <var name="iphone_2" x="32.7" y="0" use_indpndnt="False" />
+        <var name="cup_gold_2" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_46" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="20.2" y="98.9" can_empty="False">
+        <var name="retroradio" x="73.9" y="0" use_indpndnt="False">
+          <point name="point_1" x="6.7" y="13.9" can_empty="True">
+            <var name="cup_3" x="8.3" y="0" use_indpndnt="False" />
+            <var name="cup_4" x="-65.85579" y="-13.45444" use_indpndnt="False" />
+            <var name="candle_1" x="-65.85579" y="-13.45444" use_indpndnt="False" />
+            <var name="candle_2" x="28.91295" y="-13.5" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="radio" x="37.9" y="0" use_indpndnt="False" />
+        <var name="printer" x="56" y="0" use_indpndnt="False" />
+        <var name="microwave" x="73.5" y="0" use_indpndnt="False" />
+        <var name="column_1" x="2.2" y="0" use_indpndnt="False">
+          <point name="point_1" x="75.1" y="0" can_empty="False">
+            <var name="column_1" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="shparkling" x="73.9" y="0" use_indpndnt="False" />
+        <var name="t_shirt_2" x="73.9" y="0" use_indpndnt="False" />
+        <var name="sport_bag" x="-2.7" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_47" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="17.8" y="97.9" can_empty="True">
+        <var name="amplifier" x="0" y="0" use_indpndnt="False" />
+        <var name="book_1" x="83.7" y="0" use_indpndnt="False" />
+        <var name="camera_1" x="83.7" y="0" use_indpndnt="False" />
+        <var name="box_1" x="53.9" y="0" use_indpndnt="False" />
+        <var name="boombox" x="-3.9" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_49" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="45.5" y="51.9" can_empty="False">
+        <var name="desklamp_13" x="10.1" y="0" use_indpndnt="False" />
+        <var name="desklamp_15" x="-5.8" y="0" use_indpndnt="False" />
+        <var name="desklamp_21" x="-36" y="0" use_indpndnt="False" />
+        <var name="globus" x="-36" y="0" use_indpndnt="False" />
+        <var name="iphone_1" x="-21" y="0" use_indpndnt="False" />
+        <var name="toy_2" x="10.1" y="0" use_indpndnt="False" />
+        <var name="shparkling" x="10.1" y="0" use_indpndnt="False" />
+        <var name="palm_3_used" x="-41.8" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_50" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="19.6" y="51" can_empty="False">
+        <var name="imac" x="-8.1" y="0" use_indpndnt="False" />
+        <var name="phone" x="-8.1" y="0" use_indpndnt="False" />
+        <var name="ring" x="36.7" y="0" use_indpndnt="False" />
+        <var name="desklamp_24" x="41.9" y="0" use_indpndnt="False" />
+        <var name="floorlamp_6" x="41.9" y="0" use_indpndnt="False" />
+        <var name="women_bag" x="-8.1" y="0" use_indpndnt="False" />
+        <var name="toy_1" x="-8.1" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_51" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="42.9" y="52.4" can_empty="False">
+        <var name="iron" x="13.9" y="0" use_indpndnt="False" />
+        <var name="gamepad" x="-35.6" y="0" use_indpndnt="False" />
+        <var name="rocket_2" x="-24.2" y="0" use_indpndnt="False" />
+        <var name="ring" x="-24.2" y="0" use_indpndnt="False" />
+        <var name="cup_silver_1" x="13.9" y="0" use_indpndnt="False" />
+        <var name="cuckoo" x="8.32" y="7.6" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_52" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="13.7" y="50.9" can_empty="False">
+        <var name="bonsai" x="0" y="0" use_indpndnt="False" />
+        <var name="cup_4" x="52.1" y="0" use_indpndnt="False" />
+        <var name="desklamp_5" x="52.1" y="0" use_indpndnt="False" />
+        <var name="desklamp_19" x="33" y="0" use_indpndnt="False" />
+        <var name="flower_2" x="-2.9" y="0" use_indpndnt="False" />
+        <var name="flower_3" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_53" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="13.4" y="102" can_empty="False">
+        <var name="cup_4" x="0" y="0" use_indpndnt="False" />
+        <var name="glass" x="28.1" y="0" use_indpndnt="False" />
+        <var name="rocket_1" x="28.1" y="0" use_indpndnt="False">
+          <point name="point_1" x="0" y="0" can_empty="True">
+            <var name="book_1" x="-29.1" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="toy" x="28.1" y="0" use_indpndnt="False" />
+        <var name="book_1" x="36.1" y="0" use_indpndnt="False" />
+        <var name="flower_3" x="0" y="0" use_indpndnt="False" />
+        <var name="hand" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_54" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="11.2" y="102.2" can_empty="False">
+        <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+        <var name="box_1" x="0" y="0" use_indpndnt="False" />
+        <var name="camera_1" x="11.4" y="0" use_indpndnt="False" />
+        <var name="column_5" x="11.4" y="0" use_indpndnt="False" />
+        <var name="headphones" x="42.1" y="0" use_indpndnt="False" />
+        <var name="basket_used" x="0" y="0" use_indpndnt="False" />
+        <var name="cup_gold_1" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_55" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="13.1" y="102" can_empty="False">
+        <var name="camera_2" x="47.3" y="0" use_indpndnt="False" />
+        <var name="candle_1" x="47.3" y="0" use_indpndnt="False">
+          <point name="point_1" x="-49.6" y="0" can_empty="True">
+            <var name="candle_1" x="0" y="0" use_indpndnt="False" />
+          </point>
+          <point name="point_2" x="-25.2" y="0" can_empty="True">
+            <var name="candle_1" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="cup_3" x="47.3" y="0" use_indpndnt="False">
+          <point name="point_1" x="-16.3" y="0" can_empty="True">
+            <var name="book_4" x="-15.5" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="desklamp_7" x="17.2" y="0" use_indpndnt="False" />
+        <var name="iphone_2" x="27.6" y="0" use_indpndnt="False" />
+        <var name="flower_3" x="38.64" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_56" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="8" y="101.9" can_empty="True">
+        <var name="box_1" x="0" y="0" use_indpndnt="False" />
+        <var name="boombox" x="28" y="0" use_indpndnt="False">
+          <point name="point_1" x="-32.3" y="0" can_empty="True">
+            <var name="book_4" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="column_3" x="28" y="0" use_indpndnt="False">
+          <point name="point_1" x="23.9" y="0" can_empty="True">
+            <var name="cup_4" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="gramophone_1" x="28" y="0" use_indpndnt="False" />
+        <var name="iron" x="5.6" y="0" use_indpndnt="False" />
+        <var name="t_shirt_4" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_57" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="12.5" y="38.1" can_empty="False">
+        <var name="bonsai" x="-6.2" y="0" use_indpndnt="False" />
+        <var name="coffeemaker" x="12.7" y="0" use_indpndnt="False" />
+        <var name="desklamp_21" x="5.6" y="0" use_indpndnt="False" />
+        <var name="watch_7" x="6.6" y="0" use_indpndnt="False" />
+        <var name="palm_1_used" x="-12.8" y="0" use_indpndnt="False" />
+        <var name="shparkling" x="-5.1" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_58" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="14.6" y="38.3" can_empty="False">
+        <var name="column_5" x="-4.6" y="0" use_indpndnt="False">
+          <point name="point_1" x="0" y="26.1" can_empty="True">
+            <var name="cup_3" x="26.2" y="0" use_indpndnt="False" />
+            <var name="book_1" x="26.2" y="0" use_indpndnt="False" />
+            <var name="camera_1" x="3.4" y="0.2" use_indpndnt="False" />
+            <var name="glass" x="3.4" y="0.2" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="globus" x="-4.6" y="0" use_indpndnt="False" />
+        <var name="gramophone_2" x="-4.6" y="0" use_indpndnt="False" />
+        <var name="phone" x="5.7" y="0" use_indpndnt="False" />
+        <var name="radio" x="5.7" y="0" use_indpndnt="False" />
+        <var name="cup_bronze_3" x="-4.6" y="0" use_indpndnt="False" />
+        <var name="flower_3" x="-4.6" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_59" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="12" y="38.6" can_empty="True">
+        <var name="microwave" x="0" y="0" use_indpndnt="False" />
+        <var name="projector" x="0" y="0" use_indpndnt="False" />
+        <var name="sewingmachine" x="10" y="0" use_indpndnt="False" />
+        <var name="rocket_1" x="-8.6" y="0" use_indpndnt="False" />
+        <var name="ring" x="-8.6" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_60" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="13.4" y="38.6" can_empty="True">
+        <var name="desklamp_3" x="9.4" y="0" use_indpndnt="False" />
+        <var name="flower_2" x="20" y="0" use_indpndnt="False" />
+        <var name="ogn" x="-6.2" y="0" use_indpndnt="False" />
+        <var name="recorder" x="-6.2" y="0" use_indpndnt="False" />
+        <var name="sugar" x="17.8" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_61" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="11.3" y="17.9" can_empty="True">
+        <var name="book_1" x="0" y="0" use_indpndnt="False" />
+        <var name="boombox" x="0" y="0" use_indpndnt="False" />
+        <var name="column_1" x="7.9" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="63.9" y="18.3" can_empty="True">
+        <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+        <var name="camera_1" x="0" y="0" use_indpndnt="False" />
+        <var name="box_1" x="-11.6" y="0" use_indpndnt="False" />
+        <var name="cup_4" x="19.3" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_62" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="13.1" y="17.9" can_empty="True">
+        <var name="amplifier" x="0" y="0" use_indpndnt="False">
+          <point name="point_1" x="0" y="0" can_empty="True">
+            <var name="book_3" x="38.4" y="0" use_indpndnt="False" />
+          </point>
+          <point name="point_2" x="0" y="0" can_empty="True">
+            <var name="videocamera" x="59.8" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="column_5" x="0" y="0" use_indpndnt="False" />
+        <var name="globus" x="44" y="0" use_indpndnt="False" />
+        <var name="gramophone_1" x="26.1" y="0" use_indpndnt="False" />
+        <var name="retromixer" x="47.3" y="0" use_indpndnt="False">
+          <point name="point_1" x="0" y="0" can_empty="True">
+            <var name="tuner_2" x="-54.8" y="0" use_indpndnt="False">
+              <point name="point_1" x="0" y="6.9" can_empty="True">
+                <var name="tuner_1" x="0" y="0" use_indpndnt="False" />
+              </point>
+            </var>
+          </point>
+        </var>
+      </point>
+    </var>
+    <var name="case_63" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="3.8" y="18.4" can_empty="True">
+        <var name="rocket_1" x="11.4" y="0" use_indpndnt="False" />
+        <var name="ring" x="11.4" y="0" use_indpndnt="False" />
+        <var name="lavlamp_2" x="21.6" y="0" use_indpndnt="False" />
+        <var name="glass" x="21.6" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="57.8" y="18.1" can_empty="True">
+        <var name="flower_2" x="0" y="0" use_indpndnt="False" />
+        <var name="iphone_2" x="14.9" y="0" use_indpndnt="False" />
+        <var name="microwave" x="6.7" y="0" use_indpndnt="False" />
+        <var name="sewingmachine" x="6.7" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_64" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="0" y="17.8" can_empty="True">
+        <var name="cup_4" x="9.6" y="0" use_indpndnt="False" />
+        <var name="box_1" x="-0.4" y="0" use_indpndnt="False" />
+        <var name="tuner_1" x="-0.4" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="50.8" y="17.8" can_empty="True">
+        <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+        <var name="camera_1" x="10.2" y="0" use_indpndnt="False" />
+        <var name="book_1" x="10.2" y="0" use_indpndnt="False" />
+        <var name="candle_1" x="10.2" y="0" use_indpndnt="False">
+          <point name="point_1" x="5.3" y="0" can_empty="True">
+            <var name="candle_2" x="0" y="0" use_indpndnt="False" />
+          </point>
+          <point name="point_2" x="13.7" y="0" can_empty="True">
+            <var name="candle_2" x="0" y="0" use_indpndnt="False" />
+          </point>
+          <point name="point_3" x="0" y="0" can_empty="True">
+            <var name="candle_2" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+      </point>
+    </var>
+    <var name="case_65" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="12.5" y="36.9" can_empty="True">
+        <var name="coffeemaker" x="0" y="0" use_indpndnt="False" />
+        <var name="desklamp_6" x="0" y="0" use_indpndnt="False" />
+        <var name="flower_1" x="0" y="0" use_indpndnt="False" />
+        <var name="photo" x="0" y="0" use_indpndnt="False" />
+        <var name="radio" x="36.6" y="0" use_indpndnt="False" />
+        <var name="ring" x="49.4" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="case_66" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="42.2" y="19.7" can_empty="True">
+        <var name="camera_2" x="0" y="0" use_indpndnt="False" />
+        <var name="cup_3" x="0" y="0" use_indpndnt="False" />
+        <var name="gamepad" x="0" y="0" use_indpndnt="False" />
+        <var name="iphone_2" x="15.7" y="0" use_indpndnt="False" />
+        <var name="ring" x="1.2" y="0" use_indpndnt="False" />
+        <var name="cup_4" x="1.2" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="38.3" y="1.4" can_empty="True">
+        <var name="cup_4" x="11.5" y="0" use_indpndnt="False" />
+        <var name="glass" x="6.8" y="0" use_indpndnt="False" />
+        <var name="webcamera_1" x="6.8" y="0" use_indpndnt="False" />
+        <var name="watch_7" x="0.9" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="shelf_1" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="15" y="13.8" can_empty="False">
+        <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+        <var name="book_1" x="17.5" y="0" use_indpndnt="False" />
+        <var name="box_1" x="-13.9" y="0" use_indpndnt="False" />
+        <var name="cup_3" x="22.3" y="0" use_indpndnt="False">
+          <point name="point_1" x="-28.4" y="0" can_empty="True">
+            <var name="watch_7" x="-5.6" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="cup_gold_1" x="0" y="0" use_indpndnt="False" />
+        <var name="flower_3" x="0" y="0" use_indpndnt="False" />
+        <var name="lavlamp_1" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="shelf_2" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="35.3" y="10.8" can_empty="False">
+        <var name="amplifier" x="0" y="0" use_indpndnt="False" />
+        <var name="tuner_1" x="-25.9" y="0" use_indpndnt="False">
+          <point name="point_1" x="28.6" y="11.3" can_empty="True">
+            <var name="cup_4" x="4.6" y="0" use_indpndnt="False" />
+            <var name="desklamp_5" x="26.14606" y="-10.33331" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="xbox" x="-25.9" y="0" use_indpndnt="False">
+          <point name="point_1" x="20.8" y="0" can_empty="True">
+            <var name="floorlamp_6" x="-3.3" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="toy" x="-25.9" y="0" use_indpndnt="False" />
+        <var name="stereosystem" x="-25.9" y="0" use_indpndnt="False" />
+        <var name="bag" x="0" y="0" use_indpndnt="False" />
+        <var name="sport_bag" x="-25.58253" y="0.5116453" use_indpndnt="False" />
+        <var name="women_bag" x="0" y="0" use_indpndnt="False" />
+        <var name="alarmclock" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="shelf_3" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="9.3" y="2.3" can_empty="True">
+        <var name="book_2" x="0" y="0" use_indpndnt="False" />
+        <var name="book_4" x="19.06" y="-0.4" use_indpndnt="False" />
+        <var name="glass" x="19.06" y="0.49" use_indpndnt="False" />
+        <var name="iphone_1" x="42.07" y="0.49" use_indpndnt="False" />
+        <var name="iron" x="13.7" y="0.5" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="shelf_4" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="7.1" y="2.8" can_empty="True">
+        <var name="gamepad" x="0" y="-0.1" use_indpndnt="False" />
+        <var name="iphone_2" x="12.7" y="-0.1" use_indpndnt="False">
+          <point name="point_1" x="12.1" y="0" can_empty="True">
+            <var name="ring" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="webcamera_2" x="12.7" y="-0.1" use_indpndnt="False" />
+        <var name="walllamp_5" x="34.5" y="-0.1" use_indpndnt="False">
+          <point name="point_1" x="-13.3" y="0" can_empty="True">
+            <var name="walllamp_5" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="videocamera" x="0" y="-0.1" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="shelf_5" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="6.3" y="24" can_empty="True">
+        <var name="cup_3" x="0" y="0" use_indpndnt="False" />
+        <var name="cup_4" x="5.4" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="10.7" y="1.6" can_empty="True">
+        <var name="desklamp_10" x="0" y="0" use_indpndnt="False" />
+        <var name="glass" x="0" y="0" use_indpndnt="False" />
+        <var name="headphones" x="0" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_3" x="27.6" y="23.7" can_empty="True">
+        <var name="book_2" x="18.9" y="-0.2" use_indpndnt="False" />
+        <var name="book_3" x="9" y="-0.2" use_indpndnt="False" />
+      </point>
+      <point name="point_4" x="42.3" y="2.3" can_empty="True">
+        <var name="camera_1" x="3.1" y="0" use_indpndnt="False" />
+        <var name="camera_2" x="3.1" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="shelf_6" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="21.9" y="14.3" can_empty="False">
+        <var name="bonsai" x="20.6" y="0" use_indpndnt="False" />
+        <var name="flower_2" x="-4.5" y="0" use_indpndnt="False">
+          <point name="point_1" x="33.3" y="0" can_empty="True">
+            <var name="desklamp_21" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="gramophone_2" x="-4.5" y="0" use_indpndnt="False" />
+        <var name="lavlamp_3" x="-4.5" y="0" use_indpndnt="False" />
+        <var name="photo" x="33.4" y="0" use_indpndnt="False" />
+        <var name="sport_bag" x="1.9" y="0" use_indpndnt="False" />
+        <var name="t_shirt_1" x="1.9" y="0" use_indpndnt="False" />
+        <var name="t_shirt_4" x="38.7" y="0" use_indpndnt="False" />
+        <var name="toy_2" x="38.7" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="shelf_7" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="10" y="2" can_empty="True">
+        <var name="gramophone_1" x="0" y="0" use_indpndnt="False" />
+        <var name="projector" x="0" y="0" use_indpndnt="False" />
+        <var name="retroradio" x="0" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="9.2" y="21.8" can_empty="True">
+        <var name="book_3" x="27.5" y="-0.3" use_indpndnt="False" />
+        <var name="book_2" x="-0.2" y="-0.3" use_indpndnt="False" />
+      </point>
+      <point name="point_3" x="8.06" y="41.29" can_empty="True">
+        <var name="camera_1" x="0" y="0" use_indpndnt="False" />
+        <var name="cup_4" x="21.56" y="0" use_indpndnt="False" />
+        <var name="glass" x="11.9" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_4" x="45.6" y="41.1" can_empty="True">
+        <var name="cup_3" x="0" y="0" use_indpndnt="False" />
+        <var name="cup_1" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="shelf_8" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="13.7" y="2" can_empty="True">
+        <var name="amplifier" x="0" y="0" use_indpndnt="False" />
+        <var name="desklamp_10" x="0" y="-0.4" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="33.6" y="21.5" can_empty="True">
+        <var name="camera_2" x="6" y="0" use_indpndnt="False" />
+        <var name="gamepad" x="-16.3" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_3" x="18" y="41.5" can_empty="True">
+        <var name="iron" x="0" y="0" use_indpndnt="False" />
+        <var name="gramophone_1" x="0" y="0" use_indpndnt="False" />
+        <var name="iphone_1" x="33.2" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="shelving_1" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="18.5" y="30.8" can_empty="True">
+        <var name="amplifier" x="0" y="0" use_indpndnt="False" />
+        <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+        <var name="boombox" x="-10.1" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="24.2" y="61" can_empty="True">
+        <var name="book_4" x="0" y="0" use_indpndnt="False" />
+        <var name="book_1" x="-19.6" y="0" use_indpndnt="False" />
+        <var name="book_2" x="-19.6" y="0" use_indpndnt="False">
+          <point name="point_1" x="12" y="0" can_empty="True">
+            <var name="desklamp_23" x="24" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="glass" x="-19.6" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_3" x="13.4" y="92" can_empty="True">
+        <var name="cup_2" x="0" y="0" use_indpndnt="False" />
+        <var name="phone" x="19.3" y="0" use_indpndnt="False" />
+        <var name="retroradio" x="2.7" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="shelving_2" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="16.2" y="31.8" can_empty="True">
+        <var name="headphones" x="22" y="0" use_indpndnt="False" />
+        <var name="lavlamp_3" x="-9.8" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="18.9" y="61.6" can_empty="True">
+        <var name="microwave" x="-12.9" y="0" use_indpndnt="False" />
+        <var name="projector" x="0" y="0" use_indpndnt="False" />
+        <var name="ring" x="21.7" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_3" x="17.1" y="92.5" can_empty="True">
+        <var name="printer" x="0" y="0" use_indpndnt="False" />
+        <var name="sugar" x="24.4" y="0" use_indpndnt="False" />
+        <var name="toy" x="-10.1" y="0" use_indpndnt="False" />
+        <var name="videocamera" x="-10.1" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="shelving_3" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="16.5" y="16" can_empty="True">
+        <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+        <var name="book_1" x="-11.6" y="0" use_indpndnt="False" />
+        <var name="candle_2" x="21.4" y="0" use_indpndnt="False">
+          <point name="point_1" x="-10.4" y="0" can_empty="True">
+            <var name="candle_2" x="18.6" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+      </point>
+      <point name="point_2" x="12.3" y="47.1" can_empty="True">
+        <var name="boombox" x="0" y="0" use_indpndnt="False" />
+        <var name="desklamp_10" x="0" y="0" use_indpndnt="False" />
+        <var name="phone" x="-5.2" y="-0.5" use_indpndnt="False" />
+        <var name="videocamera" x="-5.2" y="-0.5" use_indpndnt="False" />
+        <var name="watch_7" x="13.6" y="-0.2" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="shelving_4" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="19.4" y="16" can_empty="True">
+        <var name="radio" x="-7.8" y="0" use_indpndnt="False" />
+        <var name="retromixer" x="-7.8" y="0" use_indpndnt="False" />
+        <var name="sugar" x="-7.8" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="16.2" y="47.2" can_empty="True">
+        <var name="cup_4" x="0" y="0" use_indpndnt="False">
+          <point name="point_1" x="12.1" y="0" can_empty="True">
+            <var name="cup_1" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="glass" x="17.3" y="0" use_indpndnt="False" />
+        <var name="iphone_2" x="17.3" y="0" use_indpndnt="False" />
+        <var name="desklamp_7" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="shelving_5" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="11.9" y="31.8" can_empty="True">
+        <var name="cup_3" x="0" y="0" use_indpndnt="False" />
+        <var name="desklamp_10" x="0" y="0" use_indpndnt="False" />
+        <var name="glass" x="26.5" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="12.7" y="61.5" can_empty="True">
+        <var name="toy" x="0" y="0" use_indpndnt="False" />
+        <var name="videocamera" x="0" y="0" use_indpndnt="False" />
+        <var name="tuner_1" x="-7" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_3" x="11.7" y="92.5" can_empty="True">
+        <var name="ring" x="0" y="0" use_indpndnt="False" />
+        <var name="retromixer" x="21.4" y="0" use_indpndnt="False" />
+        <var name="webcamera_1" x="15.7" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="shelving_6" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="13.2" y="16.1" can_empty="True">
+        <var name="cup_4" x="24.9" y="0" use_indpndnt="False" />
+        <var name="desklamp_23" x="-1.7" y="0" use_indpndnt="False" />
+        <var name="gamepad" x="11.2" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="12.4" y="47.9" can_empty="True">
+        <var name="camera_1" x="0" y="0" use_indpndnt="False" />
+        <var name="watch_7" x="6.6" y="0" use_indpndnt="False" />
+        <var name="tuner_3" x="4.7" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="sideboard_1" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="10.4" y="9.9" can_empty="True">
+        <var name="tuner_2" x="-6" y="0" use_indpndnt="False" />
+        <var name="ring" x="26.7" y="0" use_indpndnt="False" />
+        <var name="glass" x="26.7" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="7.1" y="25.5" can_empty="True">
+        <var name="cup_4" x="0" y="15.8" use_indpndnt="False" />
+        <var name="cup_3" x="16.94114" y="-0.1894073" use_indpndnt="False" />
+        <var name="iphone_2" x="38.5" y="-0.2" use_indpndnt="False" />
+        <var name="walllamp_5" x="15.7" y="-1" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="sideboard_2" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="3.1" y="34.3" can_empty="True">
+        <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+        <var name="rocket_1" x="0" y="0" use_indpndnt="False" />
+        <var name="watch_7" x="0" y="0" use_indpndnt="False" />
+        <var name="webcamera_1" x="17.3" y="0" use_indpndnt="False" />
+        <var name="webcamera_2" x="9.2" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="sideboard_3" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="12.5" y="9.6" can_empty="True">
+        <var name="gramophone_1" x="-3.1" y="0" use_indpndnt="False" />
+        <var name="ring" x="-9.6" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="11.8" y="24.8" can_empty="True">
+        <var name="videocamera" x="0" y="0" use_indpndnt="False" />
+        <var name="watch_7" x="14.9" y="16.7" use_indpndnt="False" />
+        <var name="tuner_2" x="-6" y="16.7" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="sideboard_4" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="22.9" y="26.5" can_empty="True">
+        <var name="glass" x="0" y="0" use_indpndnt="False" />
+        <var name="gamepad" x="11.7" y="-1.5" use_indpndnt="False" />
+        <var name="gramophone_1" x="-19.9" y="-1.5" use_indpndnt="False" />
+        <var name="cup_2" x="-9.7" y="15.7" use_indpndnt="False" />
+        <var name="camera_1" x="2.9" y="15.7" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="sideboard_5" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="13.5" y="25" can_empty="True">
+        <var name="camera_2" x="27.09216" y="-15.05116" use_indpndnt="False" />
+        <var name="ring" x="-3.3" y="16.3" use_indpndnt="False" />
+        <var name="retroradio" x="1.5" y="-0.9" use_indpndnt="False" />
+        <var name="tuner_3" x="-10.2" y="-15.7" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="sideboard_6" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="4.2" y="26.2" can_empty="True">
+        <var name="glass" x="0" y="0" use_indpndnt="False" />
+        <var name="gamepad" x="0" y="-2.1" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="19.6" y="41.8" can_empty="True">
+        <var name="cup_3" x="10.2" y="0" use_indpndnt="False" />
+        <var name="tuner_1" x="-14.4" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_3" x="20.7" y="10.2" can_empty="True">
+        <var name="webcamera_1" x="0" y="0" use_indpndnt="False" />
+        <var name="watch_7" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="sideboard_7" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="6.2" y="2.4" can_empty="True">
+        <var name="book_1" x="0" y="0" use_indpndnt="False" />
+        <var name="camera_1" x="0" y="0" use_indpndnt="False" />
+        <var name="cup_4" x="17.6" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="3.3" y="25.6" can_empty="True">
+        <var name="book_4" x="1.6" y="0" use_indpndnt="False" />
+        <var name="webcamera_2" x="9.7" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_3" x="77" y="25.9" can_empty="True">
+        <var name="book_3" x="0.6" y="0" use_indpndnt="False" />
+        <var name="candle_1" x="16.7" y="-0.4" use_indpndnt="False" />
+      </point>
+      <point name="point_4" x="40.9" y="25.5" can_empty="True">
+        <var name="book_2" x="21.2" y="0" use_indpndnt="False" />
+        <var name="book_3" x="20.2" y="-22" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="sideboard_8" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="0.8" y="2.6" can_empty="True">
+        <var name="amplifier" x="0" y="0" use_indpndnt="False" />
+        <var name="projector" x="37.2" y="0" use_indpndnt="False" />
+        <var name="retroradio" x="48.7" y="23.1" use_indpndnt="False" />
+        <var name="printer" x="38.6" y="22.2" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="2" y="25.4" can_empty="True">
+        <var name="cup_3" x="4.3" y="0" use_indpndnt="False" />
+        <var name="cup_4" x="75.6" y="0" use_indpndnt="False" />
+        <var name="glass" x="81.4" y="-22.5" use_indpndnt="False">
+          <point name="point_1" x="0" y="0" can_empty="True">
+            <var name="camera_1" x="1.154442" y="23.0886" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="iron" x="74.44556" y="-22.50001" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="sideboard_9" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="42.4" y="2.3" can_empty="True">
+        <var name="book_4" x="0" y="0" use_indpndnt="False" />
+        <var name="book_3" x="-2.3" y="0" use_indpndnt="False" />
+        <var name="book_1" x="3.2" y="-0.6" use_indpndnt="False" />
+        <var name="book_2" x="19.1" y="23.3" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="4.6" y="2.9" can_empty="True">
+        <var name="headphones" x="0" y="0" use_indpndnt="False" />
+        <var name="phone" x="-2" y="0" use_indpndnt="False" />
+        <var name="retroradio" x="-2" y="-0.3" use_indpndnt="False" />
+      </point>
+      <point name="point_3" x="4.6" y="25.4" can_empty="True">
+        <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+        <var name="cup_1" x="13" y="0" use_indpndnt="False" />
+        <var name="desklamp_10" x="7.2" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_4" x="77.1" y="2.2" can_empty="True">
+        <var name="videocamera" x="0" y="0" use_indpndnt="False" />
+        <var name="walllamp_5" x="0" y="0" use_indpndnt="False" />
+        <var name="webcamera_2" x="10.22245" y="23.40402" use_indpndnt="False" />
+        <var name="watch_7" x="3.1" y="23.4" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="sideboard_10" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="42" y="2.5" can_empty="True">
+        <var name="aquahouse_1" x="0" y="0" use_indpndnt="False" />
+        <var name="gramophone_1" x="-3.6" y="0" use_indpndnt="False" />
+        <var name="iron" x="1.5" y="22.8" use_indpndnt="False" />
+        <var name="headphones" x="1.5" y="22.8" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="4.3" y="2.2" can_empty="True">
+        <var name="gamepad" x="0" y="0" use_indpndnt="False" />
+        <var name="glass" x="8.9" y="23.8" use_indpndnt="False" />
+        <var name="iphone_2" x="-2" y="23.8" use_indpndnt="False" />
+        <var name="iphone_1" x="23.54461" y="1.125546" use_indpndnt="False" />
+      </point>
+      <point name="point_3" x="94.6" y="2.7" can_empty="True">
+        <var name="ring" x="0" y="0" use_indpndnt="False" />
+        <var name="book_2" x="-16.5" y="0" use_indpndnt="False">
+          <point name="point_1" x="1.6" y="22.7" can_empty="True">
+            <var name="book_4" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="camera_2" x="-16.5" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="sideboard_11" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="38.8" y="1.7" can_empty="True">
+        <var name="camera_1" x="0" y="0" use_indpndnt="False" />
+        <var name="cup_3" x="13.9" y="0" use_indpndnt="False" />
+        <var name="cup_4" x="-1" y="0" use_indpndnt="False" />
+        <var name="glass" x="-1" y="0" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="0" y="0" can_empty="True">
+        <var name="ring" x="7" y="1.8" use_indpndnt="False" />
+        <var name="retroradio" x="7" y="1.8" use_indpndnt="False" />
+        <var name="iphone_1" x="7" y="1.8" use_indpndnt="False" />
+      </point>
+      <point name="point_3" x="75.5" y="1.2" can_empty="True">
+        <var name="gamepad" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="sideboard_12" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="40.3" y="1.3" can_empty="True">
+        <var name="retroradio" x="0" y="0" use_indpndnt="False" />
+        <var name="watch_7" x="-1.5" y="18.9" use_indpndnt="False" />
+      </point>
+      <point name="point_2" x="5.1" y="19.1" can_empty="True">
+        <var name="cup_2" x="0" y="0" use_indpndnt="False" />
+        <var name="cup_3" x="10.70969" y="-17.33949" use_indpndnt="False" />
+      </point>
+      <point name="point_3" x="74.2" y="0.8" can_empty="True">
+        <var name="camera_1" x="5.6" y="0.8" use_indpndnt="False" />
+        <var name="iphone_1" x="-1" y="19.7" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="table_1" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="25.7" y="44" can_empty="True">
+        <var name="box_1" x="0" y="0" use_indpndnt="False" />
+        <var name="column_5" x="-22.2" y="0" use_indpndnt="False" />
+        <var name="desklamp_4" x="30.2" y="0" use_indpndnt="False">
+          <point name="point_1" x="-40.2" y="0" can_empty="True">
+            <var name="flower_2" x="14.5" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="desklamp_13" x="30.2" y="0" use_indpndnt="False" />
+        <var name="floorlamp_6" x="-12.3" y="0" use_indpndnt="False" />
+        <var name="gramophone_2" x="-12.3" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="table_2" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="16.7" y="44.8" can_empty="True">
+        <var name="bonsai" x="0" y="0" use_indpndnt="False" />
+        <var name="boombox" x="15.8" y="0" use_indpndnt="False" />
+        <var name="book_1" x="15.8" y="0" use_indpndnt="False" />
+        <var name="coffeemaker" x="15.8" y="0" use_indpndnt="False" />
+        <var name="cup_4" x="53.3" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="table_3" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="20.5" y="16.2" can_empty="True">
+        <var name="tuner_1" x="0" y="0" use_indpndnt="False">
+          <point name="point_1" x="68" y="0" can_empty="False">
+            <var name="tuner_2" x="0" y="0" use_indpndnt="False">
+              <point name="point_1" x="0" y="6" can_empty="True">
+                <var name="tuner_2" x="0" y="0" use_indpndnt="False" />
+                <var name="tuner_3" x="5.1" y="0" use_indpndnt="False" />
+              </point>
+            </var>
+          </point>
+        </var>
+        <var name="videocamera" x="0" y="0" use_indpndnt="False">
+          <point name="point_1" x="72.2" y="0" can_empty="True">
+            <var name="book_1" x="0" y="0" use_indpndnt="False" />
+            <var name="camera_2" x="-33.9" y="0" use_indpndnt="False">
+              <point name="point_1" x="58.6" y="0" can_empty="False">
+                <var name="book_4" x="5.1" y="0" use_indpndnt="False" />
+              </point>
+            </var>
+          </point>
+        </var>
+        <var name="projector" x="0" y="0" use_indpndnt="False">
+          <point name="point_1" x="70.9" y="0" can_empty="True">
+            <var name="headphones" x="-14.6" y="0" use_indpndnt="False" />
+          </point>
+          <point name="point_2" x="95.5" y="0" can_empty="True">
+            <var name="amplifier" x="0" y="0" use_indpndnt="False" />
+            <var name="iphone_2" x="-19.5" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="watch_7" x="0" y="0" use_indpndnt="False">
+          <point name="point_1" x="96" y="0" can_empty="True">
+            <var name="book_2" x="-17.4" y="0" use_indpndnt="False">
+              <point name="point_1" x="12.1" y="0" can_empty="True">
+                <var name="camera_1" x="0" y="0" use_indpndnt="False" />
+              </point>
+            </var>
+          </point>
+        </var>
+      </point>
+    </var>
+    <var name="table_4" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="25.6" y="27.7" can_empty="True">
+        <var name="box_1" x="-15.1" y="0" use_indpndnt="False" />
+        <var name="boombox" x="-15.1" y="0" use_indpndnt="False" />
+        <var name="chair_4" x="24.5" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="table_5" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="23.9" y="26.9" can_empty="True">
+        <var name="globus" x="22.5" y="0" use_indpndnt="False" />
+        <var name="lavlamp_3" x="10.3" y="0" use_indpndnt="False" />
+        <var name="phone" x="10.3" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="table_6" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="25.8" y="38" can_empty="True">
+        <var name="bonsai" x="0" y="0" use_indpndnt="False" />
+        <var name="cup_3" x="-24.7" y="0" use_indpndnt="False" />
+        <var name="desklamp_4" x="22.8" y="0" use_indpndnt="False" />
+        <var name="desklamp_1" x="22.8" y="0" use_indpndnt="False" />
+        <var name="iron" x="12.1" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="table_7" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="18" y="38.7" can_empty="True">
+        <var name="column_1" x="1.4" y="0" use_indpndnt="False">
+          <point name="point_1" x="6.6" y="29.5" can_empty="True">
+            <var name="iphone_1" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="desklamp_10" x="26.6" y="0" use_indpndnt="False" />
+        <var name="flower_2" x="26.6" y="0" use_indpndnt="False" />
+        <var name="imac" x="-7.2" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="table_8" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="18.1" y="36.7" can_empty="True">
+        <var name="desklamp_6" x="0" y="0" use_indpndnt="False" />
+        <var name="desklamp_11" x="32.4" y="0" use_indpndnt="False" />
+        <var name="box_1" x="-6.7" y="0" use_indpndnt="False" />
+        <var name="boombox" x="-6.7" y="0" use_indpndnt="False" />
+        <var name="candle_3" x="29" y="0" use_indpndnt="False">
+          <point name="point_1" x="-24.3" y="0" can_empty="True">
+            <var name="candle_3" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="column_3" x="20.9" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="table_9" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="20" y="36.7" can_empty="True">
+        <var name="cup_2" x="0" y="0" use_indpndnt="False" />
+        <var name="desklamp_20" x="0" y="0" use_indpndnt="False" />
+        <var name="globus" x="0" y="0" use_indpndnt="False" />
+        <var name="gramophone_1" x="0" y="0" use_indpndnt="False" />
+        <var name="headphones" x="0" y="0" use_indpndnt="False">
+          <point name="point_1" x="19.5" y="0" can_empty="False">
+            <var name="iphone_2" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+      </point>
+    </var>
+    <var name="table_10" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="0" y="38.1" can_empty="True">
+        <var name="book_1" x="0" y="0" use_indpndnt="False" />
+        <var name="camera_2" x="40.5" y="0" use_indpndnt="False" />
+        <var name="candle_2" x="40.5" y="0" use_indpndnt="False" />
+        <var name="desklamp_12" x="40.5" y="0" use_indpndnt="False" />
+        <var name="floorlamp_6" x="33.4" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="table_11" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="19.5" y="43.3" can_empty="True">
+        <var name="column_2" x="0" y="0" use_indpndnt="False" />
+        <var name="desklamp_16" x="18.6" y="0" use_indpndnt="False" />
+        <var name="glass" x="-1.9" y="0" use_indpndnt="False" />
+        <var name="lavlamp_1" x="10" y="0" use_indpndnt="False" />
+        <var name="phone" x="31.4" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="table_12" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="57.2" y="50.5" can_empty="True">
+        <var name="box_1" x="-52.4" y="0" use_indpndnt="False" />
+        <var name="desklamp_9" x="24.3" y="0" use_indpndnt="False" />
+        <var name="desklamp_24" x="-5.2" y="0" use_indpndnt="False" />
+        <var name="flower_1" x="-23.8" y="0" use_indpndnt="False" />
+        <var name="lavlamp_3" x="8.1" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="table_13" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="24.8" y="28.1" can_empty="True">
+        <var name="desklamp_4" x="0" y="0" use_indpndnt="False" />
+        <var name="gramophone_2" x="0" y="0" use_indpndnt="False" />
+        <var name="macbook" x="0" y="0" use_indpndnt="False" />
+        <var name="microwave" x="-17.1" y="0" use_indpndnt="False" />
+        <var name="projector" x="7.6" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="table_14" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="28.1" y="40" can_empty="True">
+        <var name="toy" x="0" y="0" use_indpndnt="False" />
+        <var name="videocamera" x="0" y="0" use_indpndnt="False" />
+        <var name="toster" x="21" y="0" use_indpndnt="False" />
+        <var name="stereosystem" x="-18.5" y="0" use_indpndnt="False" />
+        <var name="box_1" x="-18.5" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="table_15" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="0.8" y="30.5" can_empty="True">
+        <var name="box_1" x="0" y="0" use_indpndnt="False" />
+        <var name="candle_3" x="8.6" y="0" use_indpndnt="False" />
+        <var name="sewingmachine" x="9.8" y="0" use_indpndnt="False" />
+        <var name="retroradio" x="9.8" y="0" use_indpndnt="False" />
+        <var name="rocket_1" x="9.8" y="0" use_indpndnt="False" />
+        <var name="radio" x="26" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="warbdone_1" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="17.1" y="144.9" can_empty="True">
+        <var name="box_1" x="-7.3" y="0" use_indpndnt="False" />
+        <var name="boombox" x="-7.3" y="0" use_indpndnt="False" />
+        <var name="column_5" x="-7.3" y="0" use_indpndnt="False" />
+        <var name="globus" x="-17" y="0" use_indpndnt="False" />
+        <var name="ogn" x="-7.3" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="warbdone_2" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="15.2" y="145" can_empty="True">
+        <var name="videocamera" x="0" y="0" use_indpndnt="False" />
+        <var name="rocket_2" x="29.2" y="0" use_indpndnt="False" />
+        <var name="recorder" x="-6.7" y="0" use_indpndnt="False" />
+        <var name="retromixer" x="-6.7" y="0" use_indpndnt="False" />
+        <var name="iron" x="8.5" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="warbdone_3" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="19.5" y="145" can_empty="True">
+        <var name="box_1" x="-12.8" y="0" use_indpndnt="False" />
+        <var name="gramophone_1" x="-12.8" y="0" use_indpndnt="False" />
+        <var name="radio" x="17.1" y="0" use_indpndnt="False" />
+        <var name="sewingmachine" x="-7.3" y="0" use_indpndnt="False" />
+        <var name="tuner_1" x="0.6" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="warbdone_4" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="18.9" y="145.6" can_empty="True">
+        <var name="gramophone_2" x="0" y="0" use_indpndnt="False" />
+        <var name="printer" x="0" y="0" use_indpndnt="False" />
+        <var name="tuner_3" x="0" y="0" use_indpndnt="False">
+          <point name="point_1" x="0" y="7.2" can_empty="True">
+            <var name="tuner_2" x="-5.4" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="retroradio" x="0" y="0" use_indpndnt="False" />
+        <var name="desklamp_24" x="0" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+    <var name="warbdone_5" x="0" y="0" use_indpndnt="False">
+      <point name="point_1" x="15.1" y="145.3" can_empty="True">
+        <var name="box_1" x="-8.7" y="0" use_indpndnt="False" />
+        <var name="column_2" x="19.7" y="0" use_indpndnt="False">
+          <point name="point_1" x="-31.6" y="0" can_empty="True">
+            <var name="book_4" x="0" y="0" use_indpndnt="False" />
+          </point>
+        </var>
+        <var name="recorder" x="-8.7" y="0" use_indpndnt="False" />
+        <var name="retromixer" x="-8.7" y="0" use_indpndnt="False" />
+        <var name="book_1" x="-8.7" y="0" use_indpndnt="False" />
+      </point>
+    </var>
+  </indpndnt>
+</data>
