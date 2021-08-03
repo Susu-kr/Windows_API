@@ -9,8 +9,11 @@ class GameManager
 	UINT nFlags;
 	ULONG_PTR			g_GdiToken;
 	int					state;
-	CSound*				sound;
+	CSound				sound;
 	HBITMAP				hDoubleBufferImage;
+	bool				chk_op;
+	bool				chk_game;
+
 
 public:
 	RECT				screenRect;
@@ -23,10 +26,14 @@ public:
 	void				GDI_Draw(HDC hdc);
 	void				GDI_End();
 
+
+	bool				Click(float x, float y);
+	
 	int getState() { return state; }
 	void DrawStartScreen(Graphics& graphics);
 	void DrawGameScreen(Graphics& graphics);
 	void DrawClearScreen(Graphics& graphics);
 	void DrawOverScreen(Graphics& graphics);
 	void DrawEndScreen(Graphics& graphics);
+
 };

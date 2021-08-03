@@ -1,5 +1,9 @@
 #pragma once
-
+/*
+	참고 사이트
+	https://hombody.tistory.com/44
+	https://m.cafe.daum.net/nowcampus/ZuQY/13?
+*/
 #include "framework.h"
 
 #ifndef _SOUND_H_
@@ -7,7 +11,9 @@
 
 // FMOD SOUND
 #include "fmod.hpp"
+#include <string>
 
+using namespace std;
 using namespace FMOD;
 
 #define SOUND_MAX 1.0f
@@ -18,32 +24,37 @@ using namespace FMOD;
 class CSound
 {
 private:
-	static FMOD_SYSTEM *s_system;
+	FMOD_SYSTEM *s_system;
+	FMOD_SOUND **BG_sound; // 배경음 (로비, 게임)
+	FMOD_SOUND **EFF_sound; // 효과음 (클릭시 소리, 이동시 소리, 적 효과음, 피격음, 죽는소리)
+	// 이거 여러가지 메인 음악이랑 효과음 여러개 동시에 작동시키려고 미리 넣어놓기위해서 배열로 선언
+	FMOD_CHANNEL **BG_channel;
+	FMOD_CHANNEL *EFF_channel;
 
-	FMOD_SOUND *m_sound[5];
-	FMOD_CHANNEL *m_channel;
-
+	int BG_count;
+	int EFF_count;
 	float m_volume;
 	float e_volume;
 	FMOD_BOOL m_bool;
 
 public:
-	CSound(const char * path, bool loop);
-	~CSound();
+	CSound(void);
+	~CSound(void);
 
-	static int Init();		// 최초 실행시 딱 한번
-	static int Release();	// 프로그램 종료 직전 코드가 실행
+	void CreateBGSound(int count, string * path);
+	void CreateEFFSound(int count, string * path);
+	void PlaySoundEffect(int nIndex);
+	void PlaySoundBG(int nIndex);
+	void StopSoundBG(int nIndex);
+	void ReleaseSound();
+	void Update();
+	void volumeUp();
+	void volumeDown();
+	void e_volumeUp();
+	void e_volumeDown();
+	float getM_vol() { return m_volume; }
+	float getE_vol() { return e_volume; }
 
-	void Add_effect(const char * path, int cnt);
-	int play(int cnt);
-	int pause();
-	int resume();
-	int stop();
-	int volumeUp();
-	int volumeDown();
-	int e_volumeUp();
-	int e_volumeDown();
-	int Update();
 };
 
 #endif _SOUND_H_

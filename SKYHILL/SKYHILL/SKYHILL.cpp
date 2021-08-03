@@ -168,6 +168,12 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             }
         }
         break;
+	case WM_LBUTTONDOWN:
+		{
+			if(!gm.Click(LOWORD(lParam), HIWORD(lParam)))
+				DestroyWindow(hWnd);
+		}
+		break;
 	case WM_TIMER:
 		{
 			InvalidateRect(hWnd, NULL, false);
