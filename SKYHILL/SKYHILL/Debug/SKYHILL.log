@@ -1,4 +1,4 @@
 ﻿  GameManager.cpp
-d:\windows_api\skyhill\skyhill\gamemanager.cpp(35): warning C4101: 'hOldBitmap2' :참조되지 않은 지역 변수입니다.
-d:\windows_api\skyhill\skyhill\gamemanager.cpp(34): warning C4101: 'hMemDC2' :참조되지 않은 지역 변수입니다.
+d:\windows_api\skyhill\skyhill\gamemanager.cpp(41): warning C4101: 'hOldBitmap2' :참조되지 않은 지역 변수입니다.
+d:\windows_api\skyhill\skyhill\gamemanager.cpp(40): warning C4101: 'hMemDC2' :참조되지 않은 지역 변수입니다.
   SKYHILL.vcxproj -> D:\Windows_API\SKYHILL\Debug\SKYHILL.exe

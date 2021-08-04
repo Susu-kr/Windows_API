@@ -157,6 +157,7 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="GDI_Plus.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SKYHILL.h" />
     <ClInclude Include="Sound.h" />
@@ -164,6 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="SKYHILL.cpp" />
     <ClCompile Include="Sound.cpp" />
   </ItemGroup>

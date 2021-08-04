@@ -8,6 +8,12 @@ void GameManager::Init()
 	sound.CreateBGSound(1, &BG_path);
 	sound.CreateEFFSound(1, &EFF_path);
 
+	for (int i = 0; i < 4; i++) {
+		passive[i] = false;
+		active[i] = false;
+	}
+
+
 	sound.PlaySoundBG(0);
 }
 
@@ -108,7 +114,7 @@ bool GameManager::Click(float x, float y)
 	{
 	case START:
 		{
-			if (!chk_op && !chk_game)
+			if (!chk_op && !chk_game && !chk_ability)
 			{
 				// 옵션버튼 클릭
 				if (x >= screenRect.right - 225 && x < screenRect.right - 175
@@ -129,7 +135,7 @@ bool GameManager::Click(float x, float y)
 					return false;
 				}
 			}
-			else if(chk_op && !chk_game)
+			else if(chk_op && !chk_game && !chk_ability)
 			{
 				// 배경음버튼 클릭(감소)
 				if (x >= screenRect.right / 2 - 180 && x < screenRect.right / 2 - 155
@@ -164,7 +170,7 @@ bool GameManager::Click(float x, float y)
 				}
 				return true;
 			}
-			else if (!chk_op && chk_game) // 게임 난이도 선택단계
+			else if (!chk_op && chk_game && !chk_ability) // 게임 난이도 선택단계
 			{
 				//screenRect.right / 2 - 112, screenRect.bottom / 2 - 119
 
@@ -173,7 +179,8 @@ bool GameManager::Click(float x, float y)
 					&& y >= screenRect.bottom / 2 - 75 && y < screenRect.bottom / 2 - 51)
 				{
 					// 난이도에 따른 설정
-
+					chk_ability = true;
+					difficulty = 1;
 					// 
 				}
 				// 보통 버튼 클릭
@@ -181,20 +188,110 @@ bool GameManager::Click(float x, float y)
 					&& y >= screenRect.bottom / 2 - 32 && y < screenRect.bottom / 2 - 8)
 				{
 					// 난이도에 따른 설정
-
+					chk_ability = true;
+					difficulty = 2;
 				}
 				// 어려움 버튼 클릭
 				else if (x >= screenRect.right / 2 - 100 && x < screenRect.right / 2 + 98
 					&& y >= screenRect.bottom / 2 + 17 && y < screenRect.bottom / 2 + 41)
 				{
 					// 난이도에 따른 설정
-
+					chk_ability = true;
+					difficulty = 3;
 				}
 				// 취소 버튼 클릭
 				else if (x >= screenRect.right / 2 - 100 && x < screenRect.right / 2 + 98
 					&& y >= screenRect.bottom / 2 + 82 && y < screenRect.bottom / 2 + 106)
 				{
 					chk_game = false;
+				}
+			}
+			else if (chk_ability)
+			{
+				// 플레이어가 직접 사용
+				if (x >= screenRect.right / 2 - 133 && x < screenRect.right / 2 - 71
+					&& y >= screenRect.bottom / 2 - 85 && y < screenRect.bottom / 2 - 23)
+				{// 능력 없음
+					for (int i = 0; i < 4; i++)
+					{
+						if (i == 0) passive[i] = true;
+						else passive[i] = false;
+					}
+				}
+				else if (x >= screenRect.right / 2 - 67 && x < screenRect.right / 2 - 5
+					&& y >= screenRect.bottom / 2 - 85 && y < screenRect.bottom / 2 - 23)
+				{// 응급 도구
+					for (int i = 0; i < 4; i++)
+					{
+						if (i == 1) passive[i] = true;
+						else passive[i] = false;
+					}
+				}
+				else if (x >= screenRect.right / 2 - 1 && x < screenRect.right / 2 + 61
+					&& y >= screenRect.bottom / 2 - 85 && y < screenRect.bottom / 2 - 23)
+				{// 생존 키트
+					for (int i = 0; i < 4; i++)
+					{
+						if (i == 2) passive[i] = true;
+						else passive[i] = false;
+					}
+				}
+				else if (x >= screenRect.right / 2 + 65 && x < screenRect.right / 2 + 127
+					&& y >= screenRect.bottom / 2 - 85 && y < screenRect.bottom / 2 - 23)
+				{// 운좋은 놈
+					for (int i = 0; i < 4; i++)
+					{
+						if (i == 3) passive[i] = true;
+						else passive[i] = false;
+					}
+				}
+				// 자동으로 적용
+				else if (x >= screenRect.right / 2 - 133 && x < screenRect.right / 2 - 71
+					&& y >= screenRect.bottom / 2 + 29 && y < screenRect.bottom / 2 + 91)
+				{// 없음
+					for (int i = 0; i < 4; i++)
+					{
+						if (i == 0) active[i] = true;
+						else active[i] = false;
+					}
+				}
+				else if (x >= screenRect.right / 2 - 67 && x < screenRect.right / 2 - 5
+					&& y >= screenRect.bottom / 2 + 29 && y < screenRect.bottom / 2 + 91)
+
+				{// 운이 좌우하는 게임
+					for (int i = 0; i < 4; i++)
+					{
+						if (i == 1) active[i] = true;
+						else active[i] = false;
+					}
+				}
+				else if (x >= screenRect.right / 2 - 1 && x < screenRect.right / 2 + 61
+					&& y >= screenRect.bottom / 2 + 29 && y < screenRect.bottom / 2 + 91)
+				{// 엉망진창
+					for (int i = 0; i < 4; i++)
+					{
+						if (i == 2) active[i] = true;
+						else active[i] = false;
+					}
+				}
+				else if (x >= screenRect.right / 2 + 65 && x < screenRect.right / 2 + 127
+					&& y >= screenRect.bottom / 2 + 29 && y < screenRect.bottom / 2 + 91)
+				{// 고소공포증
+					for (int i = 0; i < 4; i++)
+					{
+						if (i == 3) active[i] = true;
+						else active[i] = false;
+					}
+				}
+				else if (x >= screenRect.right / 2 - 257 && x < screenRect.right / 2 - 56
+					&& y >= screenRect.bottom / 2 + 153 && y < screenRect.bottom / 2 + 177)
+				{ // 닫기
+					chk_ability = false;
+				}
+				else if (x >= screenRect.right / 2 + 57 && x < screenRect.right / 2 + 255
+					&& y >= screenRect.bottom / 2 + 153 && y < screenRect.bottom / 2 + 177)
+				{ // 게임시작
+					Transition(INGAME);
 				}
 			}
 		}
@@ -210,6 +307,8 @@ bool GameManager::Click(float x, float y)
 	}
 	return true;
 }
+
+
 
 void GameManager::DrawStartScreen(Graphics & graphics)
 {
@@ -269,7 +368,7 @@ void GameManager::DrawStartScreen(Graphics & graphics)
 
 		delete op_icon;
 	}
-	if (chk_game)
+	if (chk_game && !chk_ability)
 	{
 		// >> : 배경 어둡게
 		SolidBrush brush(Color(255, 0, 0, 0));
@@ -295,6 +394,83 @@ void GameManager::DrawStartScreen(Graphics & graphics)
 		graphics.DrawString(L"보 통", -1, &font, pointF2, &brush);
 		PointF pointF3(screenRect.right / 2 - 32.0f, screenRect.bottom / 2 + 22.0f);
 		graphics.DrawString(L"어 려 움", -1, &font, pointF3, &brush);
+
+		delete diff_icon;
+	}
+	if (chk_ability)
+	{
+		// >> : 배경 어둡게
+		SolidBrush brush(Color(255, 0, 0, 0));
+		brush.SetColor(Color(128, 0, 0, 0));
+		graphics.FillRectangle(&brush, 0, 0, screenRect.right, screenRect.bottom);
+		// <<
+
+		// 난이도 선택 창 출력
+		Image* ability_icon = Image::FromFile((WCHAR*)L"images/Ability2.png"); // 옵션 창
+		int a_w = ability_icon->GetWidth();
+		int a_h = ability_icon->GetHeight();
+		graphics.DrawImage(ability_icon, Rect(screenRect.right / 2 - 423, screenRect.bottom / 2 - 199, a_w, a_h), 0, 0, a_w, a_h, UnitPixel);
+
+		// 선택한 능력 표시
+		Pen RedPen(Color(255, 255, 0, 10), 2.0f);
+		int p_x = screenRect.right / 2 - 130;
+		int p_y = screenRect.bottom / 2 - 98;
+		int a_x = p_x;
+		int a_y = screenRect.bottom / 2 + 38;
+		brush.SetColor(Color(255, 145, 141, 120));
+		FontFamily fontFamily(L"Arial");
+		Font font(&fontFamily, 15, FontStyleBold, UnitPixel);
+		for (int i = 0; i < 4; i++)
+		{
+			if (passive[i] == true)
+			{
+				p_x += i * 69;
+				graphics.DrawRectangle(&RedPen, p_x, p_y, 63, 62);
+				TCHAR temp[100];
+				if (i == 1)
+				{
+					wsprintf(temp, TEXT("응급 처치 : 1회 사용 가능한 버튼이 생긴다. 사용 시, HP를 50만큼 회복시켜준다."));
+				}
+				else if (i == 2)
+				{
+					wsprintf(temp, TEXT("생존 키트 : 1회 사용 가능한 버튼이 생긴다. 사용 시 배고픔을 100만큼 회복시켜준다."));
+				}
+				else if (i == 3)
+				{
+					wsprintf(temp, TEXT("운 좋은 놈 : 150회 이동 후 재사용 가능. 사용 시 1000의 대미지 상대를 즉사시킨다."));
+				}
+				if (i != 0) {
+					PointF pointF1(screenRect.right / 2 - 300.0f, screenRect.bottom / 2 - 20.0f);
+					graphics.DrawString(temp, -1, &font, pointF1, &brush);
+				}
+
+			}
+			if (active[i])
+			{
+				a_x += i * 69;
+				graphics.DrawRectangle(&RedPen, a_x, a_y, 63, 62);
+				TCHAR temp[100];
+				if (i == 1)
+				{
+					wsprintf(temp, TEXT("운이 좌우 하는 게임 : 적을 타격할 시 기본 공격 대미지가 1 ~ 300%%로 랜덤한 특성"));
+				}
+				else if (i == 2)
+				{
+					wsprintf(temp, TEXT("엉망진창 : 아이템 드롭 확률이 50%% 증가, 10회 이동마다 임의의 아이템을 잃어버리는 특성"));
+				}
+				else if (i == 3)
+				{
+					wsprintf(temp, TEXT("고소공포증 : 시작 최대 HP가 60이나, 5개 층을 내려갈때마다 최대 HP가 10씩 증가한다."));
+				}
+
+				if (i != 0) {
+					PointF pointF1(screenRect.right / 2 - 300.0f, screenRect.bottom / 2 + 122.0f);
+					graphics.DrawString(temp, -1, &font, pointF1, &brush);
+				}
+
+			}
+		}
+		delete ability_icon;
 	}
 	count += 1130;
 	delete pImg;
@@ -306,6 +482,10 @@ void GameManager::DrawStartScreen(Graphics & graphics)
 
 void GameManager::DrawGameScreen(Graphics & graphics)
 {
+	SolidBrush brush(Color(255, 0, 0, 0));
+	brush.SetColor(Color(128, 0, 0, 0));
+	graphics.FillRectangle(&brush, 0, 0, screenRect.right, screenRect.bottom);
+	// <<
 }
 
 void GameManager::DrawClearScreen(Graphics & graphics)

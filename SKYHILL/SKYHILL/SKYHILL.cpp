@@ -174,6 +174,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 				DestroyWindow(hWnd);
 		}
 		break;
+	case WM_MOUSEMOVE:
+
 	case WM_TIMER:
 		{
 			InvalidateRect(hWnd, NULL, false);
