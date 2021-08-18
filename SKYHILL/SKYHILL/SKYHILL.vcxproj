@@ -23,7 +23,7 @@
     <ProjectGuid>{287DA3D9-0D4D-4A64-9F69-C480271E3358}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>SKYHILL</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -166,6 +166,10 @@
   <ItemGroup>
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="save.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="SKYHILL.cpp" />
     <ClCompile Include="Sound.cpp" />
   </ItemGroup>
@@ -173,8 +177,24 @@
     <ResourceCompile Include="SKYHILL.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Icon.ico" />
+    <Image Include="icon1.ico" />
     <Image Include="SKYHILL.ico" />
     <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cur00001.cur" />
+    <None Include="cur00002.cur" />
+    <None Include="cursor1.cur" />
+    <None Include="cursor2.cur" />
+    <None Include="images\Blue.cur" />
+    <None Include="images\cursor1.cur" />
+    <None Include="images\cursor2.cur" />
+    <None Include="images\Green.cur" />
+    <None Include="Main.cur" />
+    <None Include="On.cur" />
+    <None Include="Room.cur" />
+    <None Include="Target.cur" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

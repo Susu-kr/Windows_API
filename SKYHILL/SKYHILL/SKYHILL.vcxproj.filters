@@ -53,6 +53,9 @@
     <ClCompile Include="Player.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="save.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SKYHILL.rc">
@@ -66,5 +69,49 @@
     <Image Include="SKYHILL.ico">
       <Filter>리소스 파일</Filter>
     </Image>
+    <Image Include="icon1.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Icon.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\cursor1.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="images\cursor2.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="images\Blue.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="images\Green.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="cursor1.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="cursor2.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="cur00001.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="cur00002.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="On.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Main.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Target.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Room.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
   </ItemGroup>
 </Project>
