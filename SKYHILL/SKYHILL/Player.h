@@ -14,4 +14,3 @@ class Player
 	bool				Item[2];
 
 };
-

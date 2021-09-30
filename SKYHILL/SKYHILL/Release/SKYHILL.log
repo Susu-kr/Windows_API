@@ -1,17 +1,4 @@
-﻿  GameManager.cpp
-d:\github\github\windows_api\skyhill\skyhill\gamemanager.h(46): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
-d:\github\github\windows_api\skyhill\skyhill\gamemanager.cpp(27): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
-d:\github\github\windows_api\skyhill\skyhill\gamemanager.cpp(55): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\github\windows_api\skyhill\skyhill\gamemanager.cpp(73): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\github\windows_api\skyhill\skyhill\gamemanager.cpp(74): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\github\windows_api\skyhill\skyhill\gamemanager.cpp(85): warning C4101: 'hOldBitmap2' :참조되지 않은 지역 변수입니다.
-d:\github\github\windows_api\skyhill\skyhill\gamemanager.cpp(84): warning C4101: 'hMemDC2' :참조되지 않은 지역 변수입니다.
-d:\github\github\windows_api\skyhill\skyhill\gamemanager.cpp(1318): warning C4244: '인수': 'LONG'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\github\windows_api\skyhill\skyhill\gamemanager.cpp(1357): warning C4244: '인수': 'LONG'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\github\windows_api\skyhill\skyhill\gamemanager.cpp(1375): warning C4244: '인수': 'LONG'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\github\windows_api\skyhill\skyhill\gamemanager.cpp(1415): warning C4244: '인수': 'LONG'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\github\windows_api\skyhill\skyhill\gamemanager.cpp(1432): warning C4244: '인수': 'LONG'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-d:\github\github\windows_api\skyhill\skyhill\gamemanager.cpp(1472): warning C4244: '인수': 'LONG'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  Player.cpp
   코드를 생성하고 있습니다.
   0 of 237 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
